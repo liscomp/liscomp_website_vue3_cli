@@ -13,9 +13,9 @@
           <div class="fw-bolder">Endereço:</div>
           <div>
             <i class="fa-solid fa-map-marker fa"></i>
-            IFRJ - Campus Paracambi Paracambi (IFRJ-CPar). Laboratório de
-            Instrumentação e Simulação Computacional Científicas Aplicadas 28.
-            R. Sebastião de Lacerda, S/N Paracambi - RJ, 26600-000.
+            IFRJ - Campus Paracambi. Laboratório de Instrumentação e Simulação
+            Computacional Científicas Aplicadas 28. R. Sebastião de Lacerda, S/N
+            Paracambi - RJ, 26600-000.
           </div>
         </div>
         <div
