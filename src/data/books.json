@@ -1,0 +1,42 @@
+[
+    {
+      "label": "978-613-9-63169-8",
+      "type": "book",
+      "properties": {
+        "journal": "",
+        "edition": "1",
+        "publisher": "NEA",
+        "title": "Simulação e tratamento de sinais sonoros usando Octave",
+        "url": "https://www.amazon.com/Simula%C3%A7%C3%A3o-tratamento-sinais-sonoros-usando/dp/6139631696",
+        "volume": "1",
+        "author": "Goncalves, Elicardo A.S. and Lima, Rudi G.C. and Profilo, Fabricio and de Souza, Lucas and Martins, Miguel and Rodrigues, Caio",
+        "pages": "100",
+        "date": "2018-06-18",
+        "year": "2018",
+        "month": "6",
+        "day": "18",
+        "topic": "SemTopico",
+        "foto": "background-image.svg"
+      }
+    },
+    {
+      "label": "978-602-2-09273-9",
+      "type": "book",
+      "properties": {
+        "journal": "",
+        "edition": "1",
+        "publisher": "LAP Academic Publishing",
+        "title": "Digitizing Radiographic Films Through X-Ray Fluorescence Mapping",
+        "url": "https://www.amazon.com/Digitizing-Radiographic-Through-Fluorescence-Mapping/dp/6202092734",
+        "volume": "1",
+        "author": "de S. Gonçalves, Elicardo A. and OLIVEIRA, D. F. and OLIVEIRA, L. F. and ASSIS, J. T. and ANJOS, M. J. and Lopes, R. T",
+        "pages": "64",
+        "date": "2017-12-14",
+        "year": "2017",
+        "month": "12",
+        "day": "14",
+        "topic": "SemTopico",
+        "foto": "background-image.svg"
+      }
+    }
+  ]

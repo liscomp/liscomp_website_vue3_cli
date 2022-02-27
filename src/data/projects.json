@@ -1,0 +1,1032 @@
+[
+    {
+      "title": "Criação de um Laboratório Móvel Para Realizar Análises Físico-Químicas em Obras de Artes de Museus Brasileiros",
+      "short_title": "Criação de um Laboratório Móvel",
+      "foto": "background-image.svg",
+      "periodo": "2019 - 2022",
+      "financiadores": "Conselho Federal Gestor do Fundo de Defesa dos Direitos Difusos (CFDD)",
+      "edital": "08000.012661/2019-13",
+      "autores": "Renato Pereira de Freitas;Douglas Santos Rodrigues Ferreira;Andre Rocha Pimenta;Valter de Sousa Felix;Ronaldo Vicente Pereira;Elicardo Alves de Souza Gonçalves",
+      "resumo": "O fomento adquirido neste projeto, será aplicado na implementação de um laboratório móvel, composto por instrumentos de análises físico-químicas, para realizar investigações in situ e não destrutivas em obras de artes, assim como profissionais com expertise, neste campo trabalho. Este laboratório ficará à disposição de museus Brasileiros, para realizar estudos científicos em obras de artes. Os resultados obtidos, na investigação, serão úteis principalmente para o processo de conservação, restauração e catalogação das obras analisadas, além disso, os dados obtidos nas análises farão parte de um banco de dados, que será disponibilizado ao Instituto Brasileiro de Museus (IBRAM), cuja uma das funcionalidades será de comparar os resultados com a de obras de arte de autores Brasileiros suspeita de falsificação, permitindo assim realizar perícias direcionadas.",
+      "situação": "andamento"
+    },
+    {
+      "title": "Construção de um sistema portátil de macro mapeamento elementar por Fluorescência de Raios X para ser aplicado em obras de arte",
+      "short_title": "Sistema Portátil de Macro Mapeamento",
+      "foto": "background-image.svg",
+      "periodo": "2018 - 2021",
+      "financiadores": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do RJ (FAPERJ); Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro (IFRJ)",
+      "edital": "Jovem Cientista 2018 (número: E-26/202.672/2018)",
+      "autores": "Renato Pereira de Freitas;Marcelo Oliveira Pereira;Elicardo Alves de Souza Gonçalves;Cristiano Carvalho;Fabricio Silva.",
+      "resumo": "Neste projeto será desenvolvido um sistema portátil de mapeamento macro elementar por Fluorescência de Raios (macro-XRF), para ser empregado no mapeamento elementar 2D, in situ de uma área de aproximadamente 1 x 1 m² de obras de arte de diferentes museus do estado do Rio de Janeiro. Os resultados obtidos por este tipo de técnica são extremamente úteis para avaliar camadas subjacentes de pigmentos em obras de arte. Logo, a partir dos resultados é possível obter informações ocultas acerca da pintura, como modificações feitas pelo próprio artista, sobreposições de pigmentos e restaurações na superfície, fornecendo uma perspectiva única sobre o processo criativo do artista e a história da conservação e restauro da pintura.",
+      "situação": "andamento"
+    },
+    {
+      "title": "Análise estatística multivariada de dados de XRF obtidos de artefatos arqueológicas utilizando Python",
+      "short_title": "Análise estatística multivariada de dados de XRF",
+      "foto": "background-image.svg",
+      "periodo": "2019 - 2021",
+      "financiadores": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do RJ (FAPERJ)",
+      "edital": "IC- Bolsa de Iniciação Científica- 2019/1 (número: E-26/201.956/2019)",
+      "autores": "Renato Pereira de Freitas;Douglas Santos Rodrigues Ferreira;Elicardo Alves de Souza Gonçalves;Andre Rocha Pimenta;Bárbara Lorrane Oliveira Gonçalves",
+      "resumo": "Este projeto, tem como objetivo aplicar códigos computacionais baseados na linguagem Python, para realizar investigações estatísticas multivariadas em dados de XRF obtidos de artefatos arqueológicos. A partir dos códigos, também será possível automatizar os processos de pré-tratamento de dados, reduzindo assim o tempo desta etapa.",
+      "situação": "andamento"
+    },
+    {
+      "title": "Desenvolvimento De Métodos Que Auxiliem A Identificação De Roubos, Furtos E Adulterações De Obras De Arte E Veículos ",
+      "short_title": "Identificação de Roubos, Furtos e Adulterações de Obras de Arte e Veículos",
+      "foto": "Mapa_Roubo_CISP_Max.png",
+      "periodo": "2019 - 2021",
+      "financiadores": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do RJ (FAPERJ)",
+      "edital": "Programa de Apoio a Projetos de Inovação no Campo da Ciência Forense 2018 (número: E-26/290.066/2018)",
+      "autores": "Renato Pereira de Freitas;Valter de Sousa Felix;Marcelo Oliveira Pereira;Ana Luísa de Queiroz Baddini Ramos;Elicardo Alves de Souza Gonçalves;Douglas Santos Rodrigues Ferreira;Andre Rocha Pimenta;Hiram Araujo",
+      "resumo": "O Brasil possui um vasto patrimônio histórico cultural, possuindo obras de artes de pintores famosos mundialmente. Crimes, que envolvem furtos e falsificações de obras de arte aumentou muito nos últimos anos no Brasil, além disso, obras de arte tem sido utilizado, com uma forma de lavagem de dinheiro. Este projeto, que conta com o apoio da FAPERJ, tem como um dos objetivos desenvolver metodologias, que permitam verificar a autenticidade de uma de arte, utilizando dados acerca dos materiais, que foram empregados no processo de criação de uma determinada pintura. As telas estudadas neste projeto serão analisadas por técnicas físico-químicas não destrutivas. Os resultados obtidos neste projeto, auxiliarão as autoridades de segurança pública, na investigação de crimes que envolvem obras de arte. Além de desenvolver metodologias que auxiliarão na perícia de pinturas o projeto também conta, com estudos que auxiliarão em Perícias em Veículos Clonados e Identificação e Mapeamento de Roubos e Furtos.",
+      "situação": "andamento"
+    },
+    {
+      "title": "Análise de falha em peças e componentes fabricados em ligas metálicas",
+      "short_title": "Análise de falha em peças e componentes fabricados em ligas metálicas",
+      "foto": "background-image.svg",
+      "periodo": "2020 - Atual",
+      "financiadores": {
+        "bolsa": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do RJ",
+        "auxilio_financeiro": ""
+      },
+      "edital": "",
+      "autores": {
+        "coordenador": "André Rocha Pimenta",
+        "integrantes": "José Mauro Moraes Junior"
+      },
+      "resumo": "Falhas em componentes mecânicos são constantemente motivos de acidentes que podem resultar em perdas humanas, danos ambientais e econômicos. Investigar o motivo das falhas, e sugerir melhorias são os principais objetivos da linha de pesquisa em análise de falha. Este projeto irá realizar o estudos de análises de falhas em componentes mecânicos. Projeto Financiado pela FAPERJ no valor de R$ 3.780,00 (Bolsa Iniciação Cientifica Jovens Talentos).",
+      "situação": "andamento"
+    },
+    {
+      "title": "Análise de chassis de veículos clonados",
+      "short_title": "Análise de chassis de veículos clonados",
+      "foto": "background-image.svg",
+      "periodo": "2020 - Atual",
+      "financiadores": {
+        "bolsa": "Conselho Nacional de Desenvolvimento Científico e Tecnológico",
+        "auxilio_financeiro": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+      },
+      "edital": "",
+      "autores": {
+        "Coordenador": "André Rocha Pimenta",
+        "Integrantes": "José Maria Paolucci Pimenta"
+      },
+      "resumo": "O objetivo do projeto é desenvolver novos reagentes para o estudo de chassis clonados. Os reagentes tem como função revelar a marcação original que o veículo clonado apresentava. Projeto Financiado pelo IFRJ e CNPq, através do Edital IFRJ PIBIC 2020 / 2021, no valor de R$2.000,00 pelo IFRJ (taxa de bancada) e R$6.000,00 pelo CNPq (Bolsas de Iniciação Cientifica).",
+      "situação": "andamento"
+    },
+    {
+      "title": "Desenvolvimento de métodos que auxiliem a identificação de veículos furtados e roubados.",
+      "short_title": "Desenvolvimento de métodos que auxiliem a identificação de veículos furtados e roubados.",
+      "foto": "background-image.svg",
+      "periodo": "2019 - 2020",
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": ""
+      },
+      "edital": "",
+      "autores": {
+        "Coordenador": "André Rocha Pimenta",
+        "Integrantes": "José Maria Paolucci Pimenta;Daniel Oliveira de Lima"
+      },
+      "resumo": "Projeto cujo objetivo principal é o desenvolvimento de métodos que auxiliem a identificação dos números originais de chassis clonados através da utilização de ataques químicos. Projeto Financiado pelo IFRJ, através do processo Edital PIBIC 2019-2020, no valor de R$4.800,00 (Bolsa de Iniciação Científica).",
+      "situação": "concluido"
+    },
+    {
+      "title": "Identificação de carros clonados através da zona de encruamento do chassi",
+      "short_title": "Identificação de carros clonados através da zona de encruamento do chassi",
+      "foto": "background-image.svg",
+      "periodo": "2019 - Atual",
+      "financiadores": {
+        "bolsa": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do RJ",
+        "auxilio_financeiro": ""
+      },
+      "edital": "",
+      "autores": {
+        "Coordenador": "André Rocha Pimenta",
+        "Integrantes": "Renato Pereira de Freitas;Douglas Santos Rodrigues Ferreira"
+      },
+      "resumo": "Projeto destina a estudar a clonagem de chassis através de técnicas de microscopia. Projeto Financiado pela FAPERJ, através do processo E-26/201.928/2019, no valor de R$9.600,00 (Bolsa de Iniciação Científica).",
+      "situação": "andamento"
+    },
+    {
+      "title": "Caracterização da fratura de aço inoxidável superduplex após precipitação de fases deletérias",
+      "short_title": "Caracterização da fratura de aço inoxidável superduplex após precipitação de fases deletérias",
+      "foto": "background-image.svg",
+      "periodo": "2019 - Atual",
+      "financiadores": {
+        "bolsa": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do RJ",
+        "auxilio_financeiro": ""
+      },
+      "edital": "",
+      "autores": {
+        "Coordenador": "André Rocha Pimenta",
+        "Integrantes": "José Maria Paolucci Pimenta;Renato Pereira de Freitas;Lucas Leal Gomes"
+      },
+      "resumo": "Aços inoxidáveis de microestrutura duplex, são largamente utilizados nas indústrias químicas e petroquímicas devido as boas propriedades mecânicas e de resistência à corrosão. Contudo quando esses materiais são expostos a aportes térmicos, podem ocorrer a precipitação de fases deletérias, prejudicando suas propriedades. O objetivo do presente projeto é estudar a influência da precipitação dessas fases deletérias nos mecanismos de fratura do aço inoxidável superduplex. Para tanto, um aço superduplex será submetido a três diferentes tratamentos térmicos, para que ocorra a precipitação das fases deletérias sigma e chi em diferentes frações volumétricas. Os aços tratados termicamente serão submetidos a ensaios de impacto e as fraturas observadas em microscopia eletrônica de varredura. Para caracterização das fases deletérias e suas frações volumétricas, serão utilizadas as técnicas de microscopia ótica com ataque químico eletrolítico e processamento digital de imagem. Espera-se com os resultados obtidos estabelecer uma correlação entre a presença das fases deletérias e os mecanismos de fratura presentes. Os resultados deste projeto colaborarão para o conhecimento das superfícies de fratura dos aços inoxidáveis duplex, auxiliando em estudos práticos de análises de falha. Projeto Financiado pela FAPERJ no valor de R$ 3.780,00 (Bolsa Iniciação Cientifica Jovens Talentos);",
+      "situação": "andamento"
+    },
+    {
+      "title": "Desenvolvimento de Sistemas Poliméricos Nanoestruturados Aplicados a Embalagens Alimentícias Ativas e de Revestimento para Nutracêuticos",
+      "short_title": "Desenvolvimento de Sistemas Poliméricos Nanoestruturados Aplicados a Embalagens Alimentícias Ativas e de Revestimento para Nutracêuticos",
+      "foto": "background-image.svg",
+      "periodo": "2019 - Atual",
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do RJ"
+      },
+      "edital": "FAPERJ Edital nº 02/2019 - Programa Redes de Pesquisa em Nanotecnologia no Estado do Rio de Janeiro",
+      "autores": {
+        "Coordenador": "André Rocha Pimenta",
+        "Integrantes": "José Roberto Moraes D' Almeida;Lilian Ferreira de Senna;Lilian Ferreira de Senna;Marilia Garcia Diniz;Hector Reynaldo Meneses Costa;Sandro Rosa Correa;Douglas Santos Rodrigues Ferreira;Maria Inês Bruno Tavares"
+      },
+      "resumo": "Este Projeto objetivou o estabelecimento de rede de pesquisa cooperativa em área de nanotecnologia.",
+      "situação": "andamento"
+    },
+    {
+      "title": "Parâmetro de soldagem no processo TIG para aço inoxidável hiperduplex",
+      "short_title": "Parâmetro de soldagem no processo TIG para aço inoxidável hiperduplex",
+      "foto": "background-image.svg",
+      "periodo": "2018 - 2019",
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro ",
+        "auxilio_financeiro": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro "
+      },
+      "edital": "",
+      "autores": {
+        "Coordenador": "André Rocha Pimenta",
+        "Integrantes": "José Maria Paolucci Pimenta;Marilia Garcia Diniz"
+      },
+      "resumo": "Aços inoxidáveis duplex são materiais de grande interesse da indústria devido as suas boas propriedades de resistência mecânica e resistência a corrosão. A última geração desses materiais, denominados aços inoxidáveis hiperduplex, entraram no mercado recentemente e tem sido objeto de diversos estudos. O objetivo desse projeto é estudar a soldabilidade do aço hiperduplex, mais precisamente a influencia dos parâmetros de amperagem e frequência na soldagem pelo processo TIG. Projeto com financiamento do Instituto Federal do Rio de Janeiro - IFRJ, aprovado no Edital PIBIC/PROCIENCIA 2018. R$2.000,00 com auxilio financeiro e R$9.600,00 em bolsas (02 Iniciação Cientifica).",
+      "situação": "concluido"
+    },
+    {
+      "title": "Caracterização microestrutural do aço R4 submetido aos tratamentos térmicos de tempera e revenido",
+      "short_title": "Caracterização microestrutural do aço R4 submetido aos tratamentos térmicos de tempera e revenido",
+      "foto": "background-image.svg",
+      "periodo": "2013 - 2014",
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": ""
+      },
+      "edital": "",
+      "autores": {
+        "Coordenador": "André Rocha Pimenta",
+        "Integrantes": "José Maria Paolucci Pimenta;Marilia Garcia Diniz"
+      },
+      "resumo": "Projeto realizado no IFRJ com apoio de bolsas pelo IFRJ",
+      "situação": "concluido"
+    },
+    {
+      "title": "Precipitação da fase sigma em aços inoxidáveis duplex",
+      "short_title": "Precipitação da fase sigma em aços inoxidáveis duplex",
+      "foto": "background-image.svg",
+      "periodo": "2013 - 2014",
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+      },
+      "edital": "",
+      "autores": {
+        "Coordenador": "André Rocha Pimenta",
+        "Integrantes": "José Maria Paolucci Pimenta;Marilia Garcia Diniz"
+      },
+      "resumo": "Projeto de pesquisa realizado no IFRJ com apoio financeiro e de bolsas pelo IFRJ.",
+      "situação": "concluido"
+    },
+    {
+      "title": "Influência do metal de adição nas propriedades do aço inoxidável super duplex UNS S32760 submetido à soldagem por eletrodo revestido",
+      "short_title": "Influência do metal de adição nas propriedades do aço inoxidável super duplex UNS S32760 submetido à soldagem por eletrodo revestido",
+      "foto": "background-image.svg",
+      "periodo": "2010 - 2011",
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+      },
+      "edital": "",
+      "autores": {
+        "Coordenador": "André Rocha Pimenta",
+        "Integrantes": "Marilia Garcia Diniz;José Maria Paolucci Pimenta;Roberto Antonio Roco Antunez;Marcio Jardim de Oliveira"
+      },
+      "resumo": "Os aços inoxidáveis duplex são ligas metálicas compostas fundamentalmente por duas fases, ferrita e austenita, que são responsáveis pela união de excelentes propriedades mecânicas e alta resistência a corrosão na liga. Sua utilização se dá de forma acentuada na indústria petroquímica e, para que o material apresente um desempenho satisfatório neste tipo de emprego, o balanceamento entre as frações volumétricas das fases deve obedecer rigorosamente padrões que prevêem proporções de 50% para cada fase, com uma tolerância de 10%. O presente projeto irá avaliar a eficácia de diferentes tipos de metal de adição para aços inoxidáveis duplex, no processo de soldagem por eletrodo revestido. Para uma completa caracterização da junta soldada, serão avaliadas as propriedades microestruturais, dureza, resistência mecânica e tenacidade. A microestrutura será observada em microscopia óptica, as fases ferrita e austenita serão quantificadas pela técnica de processamento digital de imagem. Ensaios de microdureza, tração e impacto serão utilizados para caracterização das propriedades mecânicas. Espera-se com os resultados obtidos, estabelecer um procedimento para execução de soldagem em aço inoxidável duplex pelo processo de eletrodo revestido. Projeto com financiamento do Instituto Federal do Rio de Janeiro - IFRJ, aprovado no Edital PIBIC/PROCIENCIA 2009. R$2.000,00 com auxilio financeiro e R$4.800,00 em bolsas (01 Iniciação Cientifica).",
+      "situação": "concluido"
+    },
+    {
+      "title": "Desenvolvimento de programas de computadores que atuem como facilitadores no processo de ensino e aprendizagem da disciplina de desenho técnico.",
+      "short_title": "Desenvolvimento de programas de computadores que atuem como facilitadores no processo de ensino e aprendizagem da disciplina de desenho técnico.",
+      "foto": "background-image.svg",
+      "periodo": "2009 - 2010",
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+      },
+      "edital": "",
+      "autores": {
+        "Coordenador": "André Rocha Pimenta",
+        "Integrantes": "José Maria Paolucci Pimenta;Bárbara Rocha Pimenta"
+      },
+      "resumo": "A disciplina de desenho técnico é ministrada em diversos cursos técnicos e superiores, inclusive em vários cursos do IFRJ. Diversos autores apontam para uma relação estreita entre as habilidades espaciais de um individuo e a facilidade com que este absorve os conhecimentos da disciplina de desenho técnico. Este projeto possui como objetivo verificar esta relação e avaliar os resultados da utilização de exercícios para o desenvolvimento de habilidades espaciais como recurso didático no ensino de desenho técnico, além de confeccionar dois jogos didáticos de computador para auxiliar no processo de aprendizagem da disciplina. Projeto com financiamento do Instituto Federal do Rio de Janeiro - IFRJ, aprovado no Edital PIBIC/PROCIENCIA 2009. R$2.000,00 com auxilio financeiro e R$4.800,00 em bolsas (01 Iniciação Cientifica).",
+      "situação": "concluido"
+    },
+    {
+      "title": "Projeto e construção de uma maquina para ensaio de fadiga em corpos de prova reduzidos",
+      "short_title": "Projeto e construção de uma maquina para ensaio de fadiga em corpos de prova reduzidos",
+      "periodo": "2008 - 2009",
+      "resumo": "Ligas odontologias a base de níquel ou cobalto são constantemente alvo de estudos com o objetivo de melhorar suas propriedades mecânicas. Alguns destes estudos apontam para presença de defeitos como poros e fissuras na maioria das peças produzidas, tais defeitos são oriundos do processo de fabricação, sendo impossível sua eliminação. O esforço de mastigação exercido sobre as próteses dentárias, é classificado como uma solicitação cíclica, podendo acarretar em uma falha por fadiga. As falhas por fadiga são aceleradas em peças que possuem defeitos internos. O presente trabalho propõe o projeto e a construção de uma maquina de ensaio de fadiga que possibilite o ensaio das ligas odontologias de modo a simular de forma mais próxima do real as condições de operação das próteses. As maquinas convencionais não permitem a realização deste ensaio devido ao tamanho dos corpos de prova que podem ser confeccionados com estas ligas. Projeto com financiamento do Instituto Federal do Rio de Janeiro - IFRJ, aprovado no Edital PIBIC/PROCIENCIA 2008. R$2.000,00 com auxilio financeiro e R$4.800,00 em bolsas (01 Iniciação Cientifica).",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "André Rocha Pimenta",
+        "Integrantes": "José Maria Paolucci Pimenta"
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Desenvolvimento de programas computacionais para simulações de processos de formação de bacias sedimentares",
+      "short_title": "Desenvolvimento de programas computacionais para simulações de processos de formação de bacias sedimentares",
+      "periodo": "2019 - 2020",
+      "resumo": "A melhor compreensão do processo de formação de bacias sedimentares além de produzir um ganho substancial para o melhor entendimento científico do processo de origem e evolução da vida no planeta ainda colabora enormemente com a fase mais dispendiosa em um processo de exploração de petróleo, que é a perfuração dos poços, já que permite um conhecimento mais detalhado das condições geológicas existentes. No presente projeto, analisaremos tais processos através de modelos de deposição de sólidos, assim como através da análise das características das bacias após sua formação, características estas como a rugosidade apresentada nas interfaces e as lacunas existentes entre os diversos elementos (porosidade). Para tais estudos utilizaremos conceitos de física estatística a fim de criar modelos computacionais de deposição que reproduzam e representem de forma básica a formação e as características das bacias acima mencionadas. O projeto se iniciará com o estudo de temas básicos em física, geologia, geofísica, engenharia do petróleo, estatística e computação. A partir disto serão abordados temas mais específicos ao projeto, tais como, noções iniciais de física estatística e modelagem computacional de problemas reais, além da aprendizagem para utilização de programas específicos para criação e análises gráficas a partir de listas de dados. Utilizando os conhecimentos adquiridos iniciaremos o processo de formulação e posteriormente de implementação dos modelos de crescimento de superfícies que representarão de forma esquemática a formação das bacias responsáveis pelo armazenamento de petróleo, a partir do qual se poderá realizar o estudo das características das mesmas, sendo possível portanto realizar comparações entre os dados artificiais produzidos pelos modelos e dados conhecidos para bacias reais. Tais comparações nos permitirão fazer inferências acerca dos processos de formação das bacias, assim como suas possíveis causas e dinâmicas de evolução.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Douglas Santos Rodrigues Ferreira",
+        "Integrantes": "João Pedro Macedo Lemos de Melo"
+      },
+      "financiadores": {
+        "bolsa": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do RJ ",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Correlações temporais e espaciais de longo alcance em terremotos rasos e profundos",
+      "short_title": "Correlações temporais e espaciais de longo alcance em terremotos rasos e profundos",
+      "periodo": "2019 - 2020",
+      "resumo": "No presente projeto pretendemos utilizar uma nova metodologia de construção de redes e aplicá-la a catálogos globais de terremotos rasos e profundos. Esta nova metodologia envolve essencialmente a introdução de uma janela de tempo, que funciona como um filtro temporal para conexões de vértices. A rede resultante construída será analisada com relação à propriedades de mundo pequeno e propriedades livres de escala em suas distribuições de conectividade, obtendo ainda a influência do valor da janela temporal adotada. Será estudado ainda qual a relação do grau de conectividade da rede com as diversas áreas do globo, analisando ainda sua relação com a intensidade da atividade sísmica no período considerado. Outro tratamento que adotaremos será a análise do ponto de vista da mecânica estatística não-extensiva, onde, analisaremos distribuições de probabilidades de certas características dos terremotos, tais como: distribuições de magnitudes, de intervalos de tempo entre sismos sucessivos, de diferenças entre magnitudes de sismos e de distâncias entre sismos. Projeto financiado pelo PROCIENCIA - IFRJ no valor de R$2.000,00 + 1 bolsa de Iniciação Científica do CNPq.",
+      "situação": "andamento",
+      "autores": {
+        "Coordenador": "Douglas Santos Rodrigues Ferreira",
+        "Integrantes": "Leandro de Oliveira Pereira;Elicardo Alves de Souza Gonçalves"
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Desenvolvimento de programas computacionais para simulações de processos de formação de bacias sedimentares",
+      "short_title": "Desenvolvimento de programas computacionais para simulações de processos de formação de bacias sedimentares",
+      "periodo": "2018 - 2019",
+      "resumo": "A melhor compreensão do processo de formação das bacias sedimentares além de produzir um ganho substancial para o melhor entendimento científico do processo de origem e evolução da vida no planeta ? já que estas guardam inúmeros vestígios de seres vivos antigos ? ainda colabora enormemente com a fase mais dispendiosa em um processo de exploração de petróleo, que é a perfuração dos poços, já que permite um conhecimento mais detalhado das condições geológicas existentes. No presente projeto, analisaremos tais processos através de modelos de deposição de sólidos, assim como através da análise das características das bacias após sua formação, características estas como a rugosidade apresentada nas interfaces e as lacunas existentes entre os diversos elementos (porosidade). Para tais estudos utilizaremos conceitos de física estatística a fim de criar modelos computacionais de deposição que reproduzam e representem de forma básica a formação e as características das bacias acima mencionadas. Projeto financiado pelo PROCIENCIA - IFRJ no valor de R$2.000,00 + 2 bolsas de Iniciação Científica.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Douglas Santos Rodrigues Ferreira",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Desenvolvimento de códigos computacionais para simulações de eventos sísmicos",
+      "short_title": "Desenvolvimento de códigos computacionais para simulações de eventos sísmicos",
+      "periodo": "2016 - 2017",
+      "resumo": "Estudo de propriedades estatísticas e complexas de eventos sísmicos através do desenvolvimento de códigos computacionais com posterior comparações com resultados obtidos para dados de sismos reais.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Douglas Santos Rodrigues Ferreira",
+        "Integrantes": "Bernardo de Almeida Machado;Paulo Sérgio Lima de Oliveira Junior"
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Estudo de relações de longa distância em atividades sísmicas reais através da criação de modelo de redes complexas de epicentros",
+      "short_title": "Estudo de relações de longa distância em atividades sísmicas reais através da criação de modelo de redes complexas de epicentros",
+      "periodo": "2016 - 2017",
+      "resumo": "Neste projeto objetiva-se produzir estudos de redes complexas em atividades sísmicas mundiais através da criação e aprimoramentos de modelos teórico-computacionais. Projeto financiado pelo PROCIENCIA - IFRJ no valor de R$4.000,00 + 2 bolsas de Iniciação Científica.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Douglas Santos Rodrigues Ferreira",
+        "Integrantes": "Jennifer Ribeiro Silvério da Conceição;Otávio Augusto Moreira Neves"
+      },
+      "financiadores": {
+        "bolsa": "Conselho Nacional de Desenvolvimento Científico e Tecnológico;Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Redes complexas aplicadas ao estudo de eventos sísmicos",
+      "short_title": "Redes complexas aplicadas ao estudo de eventos sísmicos",
+      "periodo": "2015 - 2016",
+      "resumo": "No presente projeto será coletado, a partir do catálogo mundial de terremotos, uma grande quantidade de dados sismológicos ocorridos em todo o globo e então analisado estes dados à luz dos conceitos de redes complexas, onde poderemos construir redes de epicentros de terremotos e então conduzir estudos a respeito das propriedades das redes encontradas. Conforme relatado em estudos anteriores usando dados regionais (ABE a, 2004 ; ABE b, 2004 ; ABE, 2006), estas redes apresentam comportamento complexo, com distribuições livres de escala e efeitos de mundo pequeno, desta forma espera-se que as redes globais que iremos construir também possuam tais propriedades, porém a interpretação de tais propriedades em uma rede global possui importância significativamente maior, já que tais propriedades em um rede global produziriam uma corroboração ao indicativo de correlações de longo alcance temporal e espacial entre os mais diferentes sismos. Além disso, com este estudo poderemos fazer extrapolações mais profundas acerca da dinâmica que produz os eventos sísmicos, podendo classificar, por exemplo, o conjunto de fatores presentes no planeta, responsáveis pelo surgimento das ondas sísmicas, como um sistema crítico, onde se certas propriedades emergem. Projeto financiado pelo PROCIENCIA - IFRJ no valor de R$2.000,00 + 4 bolsas de Iniciação Científica.",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Douglas Santos Rodrigues Ferreira",
+        "Integrantes": "Andres Reinaldo Rodriguez Papa;Ronaldo Menezes"
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Estudos sismológicos através de simulações computacionais",
+      "short_title": "Estudos sismológicos através de simulações computacionais",
+      "periodo": "2014 - 2015",
+      "resumo": "Continuação do projeto 'ESTUDOS SISMOLÓGICOS UTILIZANDO MODELOS DE FÍSICA ESTATÍSTICA' através da criação de códigos computacionais capazes de aprimorar os entendimentos acerca do fenômeno crítico utilizando modelos de redes. Projeto financiado pelo PROCIENCIA - IFRJ no valor de R$2.000,00 + 1 bolsa de Iniciação Científica.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Douglas Santos Rodrigues Ferreira",
+        "Integrantes": "Andres Reinaldo Rodriguez Papa;"
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Estudos sismológicos utilizando modelos de física estatística",
+      "short_title": "Estudos sismológicos utilizando modelos de física estatística",
+      "periodo": "2013 - 2014",
+      "resumo": "A partir da análise tanto dos dados reais, quanto dos dados artificiais produzidos por modelo teórico-computacional (em especial o modelo OFC), é possível observar o surgimento de algumas propriedades de sistemas críticos auto-organizados (em inglês, SOC), tais como: distribuições em lei de potência, características fractais como invariância de escala espacial e temporal e expoentes críticos universais. Com a aparição destas propriedades em distribuições de probabilidades de diversas características dos terremotos, tais como, magnitude, intervalo de tempo entre terremotos, diferença entre magnitudes de terremotos sucessivos, etc., notamos que é possível ter uma melhor compreensão dos sismos a partir destes estudos de caracterizações estatísticas, onde o fenômeno sísmico é tratado como crítico.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Douglas Santos Rodrigues Ferreira",
+        "Integrantes": "Andres Reinaldo Rodriguez Papa"
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Simulações de processos de formação de bacias sedimentares através de modelos de crescimento de superfícies",
+      "short_title": "Simulações de processos de formação de bacias sedimentares através de modelos de crescimento de superfícies",
+      "periodo": "2012 - 2015",
+      "resumo": " Estudo da formação de bacias sedimentares, já que estas são as grandes fontes de reserva de petróleo, através de modelos de deposição de sólidos, assim como a análise das características das mesmas após sua formação, características estas como a rugosidade apresentada nas interfaces e as lacunas existentes entre os diversos elementos (porosidade). Projeto financiamento pela empresa: PETROBRAS S/A ; Valor = R$32.000,00.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Douglas Santos Rodrigues Ferreira",
+        "Integrantes": "Andres Reinaldo Rodriguez Papa"
+      },
+      "financiadores": {
+        "bolsa": "Petróleo Brasileiro - Rio de Janeiro - Matriz",
+        "auxilio_financeiro": "Petrobrás Distribuidora - Matriz"
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Imagens com discriminação de energia por transmissão de raios X característicos",
+      "short_title": "Imagens com discriminação de energia por transmissão de raios X característicos",
+      "periodo": "2019 - Atual",
+      "resumo": "Este trabalho visa adaptar um sistema de mapeamento por fluorescência de raios X mapear raios X característicos provenientes de um alvo específico, que atravessariam uma amostra, num sistema de mapeamento da transmitância, testando suas propriedades em diferentes amostras e condições.",
+      "situação": "andamento",
+      "autores": {
+        "Coordenador": "Elicardo Alves de Souza Gonçalves",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Elicardo Alves de Souza Gonçalves",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Simulação Monte Carlo de aplicação de radiações ionizantes em um sistema de computação em grade integrando dispositivos móveis e de baixo desempenho",
+      "short_title": "Simulação Monte Carlo de aplicação de radiações ionizantes em um sistema de computação em grade integrando dispositivos móveis e de baixo desempenho",
+      "periodo": "2018 - 2019",
+      "resumo": "O objetivo deste trabalho é criar, testar e aferir as limitações de um protótipo de sistema que faça simulação computacional Monte Carlo de forma colaborativa, distribuindo o processamento em diversos dispositivos que estariam voluntariamente oferecendo tempo de processamento. O sistema então faria a integração dos dados calculados por todos os dispositivos em uma única simulação.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Elicardo Alves de Souza Gonçalves",
+        "Integrantes": "Leandro de Oliveira Pereira;Douglas Santos Rodrigues Ferreira"
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Composição, análise e edição de áudios usando OCTAVE audio package",
+      "short_title": "Composição, análise e edição de áudios usando OCTAVE audio package",
+      "periodo": "2017 - 2018",
+      "resumo": "O intuito deste projeto foi fazer uso de facilidades encontradas na plataforma computacional OCTAVE, que contém um pacote específico de aquisição e tratamento de sinais sonoros, para criar scripts que façam essa relação entre a teoria física a prática musical, tentando abordar o processo de criação/edição de sinais sonoros e composições musicais o mais detalhado possível.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Elicardo Alves de Souza Gonçalves",
+        "Integrantes": "Rudi Garrido da Costa Lima"
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Desenvolvimento de algoritmos para reconhecimento de padrões dedicado a dados de fluorescência de raios X, usando análise de componentes principais",
+      "short_title": "Desenvolvimento de algoritmos para reconhecimento de padrões dedicado a dados de fluorescência de raios X, usando análise de componentes principais.",
+      "periodo": "2016 - 2017",
+      "resumo": "Este trabalho visou criar uma rotina computacional que automaticamente leia os dados de saída de um equipamento de fluorescência de raios X, e crie ou atualize um banco de dados, comparando e, quando possível, segregando cada nova amostra em um grupo já definido. Para a avaliação estatística foram usadas rotinas adaptadas de análise de componentes principais, tratando os dados de entrada e saída afim de ter todo o processo dedicado a problemas de fluorescência de raios X. Todo o algoritmo, em forma de script foi desenvolvido no software OCTAVE, por causa de suas ferramentas de demonstração gráfica.",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Elicardo Alves de Souza Gonçalves",
+        "Integrantes": "Renato Pereira de Freitas;Valter de Souza Felix"
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Simulação de técnicas radiográficas aplicadas a radioproteção",
+      "short_title": "Simulação de técnicas radiográficas aplicadas a radioproteção",
+      "periodo": "2016 - 2017",
+      "resumo": "O objetivo deste trabalho foi criar um simulador de baixo custo computacional para cálculo e demonstração gráfica do comportamento da radiação espalhada, em função de diversos fatores como energia e intensidade do feixe, material e meio radiografado, assim como os efeitos da mesma na imagem gerada. O simulador foi construído na plataforma de cálculo numérico OCTAVE. Todo o processo foi executado dentro do ambiente virtual que fará parte do simulador.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Elicardo Alves de Souza Gonçalves",
+        "Integrantes": "Douglas Santos Rodrigues Ferreira"
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Desenvolvimento de algoritmos para criação e processamento de imagens de mapeamento por fluorescência de raios-X",
+      "short_title": "Desenvolvimento de algoritmos para criação e processamento de imagens de mapeamento por fluorescência de raios-X",
+      "periodo": "2015 - 2016",
+      "resumo": "O trabalho teve como objetivo criar um algoritmo para a criação de imagens de mapa de concentração a partir de arquivos resultantes de medidas de fluorescências de raios-X pontuais, implementando, quando possível, rotinas de pré e pós-processamento. Este último visando combinar os resultados com outras técnicas de medidas.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Elicardo Alves de Souza Gonçalves",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Abordagem computacional didática para modelagem do movimento de um corpo rígido carregado eletricamente em um a região de campo magnético",
+      "short_title": "Abordagem computacional didática para modelagem do movimento de um corpo rígido carregado eletricamente em um a região de campo magnético",
+      "periodo": "2020 - Atual",
+      "resumo": "Neste projeto iremos resolver numericamente e simular computacionalmente um sistema dinâmico eletromagnético que é abordado no curso médio-técnico de Eletrotécnica. A aprendizagem da utilização de métodos matemáticos computacionais irá possibilitar a observação teórica da possibilidade utilização de um freio magnético em brinquedos de parque de diversões, pela analise do movimento de corpos carregados em um campo magnético. Todo o problema envolve uma vasta etapa anterior de compreensão de uma gama de conceitos e técnicas, envolvidos na solução desse problema por parte dos alunos participantes neste projeto. Portanto uma etapa inicial de nivelamento será necessária e realizada através de aulas ministradas pelo proponente deste projeto abordando tópicos tais como: noções de cálculo diferencial e integral, noções de equações diferenciais, noções de cálculo numérico, linguagem de programação C++ e programação no software ?Maple?. A solução do problema será obtida numericamente com o método de Runge-Kuta implementado em linguagem C++, para que finalmente animações das trajetórias e evolução temporal do sistema dinâmico seja criada utilizando o software ?Maple?. Estudos de sistemas como o proposto não são factíveis em laboratórios didáticos, sendo possíveis apenas por simulação computacional. Portanto a utilização da simulação computacional nas aulas de ciências torna-se uma ferramenta interessante que pode vir a auxiliar o docente no processo de aprendizagem por parte dos estudantes.",
+      "situação": "andamento",
+      "autores": {
+        "Coordenador": "Leandro de Oliveira Pereira",
+        "Integrantes": "Douglas Santos Ferreira;Rafael de Souza Dutra;Elicardo Alves de Souza Gonçalves;Davi de Mendonça Teles Guimarães;Andre Rocha Pimenta"
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Abordagem computacional didática para soluções numéricas de sistemas dinâmicos",
+      "short_title": "Abordagem computacional didática para soluções numéricas de sistemas dinâmicos",
+      "periodo": "2019 - 2020",
+      "resumo": "Neste projeto iremos resolver numericamente e simular computacionalmente sistemas dinâmicos mecânicos e elétricos que são abordados nos cursos médio-técnicos de Mecânica e Eletrotécnica, tais como o escoamento de fluidos, curva de resfriamento, oscilador harmônico e circuitos RC e RL. Todos os problemas envolvem uma vasta etapa anterior de compreensão de uma gama de conceitos e técnicas, envolvidos na solução desses problemas por parte dos alunos participantes neste projeto. Portanto uma etapa inicial de nivelamento, será necessária, através de aulas ministradas pelo proponente deste projeto, de tópicos tais como: noções de cálculo diferencial e integral, noções de equações diferenciais, noções de cálculo numérico, linguagem de programação C++ e programação no software ?Maple?. A solução dos problemas será obtida numericamente com o método de Runge-Kuta implementado em linguagem C++, para que finalmente animações das trajetórias e evolução temporal dos sistemas dinâmicos sejam criadas utilizando o software ?Maple?. A existência de laboratórios didáticos exige a existência de um espaço, onde sabemos que boa parte das nossas escolas brasileiras carecem de tal espaço, dificultando assim o processo de aprendizagem em ciências. Portanto a utilização da simulação computacional nas aulas de ciências torna-se uma ferramenta interessante que pode vir a auxiliar o docente no processo de aprendizagem por parte dos estudantes.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Leandro de Oliveira Pereira",
+        "Integrantes": "Douglas Santos Ferreira;Rafael de Souza Dutra;Elicardo Alves de Souza Gonçalves;Davi de Mendonça Teles Guimarães;Renan de Mendonça Valente"
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Soluções numéricas para problemas de ensino médio: Uma abordagem computacional didática",
+      "short_title": "Soluções numéricas para problemas de ensino médio: Uma abordagem computacional didática",
+      "periodo": "2018 - 2019",
+      "resumo": "Não se pode negar que o desenvolvimento de novas metodologias para o ensino de ciências vem sendo extensivamente discutidas ao longo dos anos, sendo um dos motivos para tal avanço o desenvolvimento da computação científica. A utilização de métodos computacionais é uma ferramenta vastamente utilizada pelos cientistas na simulação de diversos fenômenos e a sua inclusão como ferramenta de ensino vem sendo proposta pelos educadores com o intuito de facilitar a compreensão de diversos fenômenos naturais, através da sua resolução e visualização por meio de simulações computacionais (ARAUJO.; VEIT 2009). A simulação computacional pode funcionar como uma espécie de experimento computacional onde o fenômeno é simulado e visualizado através de um computador, por meio de um ?software?. Do ponto de vista prático pode vir a auxiliar o professor na demonstração de diversos fenômenos físicos abstratos ou na resolução de problemas, durante a execução de uma aula, que só poderiam ser visualizados através de experimentos reais ou simulações computacionais. Uma abordagem interdisciplinar correlacionando a computação, matemática e a física tem a capacidade de tornar mais acessíveis os conceitos abstratos desenvolvidos, principalmente a solução de sistemas dinâmicos em geral. Neste projeto iremos abordar sistemas dinâmicos de problemas de física de ensino médio que recaem em equações diferenciais, usando métodos matemáticos computacionais para resolvê-los e simular sua dinâmica. Os integradores numéricos escolhidos para a resolução das equações diferenciais serão os Runge-Kutta de ordens diferentes e um novo método de associação de Runge-Kutta de ordens distintas para análise de precisão e desempenho do integrador. O algoritmo será implementado em linguagem C++. A simulação dinâmica dos problemas será feita utilizando o software ?Maple? para ver a evolução temporal dos sistemas. Além de auxiliar no processo de aprendizagem por parte dos alunos e professores que utilizarem a simulação computacional durante as aulas, ela também proporcionará o aprendizado de tópicos de física e matemática mais avançados por estudantes de ensino médio que estarão envolvidos na execução deste projeto.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Leandro de Oliveira Pereira",
+        "Integrantes": "Douglas Santos Ferreira;Rafael de Souza Dutra;Elicardo Alves de Souza Gonçalves;Luiz Guilherme Silva Duarte;Luís Antônio Campinho Pereira da Mota;Davi de Mendonça Teles Guimarães;Myllena Figueiredo Caravana"
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "Órbitas circulares perturbadas e o problema de Kepler: uma abordagem didática do teorema de Bertrand no ensino médio",
+      "short_title": "Órbitas circulares perturbadas e o problema de Kepler: uma abordagem didática do teorema de Bertrand no ensino médio",
+      "periodo": "2019 - 2020",
+      "resumo": "Um dos grandes desafios na área de ensino de física consiste em propor abordagens de de um determinado conceito que não é visto no ensino médio regular, mas que tem relação importante com conteúdos do currículo padrão vistos atualmente nas escolas. Neste trabalho iremos propor um tratamento alternativo para a demonstração fraca do teorema de Bertrand, assunto intimamente relacionado ao tema de gravitação, utilizando conhecimentos de física e matemática vistos no ensino médio, permitindo que tal conteúdo seja introduzido nas aulas de gravitação no ensino médio.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Rafael de Sousa Dutra",
+        "Integrantes": "Douglas Santos Rodrigues Ferreira"
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": "Edital PIBICT 2019-2020 (Iniciação Científica)"
+    },
+    {
+      "title": "Estudando os Efeitos do Vento Solar em Órbitas Planetárias",
+      "short_title": "Estudando os Efeitos do Vento Solar em Órbitas Planetárias",
+      "periodo": "2018 - 2019",
+      "resumo": "Diversas modelagens, que no passado seriam impossíveis por conta da limitação computacional, hoje em dia se tornaram possíveis a sua realização, por conta desses avanços. Dentre eles destacamos o famoso problema de três corpos interagindo gravitacionalmente, que surgiu logo após a formulação da lei da gravitação universal de Newton em meados do século XVII. Por alguns séculos este problema foi estudado de maneira aproximada, por diversos cientistas motivados a partir da necessidade de uma melhor compreensão de nosso sistema solar. Podemos dizer que este problema é a base para o estudo e entendimento de órbitas planetárias. A grande dificuldade na solução deste problema se encontra na não linearidade das equações diferenciais que descrevem estes sistemas, além do fato das mesmas serem acopladas, significando que a dinâmica de um corpo acaba influenciando a dos outros. A não linearidade das equações, associada ao acoplamento das mesmas, faz com que a dinâmica desse sistema seja extremamente sensível, em determinadas situações, as condições iniciais, fazendo emergir o fenômeno do caos. Neste projeto iremos investigar a dinâmica de algumas partículas interagindo gravitacionalmente entre si, simulando um sistema solar, e perturbadas pelo efeito do vento solar, em diversos cenários, procurando limites para os quais o seu efeito pode vir a perturbar de maneira significativa as órbitas planetárias. Além de auxiliar no processo de aprendizagem por parte dos alunos e professores que utilizarem a simulação computacional durante as aulas, ela também proporcionará o aprendizado de tópicos de física mais avançados por estudantes de ensino médio que estarão envolvidos na execução deste projeto.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Rafael de Sousa Dutra",
+        "Integrantes": "Douglas Santos Rodrigues Ferreira"
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": "Edital PIBICT 2018 - 2019 (Iniciação Científica)"
+    },
+    {
+      "title": "Simulação Computacional de Sistemas Físicos: Um Viés Pedagógico",
+      "short_title": "Simulação Computacional de Sistemas Físicos: Um Viés Pedagógico",
+      "periodo": "2017 - 2018",
+      "resumo": "Desenvolvimento de novas metodologias para o ensino de ciências vem sendo extensivamente discutidas ao longo dos anos, sendo um dos motivos para tal avanço o desenvolvimento da computação científica. A computação científica é uma ferramenta vastamente utilizada pelos cientistas na simulação de diversos fenômenos e a sua inclusão como ferramenta de ensino vem sendo proposta pelos educadores com o intuito de facilitar a compreensão de diversos fenômenos naturais, através da visualização dos mesmos a partir de simulações computacionais. A simulação computacional pode funcionar como uma espécie de experimento computacional onde o fenômeno é simulado e visualizado através de um computador, por meio de um ?software?. Do ponto de vista prático pode vir a auxiliar o professor na demonstração de diversos fenômenos físicos abstratos, durante a execução de uma aula, que só poderiam ser visualizados através de experimentos reais. A existência de laboratórios didáticos exige a existência de um espaço, onde sabemos que a maioria das nossas escolas brasileiras carecem de tal espaço, dificultando assim o processo de aprendizagem em ciências. Portanto a utilização da simulação computacional nas aulas de ciências torna-se uma ferramenta interessante que pode vir a auxiliar o docente no processo de aprendizagem por parte dos estudantes. Neste projeto iremos simular diversos sistemas físicos vistos por estudantes de ciências e engenharias, sendo eles sistemas eletrostáticos sujeitos a condições de contorno e de partículas interagentes através de um potencial, permitindo simular o comportamento de um gás, utilizando o software ?Mathematica?. Além de auxiliar no processo de aprendizagem por parte dos alunos e professores que utilizarem a simulação computacional durante as aulas, ela também proporcionará o aprendizado de tópicos de física mais avançados por estudantes de ensino médio que estarão envolvidos na execução deste projeto.",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Rafael de Sousa Dutra",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": "Edital PIBICT 2017 - 2018 (Iniciação Científica)"
+    },
+    {
+      "title": "Simulação de dinâmica molecular utilizando o software Mathematica",
+      "short_title": "Simulação de dinâmica molecular utilizando o software Mathematica",
+      "periodo": "2016 - 2017",
+      "resumo": "Desenvolvimento de novas metodologias para o ensino de ciências vem sendo extensivamente discutidas ao longo dos anos, sendo um dos motivos para tal avanço o desenvolvimento da computação científica. A computação científica é uma ferramenta vastamente utilizada pelos cientistas na simulação de diversos fenômenos e a sua inclusão como ferramenta de ensino vem sendo proposta pelos educadores com o intuito de facilitar a compreensão de diversos fenômenos químicos e físicos, através da visualização dos fenômenos a partir de simulações computacionais. A simulação computacional pode funcionar como uma espécie de experimento computacional onde o fenômeno é simulado e visualizado através de um computador, por meio de um ?software?. Do ponto de vista prático pode vir a auxiliar o professor na demonstração de diversos fenômenos físicos abstratos, durante a execução de uma aula, que só poderiam ser visualizados através de experimentos reais. A existência de laboratórios didáticos exige a existência de um espaço, onde sabemos que a maioria das nossas escolas brasileiras carecem de tal espaço, dificultando assim o processo de aprendizagem em ciências. Portanto a utilização da simulação computacional nas aulas de ciências torna-se uma ferramenta interessante que pode vir a auxiliar o docente no processo de aprendizagem por parte dos estudantes. Neste projeto iremos utilizar a técnica de dinâmica molecular para simular o comportamento microscópico de um gás, utilizando o software ?Mathematica?. Além de auxiliar no processo de aprendizagem por parte dos alunos e professores que utilizarem a simulação computacional durante as aulas, ela também proporcionará o aprendizado de tópicos de física e de métodos computacionais mais avançados, por estudantes de ensino médio que estarão envolvidos na execução deste projeto.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Rafael de Sousa Dutra",
+        "Integrantes": "Renato Pereira de Freitas;Douglas Santos Rodrigues Ferreira"
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": "Edital PIVICT 2016-2017"
+    },
+    {
+      "title": "Simulação numérica de sistemas mecânicos utilizando o software Mathematica",
+      "short_title": "Simulação numérica de sistemas mecânicos utilizando o software Mathematica",
+      "periodo": "2016 - 2017",
+      "resumo": "Desenvolvimento de novas metodologias para o ensino de ciências vem sendo extensivamente discutidas ao longo dos anos, sendo um dos motivos para tal avanço o desenvolvimento da computação científica. A computação científica é uma ferramenta vastamente utilizada pelos cientistas na simulação de diversos fenômenos e a sua inclusão como ferramenta de ensino vem sendo proposta pelos educadores com o intuito de facilitar a compreensão de diversos fenômenos químicos e físicos, através da visualização dos fenômenos a partir de simulações computacionais. A simulação computacional pode funcionar como uma espécie de experimento computacional onde o fenômeno é simulado e visualizado através de um computador, por meio de um ?software?. Do ponto de vista prático pode vir a auxiliar o professor na demonstração de diversos fenômenos físicos abstratos, durante a execução de uma aula, que só poderiam ser visualizados através de experimentos reais. A existência de laboratórios didáticos exige a existência de um espaço, onde sabemos que a maioria das nossas escolas brasileiras carecem de tal espaço, dificultando assim o processo de aprendizagem em ciências. Portanto a utilização da simulação computacional nas aulas de ciências torna-se uma ferramenta interessante que pode vir a auxiliar o docente no processo de aprendizagem por parte dos estudantes. Neste projeto iremos simular dois sistemas mecânicos vistos por estudantes de ciências e engenharias, sendo eles o movimento Terra-Lua em torno do Sol (problema de três corpos) e o pêndulo duplo, utilizando o software ?Mathematica?. Além de auxiliar no processo de aprendizagem por parte dos alunos e professores que utilizarem a simulação computacional durante as aulas, ela também proporcionará o aprendizado de tópicos de física mais avançados por estudantes de ensino médio que estarão envolvidos na execução deste projeto.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Rafael de Sousa Dutra",
+        "Integrantes": "Renato Pereira de Freitas;Elicardo Alves de Souza Gonçalves"
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": "Edital PIVICT 2016-2017"
+    },
+    {
+      "title": "Efeitos de Ondas Evanescentes na Teoria das Pinças Óticas e Aplicações em Biologia Celular",
+      "short_title": "Efeitos de Ondas Evanescentes na Teoria das Pinças Óticas e Aplicações em Biologia Celular",
+      "periodo": "2015 - 2016",
+      "resumo": "Neste projeto incluiremos na teoria das pinças óticas efeitos produzidos pelas ondas evanescentes e pelas múltiplas reflexões (reverberação) presentes em condições específicas. A inclusão de tais efeitos propicia uma melhor compreensão na utilização da pinça ótica em condições de aprisionamento de microesferas próximas de um substrato plano, visando a aplicações futuras deste sistema em física biológica, de superfícies e de colóides. Em uma segunda frente de trabalho iremos desenvolver e adaptar modelos de mecânica estatística para estudar propriedades mecânicas da membrana celular, tema de pesquisa experimental no Laboratório de Pinças Óticas (LPO) da UFRJ. Este projeto é uma cooperação internacional entre o Instituto Federal do Rio de Janeiro - Campus Paracambi - e a Universidade Técnica da Dinamarca, que se iniciou durante o meu Pós Doutorado.",
+      "situação": "concluido",
+      "autores": {
+        "Coordenador": "Rafael de Sousa Dutra",
+        "Integrantes": "Paulo Américo Maia Neto;Nathan Bessa Viana;Herch Moyses Nussenzveig;Henrik Flyvbjerg"
+      },
+      "financiadores": {
+        "bolsa": "Conselho Nacional de Desenvolvimento Científico e Tecnológico",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Renato Pereira de Freitas",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Valter de Souza Felix",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Valter de Souza Felix",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Valter de Souza Felix",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    },
+    {
+      "title": "",
+      "short_title": "",
+      "periodo": "",
+      "resumo": "",
+      "situação": "",
+      "autores": {
+        "Coordenador": "Valter de Souza Felix",
+        "Integrantes": ""
+      },
+      "financiadores": {
+        "bolsa": "",
+        "auxilio_financeiro": ""
+      },
+      "foto": "background-image.svg",
+      "edital": ""
+    }
+  ]

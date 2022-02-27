@@ -1,0 +1,388 @@
+[
+    {
+      "nome": "Rafael S. Dutra",
+      "cargo": "Professor Associado (D-404) do Instituto Federal do Rio de Janeiro (IFRJ)",
+      "foto": "RSDutra.jpg",
+      "contato": {
+        "email": "rafael.dutra.@ifrj.edu.br",
+        "lattes": "http://lattes.cnpq.br/1384421730870729"
+      },
+      "educacao": [
+        {
+          "curso": "Doutorado em Física",
+          "termino": "2011",
+          "instituicao": "Universidade Federal do Rio de Janeiro",
+          "sigla": "UFRJ",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Mestrado em Física",
+          "termino": "2007",
+          "instituicao": "Universidade Federal do Rio de Janeiro",
+          "sigla": "UFRJ",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Licenciatura em Física",
+          "termino": "2005",
+          "instituicao": "Universidade Federal Rural do Rio de Janeiro",
+          "sigla": "UFRRJ",
+          "pais": "Brasil"
+        }
+      ],
+      "pesquisas": [
+        {
+          "pesquisa": "Teoria das forças de captura em pinças óticas"
+        },
+        {
+          "pesquisa": "Teoria das forças óticas em diversas condições de contorno"
+        },
+        {
+          "pesquisa": "Teoria da Imagem em sistemas óticos não paraxiais"
+        },
+        {
+          "pesquisa": "Ensino de física"
+        }
+      ]
+    },
+    {
+      "nome": "Renato P. de Freitas",
+      "cargo": "Professor Associado (D-402) do Instituto Federal do Rio de Janeiro (IFRJ)",
+      "foto": "RPFreitas.jpg",
+      "contato": {
+        "email": "renato.freitas@ifrj.edu.br ",
+        "lattes": "http://lattes.cnpq.br/2412070302741470"
+      },
+      "educacao": [
+        {
+          "curso": "Doutorado em Engenharia Nuclear",
+          "termino": "2014",
+          "instituicao": "Universidade Federal do Rio de Janeiro",
+          "sigla": "UFRJ",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Mestrado em Engenharia Nuclear",
+          "termino": "2009",
+          "instituicao": "Universidade Federal do Rio de Janeiro",
+          "sigla": "UFRJ",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Graduação em fisica",
+          "termino": "2007",
+          "instituicao": "Universidade do Estado do Rio de Janeiro",
+          "sigla": "UERJ",
+          "pais": "Brasil"
+        }
+      ],
+      "pesquisas": [
+        {
+          "pesquisa": "Arqueometria"
+        },
+        {
+          "pesquisa": "Analise Multivariada"
+        },
+        {
+          "pesquisa": "Técnicas Nucleares"
+        },
+        {
+          "pesquisa": "Espectrometria Molecular"
+        }
+      ]
+    },
+    {
+      "nome": "Douglas Santo Rodrigues Ferreira",
+      "cargo": "Professor Associado (D-402) do Instituto Federal do Rio de Janeiro (IFRJ)",
+      "foto": "Douglas.jpg",
+      "contato": {
+        "email": "douglas.ferreira@ifrj.edu.br",
+        "lattes": "http://lattes.cnpq.br/0015478917428941"
+      },
+      "educacao": [
+        {
+          "curso": "Doutorado em Geofísica",
+          "termino": "2014",
+          "instituicao": "Observatório Nacional (com período sanduíche em Florida Institute of Technology)",
+          "sigla": "ON",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Mestrado em Física",
+          "termino": "2010",
+          "instituicao": "Universidade Federal Fluminense",
+          "sigla": "UFF",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Graduacão em Física",
+          "termino": "2004",
+          "instituicao": "Universidade Federal Fluminense",
+          "sigla": "UFF",
+          "pais": "Brasil"
+        }
+      ],
+      "pesquisas": [
+        {
+          "pesquisa": "Redes Complexas"
+        },
+        {
+          "pesquisa": "Estudos de Sistemas Complexos aplicados à Geofísica"
+        },
+        {
+          "pesquisa": "Caracterizações sismológicas utilizando métodos de Física Estatística"
+        },
+        {
+          "pesquisa": "Física Estatística Aplicada à Dinâmica de Crimes"
+        },
+        {
+          "pesquisa": "Modelagem Computacional para Simulações de Terremotos"
+        },
+        {
+          "pesquisa": "Sistemas Críticos Auto-organizados"
+        },
+        {
+          "pesquisa": "Habilidades de programação em C, R e Python"
+        },
+        {
+          "pesquisa": "Manipulação computacional de redes complexas"
+        },
+        {
+          "pesquisa": "Orientação de Iniciação Científica, Mestrado e Doutorado"
+        },
+        {
+          "pesquisa": "Coordenador de Pesquisa e Inovação do IFRJ - campus Paracambi"
+        }
+      ]
+    },
+    {
+      "nome": "Leandro de Oliveira Pereira",
+      "cargo": "Professor Associado (D-402) do Instituto Federal do Rio de Janeiro (IFRJ)",
+      "foto": "folha.jpg",
+      "contato": {
+        "email": "leandro.pereira@ifrj.edu.br",
+        "lattes": "http://lattes.cnpq.br/4961077787876524"
+      },
+      "educacao": [
+        {
+          "curso": "Doutorado em Física",
+          "termino": "2017",
+          "instituicao": "Universidade do Estado do Rio de Janeiro",
+          "sigla": "UERJ",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Mestrado em Engenharia Nuclear (Física Nuclear Aplicada)",
+          "termino": "2009",
+          "instituicao": "Universidade Federal do Rio de Janeiro",
+          "sigla": "UFRJ",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Graduacão em Física",
+          "termino": "2006",
+          "instituicao": "Universidade do Estado do Rio de Janeiro",
+          "sigla": "UERJ",
+          "pais": "Brasil"
+        }
+      ],
+      "pesquisas": [
+        {
+          "pesquisa": "Espectrometria Molecular"
+        },
+        {
+          "pesquisa": "Técnicas Nucleares"
+        },
+        {
+          "pesquisa": "Desenvolvimento de Métodos Matemáticos para Análise de Sistemas Dinâmicos"
+        },
+        {
+          "pesquisa": "Habilidades de programação em C++, Maple e Python"
+        },
+        {
+          "pesquisa": "Manipulação computacional de redes complexas"
+        },
+        {
+          "pesquisa": "Orientação de Iniciação Científica e Extensão"
+        }
+      ]
+    },
+    {
+      "nome": "André Rocha Pimenta",
+      "cargo": "Professor Associado (D-402) do Instituto Federal do Rio de Janeiro (IFRJ)",
+      "foto": "andre.jpg",
+      "contato": {
+        "email": "andre.pimenta@ifrj.edu.br",
+        "lattes": "http://lattes.cnpq.br/2962103182860488"
+      },
+      "educacao": [
+        {
+          "curso": "Doutorado em Engenharia Mecânica",
+          "termino": "2016",
+          "instituicao": "Universidade do Estado do Rio de Janeiro",
+          "sigla": "UERJ",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Mestrado em Engenharia Mecânica",
+          "termino": "2009",
+          "instituicao": "Universidade do Estado do Rio de Janeiro",
+          "sigla": "UERJ",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Graduacão em Engenharia Mecânica",
+          "termino": "2006",
+          "instituicao": "Universidade do Estado do Rio de Janeiro",
+          "sigla": "UERJ",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Técnico em Mecânica",
+          "termino": "2000",
+          "instituicao": "Centro Federal de Educação Tecnológica Celso Suckow da Fonseca",
+          "sigla": "CEFET/RJ",
+          "pais": "Brasil"
+        }
+      ],
+      "pesquisas": [
+        {
+          "pesquisa": "Microscopia ótica e eletrónica"
+        },
+        {
+          "pesquisa": "Estudos de Análise de Falhas"
+        },
+        {
+          "pesquisa": "Aços inoxidáveis com ênfase em aços duplex"
+        },
+        {
+          "pesquisa": "Análises físico-químicas e microscopia aplicada a arqueometría"
+        },
+        {
+          "pesquisa": "Experiência em gestão: Coordenador do curso técnico em sistemas a gás 2007-2006; Coordenador do curso técnico em mecânica 2001-2012; Diretor de Administração do Campus Paracambi 2012-2017"
+        },
+        {
+          "pesquisa": "Coordenação dos projetos com fomento da Petrobras e FAPERJ"
+        },
+        {
+          "pesquisa": "Prestação de consultorias para empresas na área de microscopia"
+        }
+      ]
+    },
+    {
+      "nome": "Elicardo Alves de Souza Gonçalves",
+      "cargo": "Professor",
+      "foto": "elicardo.jpg",
+      "contato": {
+        "email": "elicardo.goncalves@ifrj.edu.br",
+        "lattes": "http://lattes.cnpq.br/7653565899894307"
+      },
+      "educacao": [
+        {
+          "curso": "Doutorado em Física",
+          "termino": "2016",
+          "instituicao": "Universidade do Estado do Rio de Janeiro",
+          "sigla": "UERJ",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Mestrado em Engenharia Metalúrgica e de Materiais",
+          "termino": "2010",
+          "instituicao": "Universidade Federal do Rio de Janeiro",
+          "sigla": "UFRJ",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Especialização em Radiodiagnóstico",
+          "termino": "2011",
+          "instituicao": "Instituto Nacional de Câncer",
+          "sigla": "INCa",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Graduação em Física",
+          "termino": "2007",
+          "instituicao": "Universidade Federal do Rio de Janeiro",
+          "sigla": "UFRJ",
+          "pais": "Brasil"
+        }
+      ],
+      "pesquisas": [
+        {
+          "pesquisa": "Instrumentação Nuclear aplicada"
+        },
+        {
+          "pesquisa": "Processamento de imagens e computação gráfica aplicadas"
+        },
+        {
+          "pesquisa": "Modelagem computacional e computação numérica aplicadas"
+        },
+        {
+          "pesquisa": "Técnicas de imagem por radiação ionizante"
+        },
+        {
+          "pesquisa": "Proteção radiológica"
+        }
+      ]
+    },
+    {
+      "nome": "Valter de Souza Felix",
+      "cargo": "Pesquisador/Professor",
+      "foto": "valter.jpg",
+      "contato": {
+        "email": "valter.felix@ifrj.edu.br",
+        "lattes": "http://lattes.cnpq.br/6855296784759751"
+      },
+      "educacao": [
+        {
+          "curso": "Doutorado em Engenharia Nuclear",
+          "termino": "Previsão de termino: Dez 2020",
+          "instituicao": "Universidade Federal do Rio de Janeiro",
+          "sigla": "UFRJ",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Mestrado em Química",
+          "termino": "2011",
+          "instituicao": "Universidade do Estado do Rio de Janeiro",
+          "sigla": "UERJ",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Especialização em Química",
+          "termino": "2009",
+          "instituicao": "Universidade do Estado do Rio de Janeiro",
+          "sigla": "UERJ",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Bacharel em Química",
+          "termino": "2005",
+          "instituicao": "Universidade Federal Fluminense",
+          "sigla": "UFF",
+          "pais": "Brasil"
+        },
+        {
+          "curso": "Licenciatura em Química",
+          "termino": "2005",
+          "instituicao": "Universidade Federal Fluminense",
+          "sigla": "UFF",
+          "pais": "Brasil"
+        }
+      ],
+      "pesquisas": [
+        {
+          "pesquisa": "Espectroscopia Raman e FTIR aplicada a análise de bens Culturias"
+        },
+        {
+          "pesquisa": "Fluorescência de Raios X aplicada a análise de bens culturais"
+        },
+        {
+          "pesquisa": "Mapeamento por Macro-XRF de bens culturais"
+        },
+        {
+          "pesquisa": "Análise Estatística Multi-Variada aplicada ao estudo de bens Culturais"
+        }
+      ]
+    }
+]

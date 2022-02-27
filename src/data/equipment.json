@@ -1,0 +1,57 @@
+[
+    {
+      "nome": "Parque Computacional",
+      "foto": "background-image.svg",
+      "descricao": "1 computador do tipo desktop com configurações de 64Gb de RAM,8Gb de memória de vídeo dedicada, e processadores Intel i9 octa-core 5.0GHz;1 computador do tipo desktop com configurações de 64Gb de RAM, 2Gb de memória de vídeo dedicada, e processadores Intel i9 octa-core 5.0GHz;2 computadores do tipo macbook com configurações de 16Gb de RAM, 4Gb de memória de vídeo dedicada, processadores Intel i9 octa-core 2.3GHz;5 computadores do tipo desktop com configurações de 16Gb de RAM,  2Gb de memória de vídeo dedicada, e processadores Intel i7 quad-core 3.6GHz;3 computadores do tipo notebook com configurações de 16Gb de RAM,  2Gb de memória de vídeo dedicada, processadores Intel i7 quad-core 2.5GHz;2 computadores do tipo iMac, Retina 4K, 21.5'', 8Gb de RAM, e processadores Intel i5 dual-core 2.3GHz;2 computadores do tipo notebook com configurações de 8Gb de RAM, e processadores Intel i3 quad-core 2.5GHz"
+    },
+    {
+      "nome": "Parque de Microscopia Ótica",
+      "foto": "parque_de_microscopia_otica.jpg",
+      "descricao": "01 Microscópio ótico modelo Imager.M2m da fabricante Zeiss;O equipamento possui iluminação refletida e transmitida, sistema de polarização de luz, campo claro e campo escuro, além de objetivas de 2,5x, 5x, 10x, 20x, 50x e 100x;Um sistema de platinas motorizadas nos três eixos e controladas pelo computador permite a confecção de mosaicos e imagens com correção de foco;O sistema de captura de imagem conta com uma câmera de alta resolução, e um computador com dois monitores de 23\".01 Microscópio ótico invertido modelo GX51 da fabricante Olympus;O equipamento possui platina motorizada nos eixos x e y, objetivas de 5x, 10x, 40x, 50x e 100x.01 Estéreomicroscópio modelo SZX16 Zoom da fabricante Olympus, com iluminação de fibra ótica anelar e pontual;O equipamento possui ampliação de 7 a 115 x, podendo ser instalada uma objetiva de 2x, que amplia a capacidade de ampliação para até 230x"
+    },
+    {
+      "nome": "Microscópio Eletrônico de Varredura",
+      "foto": "microscopio_eletronico_de_varredura.jpg",
+      "descricao": "Microscópio eletrônico de varredura (MEV), modelo TM3000 da fabricante Hitachi;Equipado com filamento de tungstênio e detector de elétrons retroespalhados, possui capacidade de realizar imagens com ampliações de 40x a 30.000x;Também possui um detector de espectroscopia de energia dispersiva (EDS) modelo X Flash MIN SVE fabricado pela BRUKER;O sistema de EDS pode salvar os dados da região analisada e gerar relatórios off-line, através do software Quantax70;Podem ser confeccionados relatórios de mapas por área, escaneamento por linha e pontual"
+    },
+    {
+      "nome": "Microscópio de Força Atômica",
+      "foto": "microscopio_de_forca_atomica.jpg",
+      "descricao": "Microscópio de Força Atômica (AFM), modelo NX10 da fabricante Park;Equipado com os módulos de contato, não contato e força magnética, é capaz de mapear uma área de até 40 x 40 µm;Possui caixa acústica e mesa anti-vibração para eliminar as interferências do ambiente"
+    },
+    {
+      "nome": "Parque de Preparação de Amostras",
+      "foto": "parque_de_preparacao_de_amostras.jpg",
+      "descricao": "O laboratório possui diversos equipamentos destinados a preparação de amostras, tais como: politrizes e lixadeiras manuais e automáticas;Forno para tratamento térmico até 1100°C;Formo para tratamento térmico até 1.300°C com atmosfera controlada;Embutidora de amostras a quente de 30mm e 40mm de diâmetro;Insumos para embutimento a frio para diferentes amostras"
+    },
+    {
+      "nome": "Macro Mapeamento Elementar",
+      "foto": "macro_mapeamento_elementar.jpg",
+      "descricao": "O sistema de macro mapeamento elementar é o modelo CRONO da Bruker e permite varrer de uma única vez uma área de 450 mm x 600 mm;O sistema também permite fazer escaneamentos, com os tamanhos de pixels 0,5, 1,0 e 2,0 mm;Ressalta-se, que a técnica de mapeamento elementar permite verificar a distribuição dos pigmentos presentes em um tela, permitindo inclusive verificar camadas subjacentes de pinturas"
+    },
+    {
+      "nome": "Espectroscopia no Infravermelho",
+      "foto": "espectroscopia_no_infravermelho.jpg",
+      "descricao": "O espectrômetro de infravermelho é o modelo APLPHA da Bruker, que permite fazer análises na região do infravermelho médio;O sistema permite através do modulo de refletância externa fazer análises não destrutivas da matriz orgânica e inorgânica presente na tela"
+    },
+    {
+      "nome": "Fluorescência de Raios X",
+      "foto": "fluorescencia_de_raios_x.jpg",
+      "descricao": "O sistema de Fluorescência de Raios X é o modelo TRACER da Bruker e possui um tubo de raios X de anodo de Ródio, que pode operar com tensão e corrente máxima de 40 kV e 200 µA;A técnica de Fluorescência de Raios X é consolidada na investigação de obras de arte e permite levantar a composição elementar dos materiais presentes na tela"
+    },
+    {
+      "nome": "Microscópio Estéreo",
+      "foto": "microscopio_estereo.jpg",
+      "descricao": "O microscópio estéreo é o SZX16 Zoom da fabricante Olympus, com iluminação de fibra ótica anelar e pontual;O equipamento possui ampliação de 7 a 115 x, podendo ser instalada uma objetiva de 2x, que amplia a capacidade de ampliação para até 230x"
+    },
+    {
+      "nome": "Raman Espectrômetro",
+      "foto": "raman_espectrometro.jpg",
+      "descricao": "O sistema de espectroscopia Raman utilizado é o modelo LabRAM Evolution da HORIBA Jobin Yvon, que possui três comprimentos de ondas: 514, 633 e 785 nm;O sistema possui uma mesa motorizada que permite realizar mapeamento das amostras investigadas"
+    },
+    {
+      "nome": "Espectroscopia no Infravermelho por Transformada de Fourier (FT-IR)",
+      "foto": "espectroscopia_no_infravermelho_por_transformada_de_fourier_(ft-ir).jpg",
+      "descricao": "O sistema utilizado nas medidas de FT-IR é o modelo Vertex 70 da Bruker, que permite registrar espectros de FT-IR pelos métodos da reflectância total atenuada (ATR) ou transmitância (TR), bastando para isso acoplar o acessório específico;O sistema permite registrar espectros na região do infravermelho médio (400-4000 cm-1)"
+    }
+  ]

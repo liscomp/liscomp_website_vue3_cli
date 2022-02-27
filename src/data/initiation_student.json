@@ -1,0 +1,92 @@
+[
+  {
+    "nome": "Mariane Lucena da Silva",
+    "cargo": "Bolsista CNPq",
+    "foto": "mlsilva.jpg",
+    "contato": {
+      "email": "mariane.teceletro@gmail.com",
+      "lattes": "http://lattes.cnpq.br/0341624187444088"
+    },
+    "faculdade": "Universidade Federal Rural do Rio de Janeiro"
+  },
+  {
+    "nome": "Milena Paschôal da Costa Gonçalves",
+    "cargo": "Bolsista IFRJ",
+    "foto": "mpcgoncalves.jpg",
+    "contato": {
+      "email": "milenapaschoal8@gmail.com",
+      "lattes": " http://lattes.cnpq.br/4102764550612025"
+    },
+    "faculdade": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+  },
+  {
+    "nome": "Jonas Gabriel Ramos da Silva Ataliba",
+    "cargo": "Bolsista CNPq",
+    "foto": "jgrsataliba.jpg",
+    "contato": {
+      "email": "atalibajunior1@gmail.com",
+      "lattes": "http://lattes.cnpq.br/2025254521055893"
+    },
+    "faculdade": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+  },
+  {
+    "nome": "Gabriel Santos Gonçalves",
+    "cargo": "Bolsista CNPq",
+    "foto": "gsgoncalves.jpg",
+    "contato": {
+      "email": "bielziin2216@gmail.com",
+      "lattes": "http://lattes.cnpq.br/0341624187444088"
+    },
+    "faculdade": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+  },
+  {
+    "nome": "Taylor Marins Ledra",
+    "cargo": "Bolsista FAPERJ",
+    "foto": "trledra.jpg",
+    "contato": {
+      "email": "taylorlm389@gmail.com",
+      "lattes": " http://lattes.cnpq.br/6030449239492676"
+    },
+    "faculdade": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+  },
+  {
+    "nome": "Daniele Matos da Silva",
+    "cargo": "Bolsista CNPq",
+    "foto": "dmatoss.jpeg",
+    "contato": {
+      "email": "danimatos01.dm@gmail.com",
+      "lattes": "http://lattes.cnpq.br/4141013523007559"
+    },
+    "faculdade": "Universidade Federal de Ouro Preto"
+  },
+  {
+    "nome": "Renan de Mendonça Valente",
+    "cargo": "Bolsista FAPERJ",
+    "foto": "rmvalente.jpeg",
+    "contato": {
+      "email": "renanvalente.ele111@gmail.com",
+      "lattes": " http://lattes.cnpq.br/8135707717710673"
+    },
+    "faculdade": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+  },
+  {
+    "nome": "Davi de Mendonça Teles Guimarães",
+    "cargo": "Bolsista CNPq",
+    "foto": "dmtguimaraes.jpg",
+    "contato": {
+      "email": "davimtg2012@gmail.com",
+      "lattes": "http://lattes.cnpq.br/5975938929678867"
+    },
+    "faculdade": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+  },
+  {
+    "nome": "Bárbara Lorrane Oliveira Gonçalves",
+    "cargo": "Bolsista FAPERJ",
+    "foto": "barblorrane.jpeg",
+    "contato": {
+      "email": "barblorrane@gmail.com",
+      "lattes": "http://lattes.cnpq.br/3041496931430593"
+    },
+    "faculdade": "Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "nome": "Paulo S. L. de Oliveira Jr.",
+    "cargo": "Bolsista CNPq",
+    "foto": "psloliveirajr.png",
+    "contato": {
+      "email": "paulo.oliveira@ifrj.edu.br",
+      "lattes": "http://lattes.cnpq.br/9599595617047873"
+    },
+    "faculdade": "Universidade Federal Fluminense"
+  },
+  {
+    "nome": "Jennifer R. S. da Conceição",
+    "cargo": "Bolsista FAPERJ",
+    "foto": "jrsconceicao.png",
+    "contato": {
+      "email": "jennifer.@ifrj.edu.br",
+      "lattes": "http://lattes.cnpq.br/7344849643725280"
+    },
+    "faculdade": "Universidade Federal Rural do Rio de Janeiro"
+  }
+]
