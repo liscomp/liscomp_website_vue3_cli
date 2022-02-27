@@ -6,8 +6,8 @@
       <div class="erro text-center w-100">Página não encontrada</div>
       <div class="mensagem text-center w-100">
         Não conseguimos encontrar essa página. Tente voltar para
-        <router-link :to="{ name: 'home' }">
-          <i class="fa-solid fa-home fa"></i>
+        <router-link :to="{ name: 'HomeView' }">
+          <i class="fa-solid fa-HomeView fa"></i>
         </router-link>
       </div>
     </div>

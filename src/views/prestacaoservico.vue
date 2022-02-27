@@ -1,8 +1,8 @@
 <template>
   <div id="prestacao-de-servicos" class="container">
     <ol class="breadcrumb">
-      <router-link :to="{ name: 'home' }">
-        <i class="fa-solid fa-home fa"></i>
+      <router-link :to="{ name: 'HomeView' }">
+        <i class="fa-solid fa-HomeView fa"></i>
         Home
       </router-link>
       <span class="divisoria">></span>

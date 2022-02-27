@@ -36,8 +36,8 @@ export default {
 <template>
   <div class="container" id="noticias-descricao">
     <ol class="breadcrumb p-0">
-      <router-link :to="{ name: 'home' }">
-        <i class="fa-solid fa-home fa"></i>
+      <router-link :to="{ name: 'HomeView' }">
+        <i class="fa-solid fa-HomeView fa"></i>
         Home
       </router-link>
       <span class="divisoria">></span>

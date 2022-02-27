@@ -22,8 +22,8 @@ export default {
 <template>
   <div id="parcerias-internacionais" class="container">
     <ol class="breadcrumb">
-      <router-link :to="{ name: 'home' }">
-        <i class="fa-solid fa-home fa"></i>
+      <router-link :to="{ name: 'HomeView' }">
+        <i class="fa-solid fa-HomeView fa"></i>
         Home
       </router-link>
       <span class="divisoria">></span>
@@ -76,7 +76,7 @@ export default {
 </template>
 
 <style>
-home-section:first-of-type {
+HomeView-section:first-of-type {
   padding-top: 50px;
 }
 .avatar-circle {

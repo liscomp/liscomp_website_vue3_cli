@@ -21,7 +21,7 @@ export default {
     class="navbar justify-content-center navbar-light navbar-expand-lg sticky-top"
   >
     <div class="justify-content-center align-items-center container-fluid">
-      <router-link class="navbar-brand" :to="{ name: 'home' }">
+      <router-link class="navbar-brand" :to="{ name: 'HomeView' }">
         <img
           class="logo d-block"
           src="@/assets/logos/1800x500-nobg.png"
@@ -108,7 +108,7 @@ export default {
 <style lang="scss" scoped>
 #navbar-main {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-  background-color: whitesmoke;
+  background-color: white;
 
   #navbar-header {
     padding-right: 20px;

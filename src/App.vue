@@ -81,11 +81,9 @@ export default {
     font-weight: 700;
   }
   .titulo {
-    font-weight: 700;
-    border-bottom: 2px solid #036365;
-    padding-bottom: 5px;
-    padding-left: 15px;
+    font-weight: bold;
     color: #036365;
+    text-align: center;
   }
   h1.titulo {
     font-size: 1.5em;
@@ -98,8 +96,8 @@ export default {
     margin-bottom: 40px;
   }
   h3.titulo {
-    font-size: 1.6em;
-    margin-bottom: 30px;
+    font-size: 40px;
+    margin-bottom: 10px;
   }
   h4.titulo {
     font-size: 1.4em;

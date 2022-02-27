@@ -6,11 +6,12 @@ import { firebaseApp } from "@/firebase";
 const routes = [
   {
     path: "/",
-    name: "home",
+    name: "HomeView",
     meta: {
       title: "LISComp",
     },
-    component: () => import(/* webpackChunkName: "home" */ "../views/home.vue"),
+    component: () =>
+      import(/* webpackChunkName: "HomeView" */ "../views/HomeView.vue"),
   },
   {
     path: "/labmovel",
