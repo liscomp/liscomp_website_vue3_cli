@@ -1,12 +1,15 @@
 <template>
-  <div class="col-12 col-lg-4 aluno">
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3 aluno">
     <div class="profile">
       <img class="avatar avatar-circle" v-bind:src="`${imgUrl}`" />
-      <div class="portrait-title">
-        <h5 class="titulo nome">{{ name }}</h5>
+      <div class="portrait-title text-center">
+        <h5 class="title nome">{{ name }}</h5>
         <h6 class="cargo">{{ scholarship }}</h6>
         <h6 class="cargo">{{ college }}</h6>
-        <ul class="network-icon" aria-hidden="true">
+        <ul
+          class="network-icon d-flex justify-content-center"
+          aria-hidden="true"
+        >
           <li>
             <a :href="'mailto:%20' + email">
               <i class="fa-solid fa-envelope fa fa-2x"></i>
@@ -39,4 +42,14 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.aluno {
+  padding: 20px;
+  .profile {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    height: 100%;
+    border-radius: 15px;
+    padding: 10px;
+  }
+}
+</style>
