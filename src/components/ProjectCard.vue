@@ -16,7 +16,7 @@
       </router-link>
       <div class="project-content row">
         <div class="col-md-12 col-lg-9 project-title">
-          <h3 class="title">
+          <h5 class="title">
             <router-link
               :to="{
                 name: 'ProjectView',
@@ -28,7 +28,7 @@
             >
               {{ short_title }}</router-link
             >
-          </h3>
+          </h5>
         </div>
         <div class="col-lg-3 d-none d-lg-block project-button">
           <router-link
@@ -50,7 +50,7 @@
 
 <script>
 export default {
-  name: "ProjetoCards",
+  name: "ProjectCard",
   props: ["id", "title", "short_title", "imgUrl"],
 };
 </script>
@@ -94,6 +94,7 @@ button.button:focus {
   padding: 0 10px;
   .project-box {
     height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     border-top: 0;
     margin-bottom: 0;
     background-color: #f4f6f7;

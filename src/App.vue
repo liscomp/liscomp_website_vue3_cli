@@ -1,7 +1,7 @@
 <script>
 /* eslint-disable no-unused-vars */
 import NavBar from "@/components/NavBar.vue";
-import Rodape from "@/components/rodape.vue";
+import Rodape from "@/components/FooterComponent.vue";
 import { firebaseApp } from "@/firebase";
 import { onBeforeMount } from "vue";
 import { useRouter, useRoute } from "vue-router";

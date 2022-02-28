@@ -1,12 +1,14 @@
 <script>
-import Producaoconteudo from "@/components/producaoconteudo.vue";
+import Artigo from "@/components/ArticleRow.vue";
+import Filtro from "@/components/FilterArticle.vue";
 import { useProductsStore } from "@/stores/ProductsStore";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "producao",
+  name: "PublicationView",
   components: {
-    Producaoconteudo,
+    Artigo,
+    Filtro,
   },
   setup() {
     const ProductsStore = useProductsStore();
@@ -69,12 +71,30 @@ export default {
           <div>{{ this.$route.params.id }}</div>
         </router-link>
       </ol> -->
-
-        <Producaoconteudo
-          :artigos="artigosAnos(this.$route.params.id)"
-          :anosPublicacao="anosPublicacao"
-          :topicosPublicacao="topicosPublicacao"
-        />
+        <div class="row">
+          <div class="col-sm-12 col-md-9">
+            <Artigo
+              v-for="artigo in artigosAnos(this.$route.params.id)"
+              v-bind:key="artigo.id"
+              v-bind:id="artigo.id"
+              v-bind:title="artigo.title"
+              v-bind:journal="artigo.journal"
+              v-bind:doi="artigo.doi"
+              v-bind:url="artigo.url"
+              v-bind:date="artigo.date"
+              v-bind:authors="artigo.authors"
+              v-bind:topics="artigo.topics"
+              v-bind:abstract="artigo.abstract"
+              v-bind:imgUrl="artigo.imgUrl"
+            />
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <Filtro
+              v-bind:anos="anosPublicacao"
+              v-bind:topicos="topicosPublicacao"
+            />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -108,11 +128,30 @@ export default {
           <div>{{ this.$route.params.id }}</div>
         </router-link>
       </ol> -->
-        <Producaoconteudo
-          :artigos="artigosTopicos(this.$route.params.id)"
-          :anosPublicacao="anosPublicacao"
-          :topicosPublicacao="topicosPublicacao"
-        />
+        <div class="row">
+          <div class="col-sm-12 col-md-9">
+            <Artigo
+              v-for="artigo in artigosTopicos(this.$route.params.id)"
+              v-bind:key="artigo.id"
+              v-bind:id="artigo.id"
+              v-bind:title="artigo.title"
+              v-bind:journal="artigo.journal"
+              v-bind:doi="artigo.doi"
+              v-bind:url="artigo.url"
+              v-bind:date="artigo.date"
+              v-bind:authors="artigo.authors"
+              v-bind:topics="artigo.topics"
+              v-bind:abstract="artigo.abstract"
+              v-bind:imgUrl="artigo.imgUrl"
+            />
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <Filtro
+              v-bind:anos="anosPublicacao"
+              v-bind:topicos="topicosPublicacao"
+            />
+          </div>
+        </div>
       </div>
     </div>
     <div v-else>
@@ -131,11 +170,30 @@ export default {
           Produção Científica
         </RouterLink>
       </ol> -->
-        <Producaoconteudo
-          :artigos="artigosOrdenados"
-          :anosPublicacao="anosPublicacao"
-          :topicosPublicacao="topicosPublicacao"
-        />
+        <div class="row">
+          <div class="col-sm-12 col-md-9">
+            <Artigo
+              v-for="artigo in artigosOrdenados"
+              v-bind:key="artigo.id"
+              v-bind:id="artigo.id"
+              v-bind:title="artigo.title"
+              v-bind:journal="artigo.journal"
+              v-bind:doi="artigo.doi"
+              v-bind:url="artigo.url"
+              v-bind:date="artigo.date"
+              v-bind:authors="artigo.authors"
+              v-bind:topics="artigo.topics"
+              v-bind:abstract="artigo.abstract"
+              v-bind:imgUrl="artigo.imgUrl"
+            />
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <Filtro
+              v-bind:anos="anosPublicacao"
+              v-bind:topicos="topicosPublicacao"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>

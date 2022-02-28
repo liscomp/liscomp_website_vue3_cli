@@ -20,7 +20,7 @@ const routes = [
       title: "Laboratório Móvel",
     },
     component: () =>
-      import(/* webpackChunkName: "labmovel" */ "../views/labmovel.vue"),
+      import(/* webpackChunkName: "labmovel" */ "../views/LabMovel.vue"),
   },
   {
     path: "/infraestrutura",
@@ -30,7 +30,7 @@ const routes = [
     },
     component: () =>
       import(
-        /* webpackChunkName: "infraestrutura" */ "../views/infraestrutura.vue"
+        /* webpackChunkName: "infraestrutura" */ "../views/InfrastructureView.vue"
       ),
   },
   {
@@ -41,7 +41,7 @@ const routes = [
     },
     component: () =>
       import(
-        /* webpackChunkName: "prestacaoservico" */ "../views/prestacaoservico.vue"
+        /* webpackChunkName: "prestacaoservico" */ "../views/ServiceView.vue"
       ),
   },
   {
@@ -71,13 +71,13 @@ const routes = [
       title: "Produções",
     },
     component: () =>
-      import(/* webpackChunkName: "producao" */ "../views/producao.vue"),
+      import(/* webpackChunkName: "producao" */ "../views/PublicationView.vue"),
   },
   {
     path: "/publicacoes/:id",
     name: "producaofiltro",
     component: () =>
-      import(/* webpackChunkName: "producao" */ "../views/producao.vue"),
+      import(/* webpackChunkName: "producao" */ "../views/PublicationView.vue"),
     /*  beforeEnter: (to, next) => {
       const ProductsStore = useProductsStore();
       const artigosTopicos = ProductsStore.articles.find((articles) =>
@@ -98,7 +98,7 @@ const routes = [
     path: "/publicacoes/resumo/:id",
     name: "producaoresumo",
     component: () =>
-      import(/* webpackChunkName: "producao" */ "../views/producaoresumo.vue"),
+      import(/* webpackChunkName: "producao" */ "../views/ArticleResume.vue"),
     beforeEnter: (to, from, next) => {
       const ProductsStore = useProductsStore();
       const articleResume = ProductsStore.articles.find(
@@ -119,14 +119,14 @@ const routes = [
       title: "Projetos",
     },
     component: () =>
-      import(/* webpackChunkName: "projetos" */ "../views/projetos.vue"),
+      import(/* webpackChunkName: "projetos" */ "../views/ProjectView.vue"),
     children: [],
   },
   {
     path: "/projetos/:id",
     name: "ProjectView",
     component: () =>
-      import(/* webpackChunkName: "projetos" */ "../views/ProjectView.vue"),
+      import(/* webpackChunkName: "projetos" */ "../views/ProjectResume.vue"),
     beforeEnter: (to, from, next) => {
       const ProductsStore = useProductsStore();
       const projects = ProductsStore.projects.find(
@@ -148,7 +148,7 @@ const routes = [
     },
     component: () =>
       import(
-        /* webpackChunkName: "parinternacionais" */ "../views/parinternacionais.vue"
+        /* webpackChunkName: "parinternacionais" */ "../views/PartnersView.vue"
       ),
   },
   {
@@ -158,14 +158,14 @@ const routes = [
       title: "Notícias",
     },
     component: () =>
-      import(/* webpackChunkName: "destaques" */ "../views/noticias.vue"),
+      import(/* webpackChunkName: "destaques" */ "../views/NewsView.vue"),
   },
   {
     path: "/noticias/:id",
     name: "noticiasdescricao",
     component: () =>
       import(
-        /* webpackChunkName: "noticiasdescricao" */ "../views/noticiasdescricao.vue"
+        /* webpackChunkName: "noticiasdescricao" */ "../views/NewsDescription.vue"
       ),
     beforeEnter: (to, from, next) => {
       const ProductsStore = useProductsStore();
@@ -234,7 +234,7 @@ const routes = [
     },
     component: () =>
       import(
-        /* webpackChunkName: "pagenotfound" */ "../views/pagenotfound.vue"
+        /* webpackChunkName: "pagenotfound" */ "../views/PageNotFound.vue"
       ),
   },
 ];
