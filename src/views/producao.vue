@@ -42,7 +42,7 @@ export default {
     <div v-if="nao_vazio_ano">
       <div id="page-header" class="d-flex justify-content-center flex-column">
         <div>
-          <h2 class="titulo">Artigos</h2>
+          <h2 class="title">Artigos</h2>
         </div>
         <div>
           <h2 class="category">{{ this.$route.params.id }}</h2>
@@ -81,7 +81,7 @@ export default {
     <div v-else-if="nao_vazio_topico">
       <div id="page-header" class="d-flex justify-content-center flex-column">
         <div>
-          <h2 class="titulo">Artigos</h2>
+          <h2 class="title">Artigos</h2>
         </div>
         <div>
           <h2 class="category">{{ this.$route.params.id }}</h2>
@@ -118,7 +118,7 @@ export default {
     <div v-else>
       <div id="page-header" class="d-flex justify-content-center flex-column">
         <div>
-          <h2 class="titulo">Artigos</h2>
+          <h2 class="title">Artigos</h2>
         </div>
       </div>
       <div class="container inner-pages">

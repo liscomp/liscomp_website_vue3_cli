@@ -22,7 +22,7 @@ export default {
   <div id="infraestrutura">
     <div id="page-header" class="d-flex justify-content-center flex-column">
       <div>
-        <h2 class="titulo">Infraestrutura</h2>
+        <h2 class="title">Infraestrutura</h2>
       </div>
     </div>
     <!-- <ol class="breadcrumb">

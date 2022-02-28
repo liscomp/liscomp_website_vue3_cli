@@ -70,7 +70,7 @@ export default {
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h3 class="titulo">Sobre nós</h3>
+            <h3 class="title">Sobre nós</h3>
             <div class="about-us-text">
               O Laboratório de Instrumentação e Simulação Computacional
               Científicas Aplicadas possui natureza fortemente multidisciplinar
@@ -90,7 +90,7 @@ export default {
     <div class="container news">
       <div class="row">
         <div class="col-12">
-          <h3 class="titulo">Notícias</h3>
+          <h3 class="title">Notícias</h3>
           <!-- <Noticiaspainel
           v-for="noticia in noticiasOrdenados.slice(0, 3)"
           v-bind:key="noticia.title"
@@ -121,7 +121,7 @@ export default {
         width: 100%;
         height: 600px;
         object-fit: cover;
-        object-position: 50% 50%;
+        object-position: 50% 30%;
       }
     }
   }

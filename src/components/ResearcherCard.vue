@@ -1,5 +1,5 @@
 <template>
-  <div class="row pesquisador">
+  <div class="pesquisador">
     <div class="col-12 col-lg-4">
       <div class="profile">
         <div>
@@ -9,7 +9,7 @@
           />
         </div>
         <div class="portrait-title">
-          <h5 class="titulo nome">{{ nome }}</h5>
+          <h5 class="title nome">{{ nome }}</h5>
         </div>
         <ul class="network-icon" aria-hidden="true">
           <li>
@@ -28,7 +28,7 @@
     <div class="col-12 col-lg-8">
       <div class="row about">
         <div class="col-md-5">
-          <h6 class="titulo nome">Formação</h6>
+          <h6 class="title nome">Formação</h6>
           <ul id="educacao" class="ul-edu fa-ul">
             <Educacao
               v-for="formacao in formacoes"
@@ -42,7 +42,7 @@
           </ul>
         </div>
         <div class="col-md-7">
-          <h6 class="titulo nome">Experiência</h6>
+          <h6 class="title nome">Experiência</h6>
           <div class="text-justify">
             <p
               v-for="linha in linhasPesquisa"

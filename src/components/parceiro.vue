@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="cols-12 col-lg-8 about">
-      <h5 class="titulo">Parceria</h5>
+      <h5 class="title">Parceria</h5>
       <div class="row">
         <div class="cols-12 text-justify">
           {{ sobre }}

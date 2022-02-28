@@ -88,17 +88,18 @@ export default {
     color: #00a1a1 !important;
     font-weight: 700;
   }
-  .titulo {
+  .title {
     font-weight: bold;
     color: #036365;
   }
-  h1.titulo {
+  h1.title {
     font-size: 1.5em;
     border-bottom: none;
+    line-height: var(--bs-body-line-height);
     margin: 0px;
     padding: 0px;
   }
-  h2.titulo {
+  h2.title {
     font-size: 4em;
     text-align: center;
     line-height: var(--bs-body-line-height);
@@ -112,24 +113,29 @@ export default {
     margin: 0;
   }
 
-  h3.titulo {
+  h3.title {
     font-size: 40px;
-    margin-bottom: 10px;
+    line-height: var(--bs-body-line-height);
+    margin: 0px;
     text-align: center;
   }
-  h4.titulo {
-    font-size: 1.4em;
-    margin-bottom: 20px;
+  h4.title {
+    font-size: 2em;
+    line-height: var(--bs-body-line-height);
+    margin: 0px;
+    text-align: center;
   }
-  h5.titulo {
+  h5.title {
     font-size: 1.2em;
-    margin-bottom: 15px;
+    line-height: var(--bs-body-line-height);
+    margin: 0px;
   }
-  h6.titulo {
+  h6.title {
     font-size: 1em;
+    line-height: var(--bs-body-line-height);
     margin-bottom: 0px;
   }
-  .titulo.nome {
+  .title.nome {
     border: none;
     padding-left: 0px;
   }

@@ -40,7 +40,7 @@ export default {
         {{ project.short_title }}
       </router-link>
     </ol> -->
-    <h2 class="titulo">
+    <h2 class="title">
       {{ project.title }}
     </h2>
     <div class="row">
@@ -52,7 +52,7 @@ export default {
         <div class="row">
           <div class="p-0 col-sm-12"></div>
           <div class="resumo col-sm-12">
-            <h4 class="titulo">Resumo</h4>
+            <h4 class="title">Resumo</h4>
             <div class="text-justify">
               {{ project.resumo }}
             </div>

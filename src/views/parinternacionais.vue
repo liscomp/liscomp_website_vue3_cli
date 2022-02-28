@@ -23,7 +23,7 @@ export default {
   <div id="parcerias-internacionais">
     <div id="page-header" class="d-flex justify-content-center flex-column">
       <div>
-        <h2 class="titulo">Parceiros</h2>
+        <h2 class="title">Parceiros</h2>
       </div>
     </div>
     <!-- <ol class="breadcrumb">

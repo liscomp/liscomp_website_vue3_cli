@@ -59,10 +59,10 @@ const routes = [
     path: "/equipe",
     name: "equipe",
     meta: {
-      title: "Equipe",
+      title: "TeamView",
     },
     component: () =>
-      import(/* webpackChunkName: "equipe" */ "../views/equipe.vue"),
+      import(/* webpackChunkName: "equipe" */ "../views/TeamView.vue"),
   },
   {
     path: "/publicacoes",

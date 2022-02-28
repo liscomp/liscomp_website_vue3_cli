@@ -21,7 +21,7 @@ export default {
   <div id="projetos">
     <div id="page-header" class="d-flex justify-content-center flex-column">
       <div>
-        <h2 class="titulo">Projetos</h2>
+        <h2 class="title">Projetos</h2>
       </div>
     </div>
     <!-- <ol class="breadcrumb">

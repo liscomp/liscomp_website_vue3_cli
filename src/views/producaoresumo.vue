@@ -51,13 +51,13 @@ export default {
         {{ article.id }}
       </router-link>
     </ol> -->
-    <h2 class="titulo">
+    <h2 class="title">
       {{ article.title }}
     </h2>
     <div class="row">
       <img class="featured-image" :src="`${article.imgUrl}`" />
       <div class="col-sm-12 col-md-8">
-        <h4 class="titulo">Resumo</h4>
+        <h4 class="title">Resumo</h4>
         <div class="text-justify">
           {{ article.abstract }}
         </div>
@@ -127,7 +127,7 @@ export default {
 </template>
 
 <style>
-.titulo {
+.title {
   text-transform: capitalize;
 }
 .resume-title {

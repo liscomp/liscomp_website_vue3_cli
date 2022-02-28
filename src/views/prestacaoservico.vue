@@ -2,7 +2,7 @@
   <div id="prestacao-de-servicos">
     <div id="page-header" class="d-flex justify-content-center flex-column">
       <div>
-        <h2 class="titulo">Serviços</h2>
+        <h2 class="title">Serviços</h2>
       </div>
     </div>
     <!-- <ol class="breadcrumb">

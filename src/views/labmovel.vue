@@ -2,7 +2,7 @@
   <div id="laboratorio-movel">
     <div id="page-header" class="d-flex justify-content-center flex-column">
       <div>
-        <h2 class="titulo">Laboratório Móvel</h2>
+        <h2 class="title">Laboratório Móvel</h2>
       </div>
     </div>
     <!-- <ol class="breadcrumb">
@@ -16,7 +16,7 @@
           <img class="lab-image" src="@/assets/laboratorio_movel/foto1.jpg" />
         </div>
         <div class="col-sm-8">
-          <h3 class="titulo">Oque é?</h3>
+          <h3 class="title">Oque é?</h3>
           <div class="row">
             <div class="col-sm-12 text-start">
               O laboratório móvel do IFRJ, possui uma série de instrumentos
@@ -37,7 +37,7 @@
       </div>
       <div class="row informacao align-items-center">
         <div class="col-sm-8">
-          <h3 class="titulo">Quais os objetivos das análises?</h3>
+          <h3 class="title">Quais os objetivos das análises?</h3>
           <div>
             <div class="col-sm-12 text-start">
               Os resultados obtidos, na investigação, são úteis principalmente
@@ -62,7 +62,7 @@
           <img class="lab-image" src="@/assets/laboratorio_movel/foto3.jpg" />
         </div>
         <div class="col-sm-8">
-          <h3 class="titulo">Como solicitar uma visita?</h3>
+          <h3 class="title">Como solicitar uma visita?</h3>
           <div>
             <div class="col-sm-12 text-start">
               <p>

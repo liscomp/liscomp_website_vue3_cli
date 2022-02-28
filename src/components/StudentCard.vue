@@ -3,7 +3,7 @@
     <div class="profile">
       <img class="avatar avatar-circle" v-bind:src="`${imgUrl}`" />
       <div class="portrait-title">
-        <h4 class="titulo nome">{{ name }}</h4>
+        <h5 class="titulo nome">{{ name }}</h5>
         <h6 class="cargo">{{ scholarship }}</h6>
         <h6 class="cargo">{{ college }}</h6>
         <ul class="network-icon" aria-hidden="true">
@@ -26,7 +26,7 @@
 <script>
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "Aluno",
+  name: "StudentCard",
   props: [
     "name",
     "scholarship",

@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import Artigo from "@/components/artigo.vue";
+import Artigo from "@/components/ArticleRow.vue";
 import Filtro from "@/components/filtro.vue";
 
 export default {
