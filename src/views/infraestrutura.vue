@@ -32,7 +32,7 @@ export default {
         >Infraestrutura</RouterLink
       >
     </ol> -->
-    <div class="container">
+    <div class="container inner-pages">
       <Equipamento
         v-for="equipamento in equipamentos"
         v-bind:key="equipamento.nome"

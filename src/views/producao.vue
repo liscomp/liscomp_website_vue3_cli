@@ -48,7 +48,7 @@ export default {
           <h2 class="category">{{ this.$route.params.id }}</h2>
         </div>
       </div>
-      <div class="container">
+      <div class="container inner-pages">
         <!-- <ol class="breadcrumb">
         <RouterLink to="/">
           <i class="fa-solid fa-home fa"></i> Home
@@ -87,7 +87,7 @@ export default {
           <h2 class="category">{{ this.$route.params.id }}</h2>
         </div>
       </div>
-      <div class="container">
+      <div class="container inner-pages">
         <!-- <ol class="breadcrumb">
         <RouterLink to="/">
           <i class="fa-solid fa-home fa"></i> Home
@@ -121,7 +121,7 @@ export default {
           <h2 class="titulo">Artigos</h2>
         </div>
       </div>
-      <div class="container">
+      <div class="container inner-pages">
         <!-- <ol class="breadcrumb">
         <RouterLink to="/">
           <i class="fa-solid fa-home fa"></i> Home

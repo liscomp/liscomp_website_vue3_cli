@@ -36,7 +36,7 @@ export default {
         >Parcerias Internacionais</router-link
       >
     </ol> -->
-    <div class="container">
+    <div class="container inner-pages">
       <div id="pagenotfound container">
         <div
           class="pagina-nao-encontrada justify-content-center align-items-center d-flex flex-column"

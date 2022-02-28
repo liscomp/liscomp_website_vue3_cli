@@ -10,7 +10,7 @@
       <span class="divisoria">></span>
       <RouterLink class="active" to="/labmovel">Laboratório Móvel</RouterLink>
     </ol> -->
-    <div class="container">
+    <div class="container inner-pages">
       <div class="row informacao align-items-center">
         <div class="col-sm-4 image">
           <img class="lab-image" src="@/assets/laboratorio_movel/foto1.jpg" />

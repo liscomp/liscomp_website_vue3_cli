@@ -102,7 +102,7 @@ a.paulinho {
 }
 
 footer {
-  background-color: #eee;
+  background-color: #3ef5d01c;
   border-top: 1px solid #ccc;
 }
 

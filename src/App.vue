@@ -32,7 +32,11 @@ export default {
 #app {
   #page-header {
     min-height: 210px;
-    background-color: #eee;
+    background-color: #3ef5d01c;
+  }
+  .inner-pages {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   body {
     color: black;

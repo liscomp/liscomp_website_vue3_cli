@@ -126,7 +126,7 @@ export default {
     }
   }
   .about-us {
-    background: whitesmoke;
+    background: #3ef5d01c;
     .row {
       padding: 40px 0px;
     }

@@ -35,7 +35,7 @@ export default {
       <span class="divisoria">></span>
       <RouterLink class="active" to="/equipe">Equipe</RouterLink>
     </ol> -->
-    <div class="container">
+    <div class="container inner-pages">
       <h4 class="titulo cargo">Pesquisadores</h4>
       <Pesquisador
         v-for="professor in pesquisadores"

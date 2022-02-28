@@ -34,7 +34,7 @@ export default {
         >Projetos</router-link
       >
     </ol> -->
-    <div class="contanier">
+    <div class="contanier inner-pages">
       <div class="row">
         <ProjetoCards
           v-for="projeto in projetos"
