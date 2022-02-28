@@ -40,7 +40,7 @@ export default {
 <template>
   <div id="producao">
     <div class="container" v-if="nao_vazio_ano">
-      <ol class="breadcrumb">
+      <!-- <ol class="breadcrumb">
         <RouterLink to="/">
           <i class="fa-solid fa-home fa"></i> Home
         </RouterLink>
@@ -59,7 +59,7 @@ export default {
         >
           <div>{{ this.$route.params.id }}</div>
         </router-link>
-      </ol>
+      </ol> -->
 
       <h2 class="titulo">Artigos: {{ this.$route.params.id }}</h2>
       <Producaoconteudo
@@ -70,7 +70,7 @@ export default {
     </div>
 
     <div class="container" v-else-if="nao_vazio_topico">
-      <ol class="breadcrumb">
+      <!-- <ol class="breadcrumb">
         <RouterLink to="/">
           <i class="fa-solid fa-home fa"></i> Home
         </RouterLink>
@@ -89,7 +89,7 @@ export default {
         >
           <div>{{ this.$route.params.id }}</div>
         </router-link>
-      </ol>
+      </ol> -->
 
       <h2 class="titulo">Artigos: {{ this.$route.params.id }}</h2>
       <Producaoconteudo
@@ -100,7 +100,7 @@ export default {
     </div>
 
     <div class="container" v-else>
-      <ol class="breadcrumb">
+      <!-- <ol class="breadcrumb">
         <RouterLink to="/">
           <i class="fa-solid fa-home fa"></i> Home
         </RouterLink>
@@ -108,7 +108,7 @@ export default {
         <RouterLink to="/publicacoes" class="active">
           Produção Científica
         </RouterLink>
-      </ol>
+      </ol> -->
 
       <h2 class="titulo">Artigos</h2>
       <Producaoconteudo

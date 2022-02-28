@@ -1,10 +1,10 @@
 <template>
   <div class="container" id="laboratorio-movel">
-    <ol class="breadcrumb">
+    <!-- <ol class="breadcrumb">
       <RouterLink to="/"> <i class="fa-solid fa-home fa"></i> Home </RouterLink>
       <span class="divisoria">></span>
       <RouterLink class="active" to="/labmovel">Laboratório Móvel</RouterLink>
-    </ol>
+    </ol> -->
     <div>
       <h2 class="titulo">Laboratório Móvel</h2>
       <div class="row informacao align-items-center">

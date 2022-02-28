@@ -19,7 +19,7 @@ export default {
 
 <template>
   <div id="projetos" class="container">
-    <ol class="breadcrumb">
+    <!-- <ol class="breadcrumb">
       <router-link :to="{ name: 'HomeView' }">
         <i class="fa-solid fa-HomeView fa"></i>
         Home
@@ -28,7 +28,7 @@ export default {
       <router-link class="active" :to="{ name: 'projetos' }"
         >Projetos</router-link
       >
-    </ol>
+    </ol> -->
     <h2 class="titulo">Projetos</h2>
     <div class="row">
       <ProjetoCards

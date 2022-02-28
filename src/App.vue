@@ -83,7 +83,6 @@ export default {
   .titulo {
     font-weight: bold;
     color: #036365;
-    text-align: center;
   }
   h1.titulo {
     font-size: 1.5em;
@@ -98,6 +97,7 @@ export default {
   h3.titulo {
     font-size: 40px;
     margin-bottom: 10px;
+    text-align: center;
   }
   h4.titulo {
     font-size: 1.4em;

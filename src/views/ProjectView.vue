@@ -19,7 +19,7 @@ export default {
 
 <template>
   <div id="projeto-resumo" class="container">
-    <ol class="breadcrumb">
+    <!-- <ol class="breadcrumb">
       <router-link :to="{ name: 'HomeView' }">
         <i class="fa-solid fa-HomeView fa"></i>
         Home
@@ -39,7 +39,7 @@ export default {
       >
         {{ project.short_title }}
       </router-link>
-    </ol>
+    </ol> -->
     <h2 class="titulo">
       {{ project.title }}
     </h2>

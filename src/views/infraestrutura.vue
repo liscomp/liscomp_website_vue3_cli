@@ -20,13 +20,13 @@ export default {
 
 <template>
   <div class="container" id="infraestrutura">
-    <ol class="breadcrumb">
+    <!-- <ol class="breadcrumb">
       <RouterLink to="/"> <i class="fa-solid fa-home fa"></i> Home </RouterLink>
       <span class="divisoria">></span>
       <RouterLink class="active" to="/infraestrutura"
         >Infraestrutura</RouterLink
       >
-    </ol>
+    </ol> -->
     <h2 class="titulo">Equipamentos</h2>
     <Equipamento
       v-for="equipamento in equipamentos"

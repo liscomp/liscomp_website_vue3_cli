@@ -35,7 +35,7 @@ export default {
 
 <template>
   <div class="container" id="noticias-descricao">
-    <ol class="breadcrumb p-0">
+    <!-- <ol class="breadcrumb p-0">
       <router-link :to="{ name: 'HomeView' }">
         <i class="fa-solid fa-HomeView fa"></i>
         Home
@@ -55,7 +55,7 @@ export default {
       >
         {{ noticia.title }}
       </router-link>
-    </ol>
+    </ol> -->
     <div class="noticia">
       <div class="col-sm-12">
         <div class="noticia-descricao-title">

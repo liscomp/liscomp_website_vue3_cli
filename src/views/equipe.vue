@@ -25,14 +25,14 @@ export default {
 
 <template>
   <div id="equipe" class="container">
-    <ol class="breadcrumb">
+    <!-- <ol class="breadcrumb">
       <RouterLink to="/"> <i class="fa-solid fa-home fa"></i> Home </RouterLink>
       <span class="divisoria">></span>
       <RouterLink class="active" to="/equipe">Equipe</RouterLink>
-    </ol>
+    </ol> -->
     <div>
       <h2 class="titulo">Equipe</h2>
-      <h3 class="titulo cargo">Pesquisadores</h3>
+      <h4 class="titulo cargo">Pesquisadores</h4>
       <Pesquisador
         v-for="professor in pesquisadores"
         v-bind:key="professor.nome"
@@ -42,7 +42,7 @@ export default {
         v-bind:educacao="professor.educacao"
         v-bind:pesquisas="professor.pesquisas"
       />
-      <h3 class="titulo cargo">Alunos de Doutorado</h3>
+      <h4 class="titulo cargo">Alunos de Doutorado</h4>
       <div class="row">
         <Aluno
           v-for="aluno in alunosDoutorado"
@@ -56,7 +56,7 @@ export default {
           v-bind:imgUrl="aluno.imgUrl"
         />
       </div>
-      <h3 class="titulo cargo">Alunos de Mestrado</h3>
+      <h4 class="titulo cargo">Alunos de Mestrado</h4>
       <div class="row">
         <Aluno
           v-for="aluno in alunosMestrado"
@@ -70,7 +70,7 @@ export default {
           v-bind:imgUrl="aluno.imgUrl"
         />
       </div>
-      <h3 class="titulo cargo">Alunos de Iniciação Científica</h3>
+      <h4 class="titulo cargo">Alunos de Iniciação Científica</h4>
       <div class="row">
         <Aluno
           v-for="aluno in alunosIniciacao"

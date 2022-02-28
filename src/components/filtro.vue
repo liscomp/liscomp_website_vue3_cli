@@ -10,7 +10,6 @@
               id: ano,
               title: ano,
             },
-            hash: '#producao',
           }"
           >{{ ano }}</router-link
         >
@@ -26,7 +25,6 @@
               id: topico,
               title: topico,
             },
-            hash: '#producao',
           }"
           >{{ topico }}</router-link
         >
