@@ -1,12 +1,16 @@
 <template>
-  <div class="container" id="laboratorio-movel">
+  <div id="laboratorio-movel">
+    <div id="page-header" class="d-flex justify-content-center flex-column">
+      <div>
+        <h2 class="titulo">Laboratório Móvel</h2>
+      </div>
+    </div>
     <!-- <ol class="breadcrumb">
       <RouterLink to="/"> <i class="fa-solid fa-home fa"></i> Home </RouterLink>
       <span class="divisoria">></span>
       <RouterLink class="active" to="/labmovel">Laboratório Móvel</RouterLink>
     </ol> -->
-    <div>
-      <h2 class="titulo">Laboratório Móvel</h2>
+    <div class="container">
       <div class="row informacao align-items-center">
         <div class="col-sm-4 image">
           <img class="lab-image" src="@/assets/laboratorio_movel/foto1.jpg" />

@@ -19,7 +19,12 @@ export default {
 </script>
 
 <template>
-  <div class="container" id="infraestrutura">
+  <div id="infraestrutura">
+    <div id="page-header" class="d-flex justify-content-center flex-column">
+      <div>
+        <h2 class="titulo">Infraestrutura</h2>
+      </div>
+    </div>
     <!-- <ol class="breadcrumb">
       <RouterLink to="/"> <i class="fa-solid fa-home fa"></i> Home </RouterLink>
       <span class="divisoria">></span>
@@ -27,14 +32,15 @@ export default {
         >Infraestrutura</RouterLink
       >
     </ol> -->
-    <h2 class="titulo">Equipamentos</h2>
-    <Equipamento
-      v-for="equipamento in equipamentos"
-      v-bind:key="equipamento.nome"
-      v-bind:nome="equipamento.nome"
-      v-bind:descricao="equipamento.descricao"
-      v-bind:foto="equipamento.foto"
-    />
+    <div class="container">
+      <Equipamento
+        v-for="equipamento in equipamentos"
+        v-bind:key="equipamento.nome"
+        v-bind:nome="equipamento.nome"
+        v-bind:descricao="equipamento.descricao"
+        v-bind:foto="equipamento.foto"
+      />
+    </div>
   </div>
 </template>
 

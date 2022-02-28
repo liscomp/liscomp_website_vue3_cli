@@ -39,8 +39,17 @@ export default {
 
 <template>
   <div id="producao">
-    <div class="container" v-if="nao_vazio_ano">
-      <!-- <ol class="breadcrumb">
+    <div v-if="nao_vazio_ano">
+      <div id="page-header" class="d-flex justify-content-center flex-column">
+        <div>
+          <h2 class="titulo">Artigos</h2>
+        </div>
+        <div>
+          <h2 class="category">{{ this.$route.params.id }}</h2>
+        </div>
+      </div>
+      <div class="container">
+        <!-- <ol class="breadcrumb">
         <RouterLink to="/">
           <i class="fa-solid fa-home fa"></i> Home
         </RouterLink>
@@ -61,16 +70,25 @@ export default {
         </router-link>
       </ol> -->
 
-      <h2 class="titulo">Artigos: {{ this.$route.params.id }}</h2>
-      <Producaoconteudo
-        :artigos="artigosAnos(this.$route.params.id)"
-        :anosPublicacao="anosPublicacao"
-        :topicosPublicacao="topicosPublicacao"
-      />
+        <Producaoconteudo
+          :artigos="artigosAnos(this.$route.params.id)"
+          :anosPublicacao="anosPublicacao"
+          :topicosPublicacao="topicosPublicacao"
+        />
+      </div>
     </div>
 
-    <div class="container" v-else-if="nao_vazio_topico">
-      <!-- <ol class="breadcrumb">
+    <div v-else-if="nao_vazio_topico">
+      <div id="page-header" class="d-flex justify-content-center flex-column">
+        <div>
+          <h2 class="titulo">Artigos</h2>
+        </div>
+        <div>
+          <h2 class="category">{{ this.$route.params.id }}</h2>
+        </div>
+      </div>
+      <div class="container">
+        <!-- <ol class="breadcrumb">
         <RouterLink to="/">
           <i class="fa-solid fa-home fa"></i> Home
         </RouterLink>
@@ -90,17 +108,21 @@ export default {
           <div>{{ this.$route.params.id }}</div>
         </router-link>
       </ol> -->
-
-      <h2 class="titulo">Artigos: {{ this.$route.params.id }}</h2>
-      <Producaoconteudo
-        :artigos="artigosTopicos(this.$route.params.id)"
-        :anosPublicacao="anosPublicacao"
-        :topicosPublicacao="topicosPublicacao"
-      />
+        <Producaoconteudo
+          :artigos="artigosTopicos(this.$route.params.id)"
+          :anosPublicacao="anosPublicacao"
+          :topicosPublicacao="topicosPublicacao"
+        />
+      </div>
     </div>
-
-    <div class="container" v-else>
-      <!-- <ol class="breadcrumb">
+    <div v-else>
+      <div id="page-header" class="d-flex justify-content-center flex-column">
+        <div>
+          <h2 class="titulo">Artigos</h2>
+        </div>
+      </div>
+      <div class="container">
+        <!-- <ol class="breadcrumb">
         <RouterLink to="/">
           <i class="fa-solid fa-home fa"></i> Home
         </RouterLink>
@@ -109,13 +131,12 @@ export default {
           Produção Científica
         </RouterLink>
       </ol> -->
-
-      <h2 class="titulo">Artigos</h2>
-      <Producaoconteudo
-        :artigos="artigosOrdenados"
-        :anosPublicacao="anosPublicacao"
-        :topicosPublicacao="topicosPublicacao"
-      />
+        <Producaoconteudo
+          :artigos="artigosOrdenados"
+          :anosPublicacao="anosPublicacao"
+          :topicosPublicacao="topicosPublicacao"
+        />
+      </div>
     </div>
   </div>
 </template>

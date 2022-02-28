@@ -1,5 +1,10 @@
 <template>
-  <div id="prestacao-de-servicos" class="container">
+  <div id="prestacao-de-servicos">
+    <div id="page-header" class="d-flex justify-content-center flex-column">
+      <div>
+        <h2 class="titulo">Serviços</h2>
+      </div>
+    </div>
     <!-- <ol class="breadcrumb">
       <router-link :to="{ name: 'HomeView' }">
         <i class="fa-solid fa-HomeView fa"></i>
@@ -10,18 +15,18 @@
         >Prestação de Serviços</router-link
       >
     </ol> -->
-    <h2 class="titulo">Serviços</h2>
-    <div id="pagenotfound container">
-      <div
-        class="pagina-nao-encontrada justify-content-center align-items-center d-flex flex-column"
-      >
-        <div class="erro text-center w-100">Página em construção</div>
-        <div class="mensagem text-center w-100">
-          Estamos trabalhando para oferecer uma site mais completo para você
+    <div class="container">
+      <div id="pagenotfound container">
+        <div
+          class="pagina-nao-encontrada justify-content-center align-items-center d-flex flex-column"
+        >
+          <div class="erro text-center w-100">Página em construção</div>
+          <div class="mensagem text-center w-100">
+            Estamos trabalhando para oferecer uma site mais completo para você
+          </div>
         </div>
       </div>
-    </div>
-    <!-- <div class="row panel">
+      <!-- <div class="row panel">
       <div class="col-sm-7">
         <div class="text-justify">
           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
@@ -144,6 +149,7 @@
         </div>
       </div>
     </div> -->
+    </div>
   </div>
 </template>
 

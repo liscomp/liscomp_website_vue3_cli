@@ -30,6 +30,10 @@ export default {
 
 <style lang="scss">
 #app {
+  #page-header {
+    min-height: 210px;
+    background-color: #eee;
+  }
   body {
     color: black;
     background-color: #ffffff;
@@ -91,9 +95,19 @@ export default {
     padding: 0px;
   }
   h2.titulo {
-    font-size: 1.8em;
-    margin-bottom: 40px;
+    font-size: 4em;
+    text-align: center;
+    line-height: var(--bs-body-line-height);
+    margin: 0;
   }
+  h2.category {
+    font-size: 2em;
+    text-align: center;
+    font-style: italic;
+    line-height: var(--bs-body-line-height);
+    margin: 0;
+  }
+
   h3.titulo {
     font-size: 40px;
     margin-bottom: 10px;

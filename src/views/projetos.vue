@@ -18,7 +18,12 @@ export default {
 </script>
 
 <template>
-  <div id="projetos" class="container">
+  <div id="projetos">
+    <div id="page-header" class="d-flex justify-content-center flex-column">
+      <div>
+        <h2 class="titulo">Projetos</h2>
+      </div>
+    </div>
     <!-- <ol class="breadcrumb">
       <router-link :to="{ name: 'HomeView' }">
         <i class="fa-solid fa-HomeView fa"></i>
@@ -29,16 +34,17 @@ export default {
         >Projetos</router-link
       >
     </ol> -->
-    <h2 class="titulo">Projetos</h2>
-    <div class="row">
-      <ProjetoCards
-        v-for="projeto in projetos"
-        v-bind:key="projeto.id"
-        v-bind:id="projeto.id"
-        v-bind:title="projeto.title"
-        v-bind:short_title="projeto.short_title"
-        v-bind:imgUrl="projeto.imgUrl"
-      />
+    <div class="contanier">
+      <div class="row">
+        <ProjetoCards
+          v-for="projeto in projetos"
+          v-bind:key="projeto.id"
+          v-bind:id="projeto.id"
+          v-bind:title="projeto.title"
+          v-bind:short_title="projeto.short_title"
+          v-bind:imgUrl="projeto.imgUrl"
+        />
+      </div>
     </div>
   </div>
 </template>

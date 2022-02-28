@@ -24,14 +24,18 @@ export default {
 </script>
 
 <template>
-  <div id="equipe" class="container">
+  <div id="equipe">
+    <div id="page-header" class="d-flex justify-content-center flex-column">
+      <div>
+        <h2 class="titulo">Equipe</h2>
+      </div>
+    </div>
     <!-- <ol class="breadcrumb">
       <RouterLink to="/"> <i class="fa-solid fa-home fa"></i> Home </RouterLink>
       <span class="divisoria">></span>
       <RouterLink class="active" to="/equipe">Equipe</RouterLink>
     </ol> -->
-    <div>
-      <h2 class="titulo">Equipe</h2>
+    <div class="container">
       <h4 class="titulo cargo">Pesquisadores</h4>
       <Pesquisador
         v-for="professor in pesquisadores"

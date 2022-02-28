@@ -20,7 +20,12 @@ export default {
 </script>
 
 <template>
-  <div id="parcerias-internacionais" class="container">
+  <div id="parcerias-internacionais">
+    <div id="page-header" class="d-flex justify-content-center flex-column">
+      <div>
+        <h2 class="titulo">Parceiros</h2>
+      </div>
+    </div>
     <!-- <ol class="breadcrumb">
       <router-link :to="{ name: 'HomeView' }">
         <i class="fa-solid fa-HomeView fa"></i>
@@ -31,18 +36,18 @@ export default {
         >Parcerias Internacionais</router-link
       >
     </ol> -->
-    <h2 class="titulo">Parcerias</h2>
-    <div id="pagenotfound container">
-      <div
-        class="pagina-nao-encontrada justify-content-center align-items-center d-flex flex-column"
-      >
-        <div class="erro text-center w-100">Página em construção</div>
-        <div class="mensagem text-center w-100">
-          Estamos trabalhando para oferecer uma site mais completo para você
+    <div class="container">
+      <div id="pagenotfound container">
+        <div
+          class="pagina-nao-encontrada justify-content-center align-items-center d-flex flex-column"
+        >
+          <div class="erro text-center w-100">Página em construção</div>
+          <div class="mensagem text-center w-100">
+            Estamos trabalhando para oferecer uma site mais completo para você
+          </div>
         </div>
       </div>
-    </div>
-    <!-- <Parceiro
+      <!-- <Parceiro
       v-for="parceiro in parceiros"
       v-bind:key="parceiro.nome"
       v-bind:nome="parceiro.nome"
@@ -72,6 +77,7 @@ export default {
         </a>
       </div>
     </div> -->
+    </div>
   </div>
 </template>
 
