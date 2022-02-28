@@ -100,13 +100,13 @@ export default {
     padding: 0px;
   }
   h2.title {
-    font-size: 4em;
+    font-size: 60px;
     text-align: center;
     line-height: var(--bs-body-line-height);
     margin: 0;
   }
   h2.category {
-    font-size: 2em;
+    font-size: 30px;
     text-align: center;
     font-style: italic;
     line-height: var(--bs-body-line-height);

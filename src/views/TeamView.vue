@@ -104,11 +104,8 @@ export default {
   border-radius: 10%;
 }
 .avatar {
-  width: 250px;
-  height: 250px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 20px;
+  aspect-ratio: 1;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -120,11 +117,6 @@ ul.network-icon {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.profile {
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .about {
@@ -141,7 +133,7 @@ ul.ul-edu li .description p.institution {
 }
 
 .network-icon li {
-  margin-right: 10px;
+  padding: 2.5px 5px;
 }
 
 .big-icon {
@@ -156,6 +148,8 @@ ul.ul-edu li .description p.institution {
   border-bottom: 4px solid #036365b6;
   border-top: 4px solid #036365b6;
   border-radius: 25px;
-  padding: 20px 0;
+}
+.name {
+  padding: 2.5px;
 }
 </style>
