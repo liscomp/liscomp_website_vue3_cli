@@ -1,7 +1,8 @@
 <script>
+/* eslint-disable no-unreachable */
 import Artigo from "@/components/ArticleRow.vue";
 import Filtro from "@/components/FilterArticle.vue";
-import { useProductsStore } from "@/stores/ProductsStore";
+import { useLoadArticles } from "@/firebase";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -11,29 +12,65 @@ export default {
     Filtro,
   },
   setup() {
-    const ProductsStore = useProductsStore();
+    const articles = useLoadArticles();
     return {
-      artigosOrdenados: ProductsStore.artigosOrdenados,
-      anosPublicacao: ProductsStore.pegarAnos,
-      topicosPublicacao: ProductsStore.pegarTopicos,
-      artigosAnos: ProductsStore.artigosAnos,
-      artigosTopicos: ProductsStore.artigosTopicos,
+      articles,
     };
   },
-  computed: {
-    nao_vazio_ano() {
-      if (this.artigosAnos(this.$route.params.id).length != 0) {
-        return true;
-      } else {
-        return false;
-      }
+  methods: {
+    orderArticles: (articles) => {
+      return articles.sort(function (a, b) {
+        if (new Date(a.date) > new Date(b.date)) {
+          return -1;
+        }
+        if (new Date(a.date) < new Date(b.date)) {
+          return 1;
+        }
+        return 0; // a must be equal to b
+      });
     },
-    nao_vazio_topico() {
-      if (this.artigosTopicos(this.$route.params.id).length != 0) {
-        return true;
-      } else {
-        return false;
-      }
+    articlesYear: (articles, year) => {
+      return articles.filter(
+        (articles) => new Date(articles.date).getFullYear() == year
+      );
+    },
+    articlesTopic: (articles, topic) => {
+      return articles.filter((articles) =>
+        articles.topics
+          .split(";")
+          .map((topic) => topic.trim())
+          .includes(topic)
+      );
+    },
+  },
+  computed: {
+    articleSorted() {
+      return this.orderArticles(this.articles);
+    },
+    articlesInThisYear() {
+      return this.articlesYear(this.articleSorted, this.$route.params.id);
+    },
+    articlesInThisTopic() {
+      return this.articlesTopic(this.articleSorted, this.$route.params.id);
+    },
+    takeYears() {
+      return Array.from(
+        // eslint-disable-next-line prettier/prettier
+        new Set(this.articleSorted.map((articles) => new Date(articles.date).getFullYear()))
+      )
+        .sort()
+        .reverse();
+    },
+    takeTopics() {
+      return Array.from(
+        new Set(
+          [].concat(
+            ...this.articleSorted.map((articles) =>
+              articles.topics.split(";").map((topic) => topic.trim())
+            )
+          )
+        )
+      ).sort();
     },
   },
 };
@@ -41,10 +78,17 @@ export default {
 
 <template>
   <div id="producao">
-    <div v-if="nao_vazio_ano">
+    <div v-if="articlesInThisYear.length != 0">
       <div id="page-header" class="d-flex justify-content-center flex-column">
         <div>
-          <h2 class="title">Artigos</h2>
+          <router-link
+            class="active"
+            :to="{
+              name: 'publicacoes',
+            }"
+          >
+            <h2 class="title">Artigos</h2>
+          </router-link>
         </div>
         <div>
           <h2 class="category">{{ this.$route.params.id }}</h2>
@@ -72,9 +116,9 @@ export default {
         </router-link>
       </ol> -->
         <div class="row">
-          <div class="col-sm-12 col-md-9">
+          <div class="col-sm-12 col-md-9 col-xl-10">
             <Artigo
-              v-for="artigo in artigosAnos(this.$route.params.id)"
+              v-for="artigo in articlesInThisYear"
               v-bind:key="artigo.id"
               v-bind:id="artigo.id"
               v-bind:title="artigo.title"
@@ -88,21 +132,23 @@ export default {
               v-bind:imgUrl="artigo.imgUrl"
             />
           </div>
-          <div class="col-sm-12 col-md-3">
-            <Filtro
-              v-bind:anos="anosPublicacao"
-              v-bind:topicos="topicosPublicacao"
-            />
+          <div class="col-sm-12 col-md-3 col-xl-2">
+            <Filtro v-bind:anos="takeYears" v-bind:topicos="takeTopics" />
           </div>
         </div>
       </div>
     </div>
 
-    <div v-else-if="nao_vazio_topico">
+    <div v-else-if="articlesInThisTopic.length != 0">
       <div id="page-header" class="d-flex justify-content-center flex-column">
-        <div>
+        <router-link
+          class="active"
+          :to="{
+            name: 'publicacoes',
+          }"
+        >
           <h2 class="title">Artigos</h2>
-        </div>
+        </router-link>
         <div>
           <h2 class="category">{{ this.$route.params.id }}</h2>
         </div>
@@ -129,9 +175,9 @@ export default {
         </router-link>
       </ol> -->
         <div class="row">
-          <div class="col-sm-12 col-md-9">
+          <div class="col-sm-12 col-md-9 col-xl-10">
             <Artigo
-              v-for="artigo in artigosTopicos(this.$route.params.id)"
+              v-for="artigo in articlesInThisTopic"
               v-bind:key="artigo.id"
               v-bind:id="artigo.id"
               v-bind:title="artigo.title"
@@ -145,11 +191,8 @@ export default {
               v-bind:imgUrl="artigo.imgUrl"
             />
           </div>
-          <div class="col-sm-12 col-md-3">
-            <Filtro
-              v-bind:anos="anosPublicacao"
-              v-bind:topicos="topicosPublicacao"
-            />
+          <div class="col-sm-12 col-md-3 col-xl-2">
+            <Filtro v-bind:anos="takeYears" v-bind:topicos="takeTopics" />
           </div>
         </div>
       </div>
@@ -171,9 +214,9 @@ export default {
         </RouterLink>
       </ol> -->
         <div class="row">
-          <div class="col-sm-12 col-md-9">
+          <div class="col-sm-12 col-md-9 col-xl-10">
             <Artigo
-              v-for="artigo in artigosOrdenados"
+              v-for="artigo in articleSorted"
               v-bind:key="artigo.id"
               v-bind:id="artigo.id"
               v-bind:title="artigo.title"
@@ -187,11 +230,8 @@ export default {
               v-bind:imgUrl="artigo.imgUrl"
             />
           </div>
-          <div class="col-sm-12 col-md-3">
-            <Filtro
-              v-bind:anos="anosPublicacao"
-              v-bind:topicos="topicosPublicacao"
-            />
+          <div class="col-sm-12 col-md-3 col-xl-2">
+            <Filtro v-bind:anos="takeYears" v-bind:topicos="takeTopics" />
           </div>
         </div>
       </div>

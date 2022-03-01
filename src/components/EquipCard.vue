@@ -1,58 +1,37 @@
 <script>
-/* eslint-disable vue/no-unused-components */
-import Educacao from "@/components/educacao.vue";
-
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "Pesquisador",
-  props: ["nome", "foto", "contato", "educacao", "pesquisas"],
+  name: "Equipamento",
+  props: ["nome", "foto", "descricao"],
   data: function () {
     return {
-      linhasPesquisa: this.pesquisas,
-      formacoes: this.educacao,
-      email_completo: "mailto:%20" + this.contato.email,
       abbreviation: this.foto.split(".")[0],
     };
-  },
-  components: {
-    Educacao,
   },
 };
 </script>
 
 <template>
-  <div class="pesquisador col-12 col-md-6 col-lg-4 col-xl-3">
+  <div class="col-12 col-md-6 col-lg-4 equipamento">
     <div class="profile">
       <div class="d-flex justify-content-center">
         <img
           class="avatar avatar-circle"
-          v-bind:src="require(`@/assets/equipe/${foto}`)"
+          v-bind:src="require(`@/assets/equipamentos/${foto}`)"
         />
       </div>
       <div class="portrait-title text-center">
         <h5 class="title name">{{ nome }}</h5>
       </div>
-      <ul class="network-icon d-flex justify-content-center" aria-hidden="true">
-        <li>
-          <a :href="email_completo">
-            <i class="fa-solid fa-envelope fa fa-2x"></i>
-          </a>
-        </li>
-        <li>
-          <a :href="contato.lattes" target="_blank" rel="noopener">
-            <i class="ai ai-lattes fa-2x"></i>
-          </a>
-        </li>
-      </ul>
-      <div class="resume">
+      <div class="details">
         <div class="d-flex justify-content-center">
           <button
             type="button"
-            class="resume-button"
+            class="details-button"
             data-bs-toggle="modal"
             :data-bs-target="`#${abbreviation}`"
           >
-            Resumo
+            Detalhes
           </button>
         </div>
         <div
@@ -66,7 +45,6 @@ export default {
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="title name" id="researcherModalLabel">{{ nome }}</h5>
-                <h5 class="modal-title"></h5>
                 <button
                   type="button"
                   class="btn-close"
@@ -76,31 +54,16 @@ export default {
               </div>
               <div class="modal-body">
                 <div class="row about">
-                  <div class="col-md-5">
-                    <h6 class="title name">Formação</h6>
-                    <ul id="educacao" class="ul-edu fa-ul">
-                      <Educacao
-                        v-for="formacao in formacoes"
-                        v-bind:key="formacao.curso"
-                        v-bind:curso="formacao.curso"
-                        v-bind:termino="formacao.termino"
-                        v-bind:instituto="formacao.instituicao"
-                        v-bind:sigla="formacao.sigla"
-                        v-bind:pais="formacao.pais"
-                      />
-                    </ul>
-                  </div>
-                  <div class="col-md-7">
-                    <h6 class="title name">Experiência</h6>
-                    <div class="text-justify">
-                      <p
-                        v-for="linha in linhasPesquisa"
-                        v-bind:key="linha.pesquisa"
+                  <div class="col-12">
+                    <ul class="equipamento-descricao">
+                      <li
+                        v-for="info in descricao.split(';')"
+                        v-bind:key="info"
                         class="m-0"
                       >
-                        {{ linha.pesquisa }};
-                      </p>
-                    </div>
+                        {{ info }};
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -113,7 +76,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.pesquisador {
+.equipamento {
   padding: 20px;
   .profile {
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
@@ -122,7 +85,7 @@ export default {
     padding: 10px;
   }
 }
-.resume-button {
+.details-button {
   background-color: white;
   border: 2px solid #036365;
   border-radius: 15px;
@@ -135,10 +98,21 @@ export default {
   width: 50%;
 }
 
-.resume-button:hover {
+.details-button:hover {
   color: white;
   background-color: #036365;
   transition: background 500ms;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+.avatar-circle {
+  border-radius: 10%;
+}
+.avatar {
+  aspect-ratio: 1;
+  width: 100%;
+  object-fit: cover;
+}
+h5.name {
+  padding: 5px;
 }
 </style>

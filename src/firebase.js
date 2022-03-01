@@ -33,11 +33,6 @@ export const getArticle = async (id) => {
   return article.exists ? article.data() : null;
 };
 
-export const getArticleMulti = async (id) => {
-  const article = await articlesCollection.doc(id).get();
-  return article.exists ? article.data() : null;
-};
-
 export const updateArticle = (id, article) => {
   return articlesCollection.doc(id).update(article);
 };

@@ -1,33 +1,73 @@
 <template>
-  <div>
+  <div id="filter">
     <div class="categorias">
       <h4 class="title">Anos</h4>
-      <div v-for="ano in anos" v-bind:key="ano" class="filtro-item">
-        <router-link
-          :to="{
-            name: 'producaofiltro',
-            params: {
-              id: ano,
-              title: ano,
-            },
-          }"
-          >{{ ano }}</router-link
+      <div class="box">
+        <div
+          v-for="ano in anos.slice(0, 1)"
+          v-bind:key="ano"
+          class="filtro-item first"
         >
+          <router-link
+            :to="{
+              name: 'producaofiltro',
+              params: {
+                id: ano,
+                title: ano,
+              },
+            }"
+            >{{ ano }}</router-link
+          >
+        </div>
+        <div v-for="ano in anos.slice(1)" v-bind:key="ano" class="filtro-item">
+          <router-link
+            :to="{
+              name: 'producaofiltro',
+              params: {
+                id: ano,
+                title: ano,
+              },
+            }"
+            >{{ ano }}</router-link
+          >
+        </div>
       </div>
     </div>
     <div class="categorias">
       <h4 class="title">Tópicos</h4>
-      <div v-for="topico in topicos" v-bind:key="topico" class="filtro-item">
-        <router-link
-          :to="{
-            name: 'producaofiltro',
-            params: {
-              id: topico,
-              title: topico,
-            },
-          }"
-          >{{ topico }}</router-link
+      <div class="box">
+        <div
+          v-for="topico in topicos.slice(0, 1)"
+          v-bind:key="topico"
+          class="filtro-item first"
         >
+          <router-link
+            :to="{
+              name: 'producaofiltro',
+              params: {
+                id: topico,
+                title: topico,
+              },
+            }"
+            >{{ topico }}</router-link
+          >
+        </div>
+        <div
+          v-for="topico in topicos.slice(1)"
+          v-bind:key="topico"
+          class="filtro-item"
+        >
+          <router-link
+            :to="{
+              name: 'producaofiltro',
+              params: {
+                id: topico,
+                title: topico,
+              },
+            }"
+            >{{ topico }}</router-link
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -49,12 +89,23 @@ export default {
   margin-bottom: 20px;
 }
 .filtro-item {
-  border-bottom: 1px solid rgb(200, 200, 200);
+  border-top: 1px solid #036365b6;
   font-weight: 400;
-  margin-bottom: 10px;
-  padding-left: 10px;
+  text-align: center;
+  padding: 5px;
+}
+.first {
+  border-top: 0px;
 }
 .categorias {
   margin-bottom: 40px;
+}
+.box {
+  width: 100%;
+  border-bottom: 4px solid #036365b6;
+  border-top: 4px solid #036365b6;
+  border-right: 2px solid #036365b6;
+  border-left: 2px solid #036365b6;
+  border-radius: 25px;
 }
 </style>

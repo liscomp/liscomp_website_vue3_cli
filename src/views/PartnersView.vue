@@ -81,7 +81,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 HomeView-section:first-of-type {
   padding-top: 50px;
 }

@@ -3,6 +3,7 @@
 import Pesquisador from "@/components/ResearcherCard.vue";
 import Aluno from "@/components/StudentCard.vue";
 import { usePeopleStore } from "@/stores/PeopleStore";
+import { useLoadStudents } from "@/firebase";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -13,12 +14,53 @@ export default {
   },
   setup() {
     const PeopleStore = usePeopleStore();
+    const students = useLoadStudents();
     return {
-      pesquisadores: PeopleStore.pesquisadoresOrdenados,
-      alunosDoutorado: PeopleStore.alunosDoutoradoOrdenados,
-      alunosMestrado: PeopleStore.alunosMestradoOrdenados,
-      alunosIniciacao: PeopleStore.alunosIniciacaoOrdenados,
+      students,
+      researchers: PeopleStore.researchers,
     };
+  },
+  methods: {
+    orderStudents: (students, level) => {
+      return students
+        .filter((students) => students.level == level)
+        .sort(function (a, b) {
+          if (a.name > b.name) {
+            return 1;
+          }
+          if (a.name < b.name) {
+            return -1;
+          }
+          // a must be equal to b
+          return 0;
+        });
+    },
+    orderResearchers: (researchers) => {
+      return researchers.sort(function (a, b) {
+        if (a.nome > b.nome) {
+          return 1;
+        }
+        if (a.nome < b.nome) {
+          return -1;
+        }
+        // a must be equal to b
+        return 0;
+      });
+    },
+  },
+  computed: {
+    orderResearcher() {
+      return this.orderResearchers(this.researchers);
+    },
+    orderStudentDoctorate() {
+      return this.orderStudents(this.students, "doutorado");
+    },
+    orderStudentMaster() {
+      return this.orderStudents(this.students, "mestrado");
+    },
+    orderStudentInitiation() {
+      return this.orderStudents(this.students, "iniciacao");
+    },
   },
 };
 </script>
@@ -39,7 +81,7 @@ export default {
       <h4 class="title position">Pesquisadores</h4>
       <div class="row box-positions">
         <Pesquisador
-          v-for="professor in pesquisadores"
+          v-for="professor in orderResearcher"
           v-bind:key="professor.nome"
           v-bind:nome="professor.nome"
           v-bind:contato="professor.contato"
@@ -52,7 +94,7 @@ export default {
       <h4 class="title position">Alunos de Doutorado</h4>
       <div class="row box-positions">
         <Aluno
-          v-for="aluno in alunosDoutorado"
+          v-for="aluno in orderStudentDoctorate"
           v-bind:key="aluno.abbreviation"
           v-bind:name="aluno.name"
           v-bind:scholarship="aluno.scholarship"
@@ -66,7 +108,7 @@ export default {
       <h4 class="title position">Alunos de Mestrado</h4>
       <div class="row box-positions">
         <Aluno
-          v-for="aluno in alunosMestrado"
+          v-for="aluno in orderStudentMaster"
           v-bind:key="aluno.abbreviation"
           v-bind:name="aluno.name"
           v-bind:scholarship="aluno.scholarship"
@@ -81,7 +123,7 @@ export default {
 
       <div class="row box-positions">
         <Aluno
-          v-for="aluno in alunosIniciacao"
+          v-for="aluno in orderStudentInitiation"
           v-bind:key="aluno.abbreviation"
           v-bind:name="aluno.name"
           v-bind:scholarship="aluno.scholarship"

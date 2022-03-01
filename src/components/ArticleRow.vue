@@ -1,6 +1,6 @@
 <template>
   <div class="row mb-5">
-    <div class="col-sm-4 mb-3">
+    <div class="col-sm-4 col-xl-3 mb-3">
       <router-link
         :to="{
           name: 'producaoresumo',
@@ -18,7 +18,7 @@
         />
       </router-link>
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-8 col-xl-9">
       <router-link
         :to="{
           name: 'producaoresumo',

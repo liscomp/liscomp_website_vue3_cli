@@ -1,111 +1,103 @@
 <script>
+/* eslint-disable no-unused-vars */
 import Artigolast from "@/components/artigolast.vue";
-import { useProductsStore } from "@/stores/ProductsStore";
+import { reactive, computed, onMounted } from "vue";
+import { useRoute } from "vue-router";
+import { getArticle } from "@/firebase";
 
 export default {
   name: "ProducaoResumo",
   setup() {
-    const ProductsStore = useProductsStore();
+    const route = useRoute();
+    const articleId = computed(() => route.params.id);
+    const specificArticle = reactive({
+      id: "",
+      title: "",
+      journal: "",
+      doi: "",
+      url: "",
+      authors: "",
+      date: "",
+      topics: "",
+      abstract: "",
+      imgUrl: "",
+    });
+    onMounted(async () => {
+      const article = await getArticle(articleId.value);
+      specificArticle.id = article.id;
+      specificArticle.title = article.title;
+      specificArticle.journal = article.journal;
+      specificArticle.doi = article.doi;
+      specificArticle.url = article.url;
+      specificArticle.authors = article.authors;
+      specificArticle.date = article.date;
+      specificArticle.topics = article.topics;
+      specificArticle.abstract = article.abstract;
+      specificArticle.imgUrl = article.imgUrl;
+    });
     return {
-      artigosOrdenados: ProductsStore.artigosOrdenados,
-      artigoEspecifico: ProductsStore.artigoEspecifico,
+      specificArticle,
     };
   },
   components: {
     // eslint-disable-next-line vue/no-unused-components
     Artigolast,
   },
-  computed: {
-    article() {
-      return this.artigoEspecifico(this.$route.params.id);
-    },
-  },
 };
 </script>
 
 <template>
   <div id="producao-resumo" class="container">
-    <!-- <ol class="breadcrumb">
-      <router-link :to="{ name: 'HomeView' }">
-        <i class="fa-solid fa-HomeView fa"></i>
-        Home
-      </router-link>
-      <span class="divisoria">></span>
-      <router-link
-        :to="{
-          name: 'publicacoes',
-        }"
-        >Produção Científica</router-link
-      >
-      <span class="divisoria">></span>
-      <router-link
-        :to="{
-          name: 'producaoresumo',
-          params: {
-            id: article.id,
-            title: article.id,
-          },
-        }"
-        class="active"
-      >
-        {{ article.id }}
-      </router-link>
-    </ol> -->
     <h2 class="title">
-      {{ article.title }}
+      {{ specificArticle.title }}
     </h2>
     <div class="row">
-      <img class="featured-image" :src="`${article.imgUrl}`" />
+      <img class="featured-image" :src="`${specificArticle.imgUrl}`" />
       <div class="col-sm-12 col-md-8">
         <h4 class="title">Resumo</h4>
         <div class="text-justify">
-          {{ article.abstract }}
+          {{ specificArticle.abstract }}
         </div>
       </div>
       <div class="info-quadro col-sm-12 col-md-4">
         <div class="info">
           <div class="info-items">
             <h5 class="titulo nome">Autores</h5>
-            <div>
-              {{ article.author }}
-            </div>
+            <p
+              v-for="author in specificArticle.authors.split(';')"
+              :key="author"
+              class="mb-0 text-nowrap"
+            >
+              {{ author }}
+            </p>
           </div>
           <div class="info-items">
             <h5 class="titulo nome">Data da Publicação</h5>
             <div>
-              {{ article.date }}
+              {{ specificArticle.date }}
             </div>
           </div>
           <div class="info-items">
             <h5 class="titulo nome">Revista</h5>
             <div>
-              {{ article.journal }}
+              {{ specificArticle.journal }}
             </div>
           </div>
           <div class="info-items last-line">
             <h5 class="titulo nome">Tópicos</h5>
             <div
-              v-for="topic in article.topics.split(';')"
+              v-for="topic in specificArticle.topics.split(';')"
               :key="topic"
               class="m-0"
             >
-              <router-link
-                :to="{
-                  name: 'producaofiltro',
-                  params: {
-                    id: topic,
-                    title: topic,
-                  },
-                }"
-                >{{ topic }}</router-link
-              >
+              {{ topic }}
             </div>
           </div>
         </div>
         <div class="info">
           <div class="info-items last-line">
             <h5 class="titulo nome">Links</h5>
-            <a :href="article.url" class="info-link" target="_blank"
+            <a :href="specificArticle.url" class="info-link" target="_blank"
               ><i class="fa-solid fa-external-link fa fa-1x"></i> Site da
               revista</a
             >
@@ -114,8 +106,8 @@ export default {
       </div>
     </div>
 
-    <div class="about-us">Últimas publicações</div>
-    <!-- <div class="row article-last">
+    <!-- <div class="about-us">Últimas publicações</div>
+    <div class="row article-last">
       <Artigolast
         v-for="artigo in artigosOrdenados.slice(0, 3)"
         v-bind:key="artigo.id"

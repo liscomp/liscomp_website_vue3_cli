@@ -1,18 +1,41 @@
 <script>
-import { useProductsStore } from "@/stores/ProductsStore";
+import { reactive, computed, onMounted } from "vue";
+import { useRoute } from "vue-router";
+import { getProject } from "@/firebase";
 
 export default {
   name: "ProjectResume",
   setup() {
-    const ProductsStore = useProductsStore();
+    const route = useRoute();
+    const projectId = computed(() => route.params.id);
+    const specificProject = reactive({
+      id: "",
+      title: "",
+      short_title: "",
+      periodo: "",
+      financiadores: "",
+      autores: "",
+      edital: "",
+      situação: "",
+      resumo: "",
+      imgUrl: "",
+    });
+    onMounted(async () => {
+      const project = await getProject(projectId.value);
+      specificProject.id = project.id;
+      specificProject.title = project.title;
+      specificProject.short_title = project.short_title;
+      specificProject.periodo = project.periodo;
+      specificProject.financiadores = project.financiadores;
+      specificProject.autores = project.autores;
+      specificProject.edital = project.edital;
+      specificProject.situação = project.situação;
+      specificProject.resumo = project.resumo;
+      specificProject.imgUrl = project.imgUrl;
+    });
     return {
-      projetoEspecifico: ProductsStore.projetoEspecifico,
+      specificProject,
     };
-  },
-  computed: {
-    project() {
-      return this.projetoEspecifico(this.$route.params.id);
-    },
   },
 };
 </script>
@@ -41,20 +64,17 @@ export default {
       </router-link>
     </ol> -->
     <h2 class="title">
-      {{ project.title }}
+      {{ specificProject.title }}
     </h2>
     <div class="row">
-      <img
-        class="featured-image"
-        :src="require(`/src/assets/projetos/${project.foto}`)"
-      />
+      <img class="featured-image" :src="`${specificProject.imgUrl}`" />
       <div class="col-sm-12 col-md-8">
         <div class="row">
           <div class="p-0 col-sm-12"></div>
           <div class="resumo col-sm-12">
             <h4 class="title">Resumo</h4>
             <div class="text-justify">
-              {{ project.resumo }}
+              {{ specificProject.resumo }}
             </div>
           </div>
         </div>
@@ -64,7 +84,7 @@ export default {
           <div class="info-items">
             <h5 class="titulo nome">Autores</h5>
             <p
-              v-for="author in project.autores
+              v-for="author in specificProject.autores
                 .split(';')
                 .map((author) => author.trim())"
               :key="author"
@@ -74,15 +94,15 @@ export default {
           </div>
           <div class="info-items">
             <h5 class="titulo nome">Financiadores</h5>
-            <div>{{ project.financiadores }}</div>
+            <div>{{ specificProject.financiadores }}</div>
           </div>
           <div class="info-items">
             <h5 class="titulo nome">Edital</h5>
-            <div>{{ project.edital }}</div>
+            <div>{{ specificProject.edital }}</div>
           </div>
           <div class="info-items last-line">
             <h5 class="titulo nome">Período de Execução</h5>
-            <div>{{ project.periodo }}</div>
+            <div>{{ specificProject.periodo }}</div>
           </div>
         </div>
       </div>

@@ -26,7 +26,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "StudentCard",
@@ -42,7 +42,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .aluno {
   padding: 20px;
   .profile {

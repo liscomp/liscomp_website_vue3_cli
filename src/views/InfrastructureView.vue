@@ -1,6 +1,6 @@
 <script>
 // @ is an alias to @
-import Equipamento from "@/components/equipamento.vue";
+import Equipamento from "@/components/EquipCard.vue";
 import { mapState } from "pinia";
 import { useProductsStore } from "../stores/ProductsStore";
 
@@ -33,51 +33,17 @@ export default {
       >
     </ol> -->
     <div class="container inner-pages">
-      <Equipamento
-        v-for="equipamento in equipamentos"
-        v-bind:key="equipamento.nome"
-        v-bind:nome="equipamento.nome"
-        v-bind:descricao="equipamento.descricao"
-        v-bind:foto="equipamento.foto"
-      />
+      <div class="row">
+        <Equipamento
+          v-for="equipamento in equipamentos"
+          v-bind:key="equipamento.nome"
+          v-bind:nome="equipamento.nome"
+          v-bind:descricao="equipamento.descricao"
+          v-bind:foto="equipamento.foto"
+        />
+      </div>
     </div>
   </div>
 </template>
 
-<style>
-.home-section:first-of-type {
-  padding-top: 50px;
-}
-.avatar-circle {
-  border-radius: 10%;
-}
-.avatar {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
-  object-fit: cover;
-  background-color: gray;
-}
-
-.profile {
-  text-align: center;
-}
-
-.descricao {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.descricao-text {
-  font-size: 1.1em;
-}
-
-.equipamento {
-  margin-bottom: 50px;
-}
-
-.name-equip {
-  font-size: 2em;
-  margin: 20px 0 10px 0;
-}
-</style>
+<style scoped></style>

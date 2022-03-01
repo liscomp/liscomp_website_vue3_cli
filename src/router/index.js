@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import { useProductsStore } from "../stores/ProductsStore";
+import { getArticle, getProject } from "@/firebase";
 // eslint-disable-next-line no-unused-vars
 import { firebaseApp } from "@/firebase";
 
@@ -78,21 +79,6 @@ const routes = [
     name: "producaofiltro",
     component: () =>
       import(/* webpackChunkName: "producao" */ "../views/PublicationView.vue"),
-    /*  beforeEnter: (to, next) => {
-      const ProductsStore = useProductsStore();
-      const artigosTopicos = ProductsStore.articles.find((articles) =>
-        articles.topics.split(";").includes(to.params.id)
-      );
-      const artigosAnos = ProductsStore.articles.find(
-        (articles) => new Date(articles.year).getFullYear() === to.params.id
-      );
-      document.title = to.params.id;
-      if (artigosAnos || artigosTopicos) {
-        next();
-      } else {
-        next({ name: "naoEcontrada" });
-      }
-    }, */
   },
   {
     path: "/publicacoes/resumo/:id",
@@ -100,12 +86,9 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "producao" */ "../views/ArticleResume.vue"),
     beforeEnter: (to, from, next) => {
-      const ProductsStore = useProductsStore();
-      const articleResume = ProductsStore.articles.find(
-        (articles) => articles.id === to.params.id
-      );
-      document.title = to.params.id;
-      if (articleResume) {
+      const exist = getArticle(to.params.id);
+      if (exist) {
+        document.title = to.params.id;
         next();
       } else {
         next({ name: "naoEcontrada" });
@@ -128,12 +111,9 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "projetos" */ "../views/ProjectResume.vue"),
     beforeEnter: (to, from, next) => {
-      const ProductsStore = useProductsStore();
-      const projects = ProductsStore.projects.find(
-        (projects) => projects.id === to.params.id
-      );
-      document.title = projects.title;
-      if (projects) {
+      const exist = getProject(to.params.id);
+      if (exist) {
+        document.title = to.params.id;
         next();
       } else {
         next({ name: "naoEcontrada" });
