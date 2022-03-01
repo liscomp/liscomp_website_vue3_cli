@@ -142,7 +142,7 @@ export default {
     padding-left: 7px;
   }
   .about-us-text {
-    font-size: 1.2em;
+    font-size: 16px;
   }
   .news-avatar-circle {
     border-radius: 10%;

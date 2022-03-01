@@ -118,6 +118,7 @@ export default {
     line-height: var(--bs-body-line-height);
     margin: 0px;
     text-align: center;
+    padding: 10px;
   }
   h4.title {
     font-size: 2em;
