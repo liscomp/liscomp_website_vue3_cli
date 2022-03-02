@@ -1,11 +1,11 @@
 <script>
-import { createStudent } from "@/firebase";
+import { createCompany } from "@/firebase";
 /* import firebase from "firebase"; */
 import { reactive } from "vue";
 import { firebaseApp } from "@/firebase";
 
 export default {
-  name: "StudentCreate",
+  name: "CompanyCreate",
   methods: {
     previewImage(event) {
       this.uploadValue.value = 0;
@@ -15,12 +15,8 @@ export default {
   setup() {
     const form = reactive({
       name: "",
-      level: "",
-      schorlarship: "",
-      abbreviation: "",
-      email: "",
-      lattes: "",
-      college: "",
+      acronym: "",
+      about: "",
       imgUrl: "",
     });
     const imageData = reactive({ data: {} });
@@ -29,14 +25,14 @@ export default {
       const fileExtension = imageData.data.name.split(".").pop();
       const myNewFile = new File(
         [imageData.data],
-        `${form.abbreviation}.${fileExtension}`,
+        `${form.acronym}.${fileExtension}`,
         {
           type: imageData.data.type,
         }
       );
       const storageRef = firebaseApp
         .storage()
-        .ref(`/student/${myNewFile.name}`)
+        .ref(`/company/${myNewFile.acronym}`)
         .put(myNewFile);
       storageRef.on(
         `state_changed`,
@@ -51,14 +47,10 @@ export default {
           uploadValue.value = 100;
           storageRef.snapshot.ref.getDownloadURL().then((url) => {
             form.imgUrl = url;
-            createStudent(form.abbreviation, { ...form });
+            createCompany(form.acronym, { ...form });
             form.name = "";
-            form.level = "";
-            form.schorlarship = "";
-            form.abbreviation = "";
-            form.email = "";
-            form.lattes = "";
-            form.college = "";
+            form.acronym = "";
+            form.about = "";
             form.imgUrl = "";
             imageData.data = {};
             uploadValue.value = 0;
@@ -72,7 +64,7 @@ export default {
 </script>
 
 <template>
-  <div class="card card-body mt-4">
+  <div class="card card-body">
     <div v-if="uploadValue.value != 0">
       <p>
         Progress: {{ uploadValue.value.toFixed() + "%" }}
@@ -96,72 +88,27 @@ export default {
         />
       </div>
 
-      <label for="abbreviation" class="fw-bolder form-label">
-        Nome abreviado
-      </label>
+      <label for="acronym" class="fw-bolder form-label"> Sigla </label>
       <div class="input-group mb-3">
         <input
-          v-model="form.abbreviation"
+          v-model="form.acronym"
           type="text"
           class="form-control"
-          name="abbreviation"
+          name="acronym"
           required
         />
       </div>
 
-      <label for="level" class="fw-bolder form-label"> Nivel </label>
+      <label for="about" class="fw-bolder form-label"> Sobre a parceria </label>
       <div class="input-group mb-3">
-        <input
-          v-model="form.level"
+        <textarea
+          v-model="form.about"
           type="text"
           class="form-control"
-          name="level"
+          name="about"
+          aria-label="With textarea"
           required
-        />
-      </div>
-
-      <label for="schorlarship" class="fw-bolder form-label"> Bolsa </label>
-      <div class="input-group mb-3">
-        <input
-          v-model="form.schorlarship"
-          type="text"
-          class="form-control"
-          name="schorlarship"
-          required
-        />
-      </div>
-
-      <label for="email" class="fw-bolder form-label"> Email </label>
-      <div class="input-group mb-3">
-        <input
-          v-model="form.email"
-          type="text"
-          class="form-control"
-          name="email"
-          required
-        />
-      </div>
-
-      <label for="lattes" class="fw-bolder form-label"> Lattes </label>
-      <div class="input-group mb-3">
-        <input
-          v-model="form.lattes"
-          type="text"
-          class="form-control"
-          name="lattes"
-          required
-        />
-      </div>
-
-      <label for="college" class="fw-bolder form-label"> Faculdade </label>
-      <div class="input-group mb-3">
-        <input
-          v-model="form.college"
-          type="text"
-          class="form-control"
-          name="college"
-          required
-        />
+        ></textarea>
       </div>
 
       <label for="inputImage" class="fw-bolder form-label"> Imagem </label>
@@ -177,7 +124,7 @@ export default {
       </div>
 
       <button type="submit" class="btn btn-success mt-3">
-        Adicionar estudante
+        Adicionar artigo
       </button>
     </form>
   </div>

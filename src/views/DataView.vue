@@ -8,6 +8,8 @@ import StudentCreate from "@/components/StudentCreate.vue";
 import StudentList from "@/components/StudentList.vue";
 import ProjectCreate from "@/components/ProjectCreate.vue";
 import ProjectList from "@/components/ProjectList.vue";
+import CompanyCreate from "@/components/CompanyCreate.vue";
+import CompanyList from "@/components/CompanyList.vue";
 import { adminLogout, firebaseApp } from "@/firebase";
 import { onBeforeMount } from "vue";
 import { useRouter, useRoute } from "vue-router";
@@ -23,6 +25,8 @@ export default {
     StudentList,
     ProjectCreate,
     ProjectList,
+    CompanyCreate,
+    CompanyList,
   },
   setup() {
     const router = useRouter();
@@ -89,6 +93,20 @@ export default {
           </button>
         </li>
         <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-company-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-company"
+            type="button"
+            role="tab"
+            aria-controls="pills-company"
+            aria-selected="false"
+          >
+            Empresas
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
           <button type="button" class="logout" @click="adminLogout">
             Logout
           </button>
@@ -151,7 +169,6 @@ export default {
             </div>
           </div>
         </div>
-
         <div
           class="tab-pane fade"
           id="pills-student"
@@ -209,7 +226,7 @@ export default {
           </div>
         </div>
         <div
-          class="tab-pane fade show active"
+          class="tab-pane fade"
           id="pills-project"
           role="tabpanel"
           aria-labelledby="pills-project-tab"
@@ -261,6 +278,62 @@ export default {
               aria-labelledby="pills-project-list-tab"
             >
               <ProjectList />
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-company"
+          role="tabpanel"
+          aria-labelledby="pills-company-tab"
+        >
+          <ul class="nav nav-pills mb-3" id="pills-company-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-company-create-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-company-create"
+                type="button"
+                role="tab"
+                aria-controls="pills-company-create"
+                aria-selected="true"
+              >
+                Adicionar
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-company-list-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-company-list"
+                type="button"
+                role="tab"
+                aria-controls="pills-company-list"
+                aria-selected="false"
+              >
+                Listar
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="pills-company-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-company-create"
+              role="tabpanel"
+              aria-labelledby="pills-company-create-tab"
+            >
+              <CompanyCreate />
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-company-list"
+              role="tabpanel"
+              aria-labelledby="pills-company-list-tab"
+            >
+              <CompanyList />
             </div>
           </div>
         </div>

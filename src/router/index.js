@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import { useProductsStore } from "../stores/ProductsStore";
+import { useProductsStore } from "@/stores/ProductsStore";
 import { getArticle, getProject } from "@/firebase";
 // eslint-disable-next-line no-unused-vars
 import { firebaseApp } from "@/firebase";
@@ -12,7 +12,7 @@ const routes = [
       title: "LISComp",
     },
     component: () =>
-      import(/* webpackChunkName: "HomeView" */ "../views/HomeView.vue"),
+      import(/* webpackChunkName: "HomeView" */ "@/views/HomeView.vue"),
   },
   {
     path: "/labmovel",
@@ -21,7 +21,7 @@ const routes = [
       title: "Laboratório Móvel",
     },
     component: () =>
-      import(/* webpackChunkName: "labmovel" */ "../views/LabMovel.vue"),
+      import(/* webpackChunkName: "labmovel" */ "@/views/LabMovel.vue"),
   },
   {
     path: "/infraestrutura",
@@ -31,7 +31,7 @@ const routes = [
     },
     component: () =>
       import(
-        /* webpackChunkName: "infraestrutura" */ "../views/InfrastructureView.vue"
+        /* webpackChunkName: "infraestrutura" */ "@/views/InfrastructureView.vue"
       ),
   },
   {
@@ -42,7 +42,7 @@ const routes = [
     },
     component: () =>
       import(
-        /* webpackChunkName: "prestacaoservico" */ "../views/ServiceView.vue"
+        /* webpackChunkName: "prestacaoservico" */ "@/views/ServiceView.vue"
       ),
   },
   {
@@ -53,7 +53,7 @@ const routes = [
     },
     component: () =>
       import(
-        /* webpackChunkName: "linhaspesquisa" */ "../views/linhaspesquisa.vue"
+        /* webpackChunkName: "linhaspesquisa" */ "@/views/linhaspesquisa.vue"
       ),
   },
   {
@@ -63,7 +63,7 @@ const routes = [
       title: "TeamView",
     },
     component: () =>
-      import(/* webpackChunkName: "equipe" */ "../views/TeamView.vue"),
+      import(/* webpackChunkName: "equipe" */ "@/views/TeamView.vue"),
   },
   {
     path: "/publicacoes",
@@ -72,19 +72,19 @@ const routes = [
       title: "Produções",
     },
     component: () =>
-      import(/* webpackChunkName: "producao" */ "../views/PublicationView.vue"),
+      import(/* webpackChunkName: "producao" */ "@/views/PublicationView.vue"),
   },
   {
     path: "/publicacoes/:id",
     name: "producaofiltro",
     component: () =>
-      import(/* webpackChunkName: "producao" */ "../views/PublicationView.vue"),
+      import(/* webpackChunkName: "producao" */ "@/views/PublicationView.vue"),
   },
   {
     path: "/publicacoes/resumo/:id",
     name: "producaoresumo",
     component: () =>
-      import(/* webpackChunkName: "producao" */ "../views/ArticleResume.vue"),
+      import(/* webpackChunkName: "producao" */ "@/views/ArticleResume.vue"),
     beforeEnter: (to, from, next) => {
       const exist = getArticle(to.params.id);
       if (exist) {
@@ -102,14 +102,14 @@ const routes = [
       title: "Projetos",
     },
     component: () =>
-      import(/* webpackChunkName: "projetos" */ "../views/ProjectView.vue"),
+      import(/* webpackChunkName: "projetos" */ "@/views/ProjectView.vue"),
     children: [],
   },
   {
     path: "/projetos/:id",
     name: "ProjectView",
     component: () =>
-      import(/* webpackChunkName: "projetos" */ "../views/ProjectResume.vue"),
+      import(/* webpackChunkName: "projetos" */ "@/views/ProjectResume.vue"),
     beforeEnter: (to, from, next) => {
       const exist = getProject(to.params.id);
       if (exist) {
@@ -128,7 +128,7 @@ const routes = [
     },
     component: () =>
       import(
-        /* webpackChunkName: "parinternacionais" */ "../views/PartnersView.vue"
+        /* webpackChunkName: "parinternacionais" */ "@/views/PartnersView.vue"
       ),
   },
   {
@@ -138,14 +138,14 @@ const routes = [
       title: "Notícias",
     },
     component: () =>
-      import(/* webpackChunkName: "destaques" */ "../views/NewsView.vue"),
+      import(/* webpackChunkName: "destaques" */ "@/views/NewsView.vue"),
   },
   {
     path: "/noticias/:id",
     name: "noticiasdescricao",
     component: () =>
       import(
-        /* webpackChunkName: "noticiasdescricao" */ "../views/NewsDescription.vue"
+        /* webpackChunkName: "noticiasdescricao" */ "@/views/NewsDescription.vue"
       ),
     beforeEnter: (to, from, next) => {
       const ProductsStore = useProductsStore();
@@ -168,7 +168,7 @@ const routes = [
       title: "Admin",
     },
     component: () =>
-      import(/* webpackChunkName: "destaques" */ "../views/AdminLogin.vue"),
+      import(/* webpackChunkName: "destaques" */ "@/views/AdminLogin.vue"),
   },
   {
     path: "/dataview",
@@ -177,7 +177,7 @@ const routes = [
       title: "Visualizar Dados",
     },
     component: () =>
-      import(/* webpackChunkName: "destaques" */ "../views/DataView.vue"),
+      import(/* webpackChunkName: "destaques" */ "@/views/DataView.vue"),
   },
   {
     path: "/articleedit/:id",
@@ -186,7 +186,7 @@ const routes = [
       title: "Editar Artigos",
     },
     component: () =>
-      import(/* webpackChunkName: "destaques" */ "../views/ArticleEdit.vue"),
+      import(/* webpackChunkName: "destaques" */ "@/views/ArticleEdit.vue"),
   },
   {
     path: "/studentedit/:id",
@@ -195,7 +195,7 @@ const routes = [
       title: "Editar Artigos",
     },
     component: () =>
-      import(/* webpackChunkName: "destaques" */ "../views/StudentEdit.vue"),
+      import(/* webpackChunkName: "destaques" */ "@/views/StudentEdit.vue"),
   },
   {
     path: "/projectedit/:id",
@@ -204,7 +204,16 @@ const routes = [
       title: "Editar Artigos",
     },
     component: () =>
-      import(/* webpackChunkName: "destaques" */ "../views/ProjectEdit.vue"),
+      import(/* webpackChunkName: "destaques" */ "@/views/ProjectEdit.vue"),
+  },
+  {
+    path: "/companyedit/:id",
+    name: "CompanyEdit",
+    meta: {
+      title: "Editar Artigos",
+    },
+    component: () =>
+      import(/* webpackChunkName: "destaques" */ "@/views/CompanyEdit.vue"),
   },
   {
     path: "/:pathMatch(.*)*",
@@ -213,9 +222,7 @@ const routes = [
       title: "Página Não Encontra",
     },
     component: () =>
-      import(
-        /* webpackChunkName: "pagenotfound" */ "../views/PageNotFound.vue"
-      ),
+      import(/* webpackChunkName: "pagenotfound" */ "@/views/PageNotFound.vue"),
   },
 ];
 

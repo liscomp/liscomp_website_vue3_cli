@@ -1,104 +1,98 @@
 <script>
-import Parceiro from "@/components/parceiro.vue";
-import { usePeopleStore } from "@/stores/PeopleStore";
+// @ is an alias to @
+import Pesquisador from "@/components/ResearcherPartnerCard.vue";
+import Empresa from "@/components/CompanyCard.vue";
+import { useLoadCompanys, useLoadResearcherPartners } from "@/firebase";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "Parcerias",
+  name: "PartnersView",
   components: {
-    // eslint-disable-next-line vue/no-unused-components
-    Parceiro,
+    Pesquisador,
+    Empresa,
   },
   setup() {
-    const PeopleStore = usePeopleStore();
+    const companys = useLoadCompanys();
+    const researcherPartners = useLoadResearcherPartners();
     return {
-      parceiros: PeopleStore.parceriasOrdenados,
-      faculdades: PeopleStore.pegarfaculdade,
+      researcherPartners,
+      companys,
     };
+  },
+  methods: {
+    orderByName: (subject) => {
+      return subject.sort(function (a, b) {
+        if (a.nome > b.nome) {
+          return 1;
+        }
+        if (a.nome < b.nome) {
+          return -1;
+        }
+        // a must be equal to b
+        return 0;
+      });
+    },
+  },
+  computed: {
+    orderResearcherPartners() {
+      return this.orderByName(this.researcherPartners);
+    },
+    orderCompanys() {
+      return this.orderByName(this.companys);
+    },
   },
 };
 </script>
 
 <template>
-  <div id="parcerias-internacionais">
+  <div id="parceiros">
     <div id="page-header" class="d-flex justify-content-center flex-column">
       <div>
         <h2 class="title">Parceiros</h2>
       </div>
     </div>
-    <!-- <ol class="breadcrumb">
-      <router-link :to="{ name: 'HomeView' }">
-        <i class="fa-solid fa-HomeView fa"></i>
-        Home
-      </router-link>
-      <span class="divisoria">></span>
-      <router-link class="active" :to="{ name: 'parinternacionais' }"
-        >Parcerias Internacionais</router-link
-      >
-    </ol> -->
     <div class="container inner-pages">
-      <div id="pagenotfound container">
-        <div
-          class="pagina-nao-encontrada justify-content-center align-items-center d-flex flex-column"
-        >
-          <div class="erro text-center w-100">Página em construção</div>
-          <div class="mensagem text-center w-100">
-            Estamos trabalhando para oferecer uma site mais completo para você
-          </div>
-        </div>
+      <h4 class="title position">Pesquisadores</h4>
+      <div class="row box-positions">
+        <Pesquisador
+          v-for="researcher in orderResearcherPartners"
+          v-bind:key="researcher.abbreviation"
+          v-bind:abbreviation="researcher.abbreviation"
+          v-bind:name="researcher.name"
+          v-bind:institution="researcher.institution"
+          v-bind:email="researcher.email"
+          v-bind:lattes="researcher.lattes"
+          v-bind:resume="researcher.resume"
+          v-bind:imgUrl="researcher.imgUrl"
+          v-bind:imgLogoUrl="researcher.imgLogoUrl"
+        />
       </div>
-      <!-- <Parceiro
-      v-for="parceiro in parceiros"
-      v-bind:key="parceiro.nome"
-      v-bind:nome="parceiro.nome"
-      v-bind:e_mail="parceiro.e_mail"
-      v-bind:foto="parceiro.foto"
-      v-bind:cargo="parceiro.cargo"
-      v-bind:faculdade="parceiro.faculdade"
-      v-bind:sobre="parceiro.sobre"
-    />
-    <div class="logos row">
-      <div
-        v-for="faculdade in faculdades"
-        v-bind:key="faculdade.sigla"
-        class="col-12 col-sm-6 col-md-4 col-lg-3 align-items-center d-flex footer-item"
-      >
-        <a
-          :href="faculdade.url"
-          target="_blank"
-          class="d-none-md d-block mx-auto"
-        >
-          <img
-            class="rounded"
-            :src="require(`@/assets/parceiros/logo-${faculdade.sigla}.png`)"
-            :alt="faculdade.sigla"
-            height="200px"
-          />
-        </a>
+
+      <h4 class="title position">Empresas</h4>
+      <div class="row box-positions">
+        <Empresa
+          v-for="company in orderCompanys"
+          v-bind:key="company.acronym"
+          v-bind:name="company.name"
+          v-bind:about="company.about"
+          v-bind:acronym="company.acronym"
+          v-bind:imgUrl="company.imgUrl"
+        />
       </div>
-    </div> -->
     </div>
   </div>
 </template>
 
-<style scoped>
-HomeView-section:first-of-type {
-  padding-top: 50px;
-}
+<style lang="scss">
 .avatar-circle {
   border-radius: 10%;
 }
 .avatar {
-  width: 250px;
-  height: 250px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 20px;
+  aspect-ratio: 1;
+  width: 100%;
   object-fit: cover;
 }
-h6.cargo {
-  color: rgb(0, 0, 0);
-}
+
 ul.network-icon {
   display: inline-flex;
   flex-direction: row;
@@ -108,33 +102,38 @@ ul.network-icon {
   padding: 0;
   margin: 0;
 }
-.profile {
-  text-align: center;
-  margin-bottom: 20px;
-}
+
 .about {
   padding-left: 10px;
 }
+
 ul.ul-edu li .description p {
   margin: 0;
 }
+
 ul.ul-edu li .description p.institution {
   font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.6);
 }
+
 .network-icon li {
-  margin-right: 10px;
+  padding: 2.5px 5px;
 }
+
 .big-icon {
   font-size: 2.5rem;
 }
-.parceiro {
-  margin-bottom: 30px;
+
+.position {
+  padding: 20px;
 }
-.cargo {
-  margin-left: 10px;
+.box-positions {
+  width: 100%;
+  border-bottom: 4px solid #036365b6;
+  border-top: 4px solid #036365b6;
+  border-radius: 25px;
 }
-.logos {
-  margin-bottom: 30px;
+.name {
+  padding: 2.5px;
 }
 </style>

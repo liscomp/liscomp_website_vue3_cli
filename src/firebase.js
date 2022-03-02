@@ -17,6 +17,21 @@ const firebaseConfig = {
   measurementId: "G-FWNYLJRM5C",
 };
 
+export const adminLogin = (login) => {
+  return firebaseApp
+    .auth()
+    .signInWithEmailAndPassword(login.email, login.password)
+    .then(() => console.log("Logged in"))
+    .catch((err) => alert(err.message));
+};
+
+export const adminLogout = () => {
+  firebaseApp
+    .auth()
+    .signOut()
+    .then(() => console.log("Signed out"))
+    .catch((err) => alert(err.message));
+};
 // Initialize Firebase
 // eslint-disable-next-line
 export const firebaseApp = firebase.initializeApp(firebaseConfig);
@@ -115,18 +130,64 @@ export const useLoadProjects = () => {
   return projects;
 };
 
-export const adminLogin = (login) => {
-  return firebaseApp
-    .auth()
-    .signInWithEmailAndPassword(login.email, login.password)
-    .then(() => console.log("Logged in"))
-    .catch((err) => alert(err.message));
+const researcherPartnersCollection = db.collection("researcherPartners");
+
+export const createResearcherPartner = (id, researcherPartner) => {
+  return researcherPartnersCollection.doc(id).set(researcherPartner);
 };
 
-export const adminLogout = () => {
-  firebaseApp
-    .auth()
-    .signOut()
-    .then(() => console.log("Signed out"))
-    .catch((err) => alert(err.message));
+export const getResearcherPartner = async (id) => {
+  const researcherPartner = await researcherPartnersCollection.doc(id).get();
+  return researcherPartner.exists ? researcherPartner.data() : null;
+};
+
+export const updateResearcherPartner = (id, researcherPartner) => {
+  return researcherPartnersCollection.doc(id).update(researcherPartner);
+};
+
+export const deleteResearcherPartner = (id) => {
+  return researcherPartnersCollection.doc(id).delete();
+};
+
+export const useLoadResearcherPartners = () => {
+  const researcherPartners = ref([]);
+  const close = researcherPartnersCollection.onSnapshot((snapshot) => {
+    researcherPartners.value = snapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+  });
+  onUnmounted(close);
+  return researcherPartners;
+};
+
+const companysCollection = db.collection("companys");
+
+export const createCompany = (id, company) => {
+  return companysCollection.doc(id).set(company);
+};
+
+export const getCompany = async (id) => {
+  const company = await companysCollection.doc(id).get();
+  return company.exists ? company.data() : null;
+};
+
+export const updateCompany = (id, company) => {
+  return companysCollection.doc(id).update(company);
+};
+
+export const deleteCompany = (id) => {
+  return companysCollection.doc(id).delete();
+};
+
+export const useLoadCompanys = () => {
+  const companys = ref([]);
+  const close = companysCollection.onSnapshot((snapshot) => {
+    companys.value = snapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+  });
+  onUnmounted(close);
+  return companys;
 };

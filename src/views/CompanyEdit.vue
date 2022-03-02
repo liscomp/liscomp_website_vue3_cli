@@ -1,10 +1,10 @@
 <script>
 import { reactive, computed, onMounted } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import { getStudent, updateStudent, firebaseApp } from "@/firebase";
+import { getCompany, updateCompany, firebaseApp } from "@/firebase";
 
 export default {
-  name: "StudentEdit",
+  name: "CompanyEdit",
   methods: {
     previewImage(event) {
       this.uploadValue.value = 0;
@@ -14,56 +14,44 @@ export default {
   setup() {
     const router = useRouter();
     const route = useRoute();
-    const studentId = computed(() => route.params.id);
+    const companyId = computed(() => route.params.id);
 
     const form = reactive({
       name: "",
-      level: "",
-      scholarship: "",
-      abbreviation: "",
-      email: "",
-      lattes: "",
-      college: "",
+      acronym: "",
+      about: "",
       imgUrl: "",
     });
     onMounted(async () => {
-      const student = await getStudent(studentId.value);
-      form.name = student.name;
-      form.level = student.level;
-      form.scholarship = student.scholarship;
-      form.abbreviation = student.abbreviation;
-      form.email = student.email;
-      form.lattes = student.lattes;
-      form.college = student.college;
-      form.imgUrl = student.imgUrl;
+      const company = await getCompany(companyId.value);
+      form.name = company.name;
+      form.acronym = company.acronym;
+      form.about = company.about;
+      form.imgUrl = company.imgUrl;
     });
     const imageData = reactive({ data: null });
     const uploadValue = reactive({ value: 0 });
     const update = async () => {
       window.scrollTo(0, 0);
       if (imageData.data == null) {
-        await updateStudent(studentId.value, { ...form });
+        await updateCompany(companyId.value, { ...form });
         router.push("/dataview");
         form.name = "";
-        form.level = "";
-        form.scholarship = "";
-        form.abbreviation = "";
-        form.email = "";
-        form.lattes = "";
-        form.college = "";
+        form.acronym = "";
+        form.about = "";
         form.imgUrl = "";
       } else {
         const fileExtension = imageData.data.name.split(".").pop();
         const myNewFile = new File(
           [imageData.data],
-          `${form.abbreviation}.${fileExtension}`,
+          `${form.acronym}.${fileExtension}`,
           {
             type: imageData.data.type,
           }
         );
         const storageRef = firebaseApp
           .storage()
-          .ref(`/equipe/${myNewFile.name}`)
+          .ref(`/company/${myNewFile.name}`)
           .put(myNewFile);
         storageRef.on(
           `state_changed`,
@@ -78,14 +66,10 @@ export default {
             uploadValue.value = 100;
             storageRef.snapshot.ref.getDownloadURL().then((url) => {
               form.imgUrl = url;
-              updateStudent(form.abbreviation, { ...form });
+              updateCompany(form.acronym, { ...form });
               form.name = "";
-              form.level = "";
-              form.scholarship = "";
-              form.abbreviation = "";
-              form.email = "";
-              form.lattes = "";
-              form.college = "";
+              form.acronym = "";
+              form.about = "";
               form.imgUrl = "";
               imageData.data = {};
               uploadValue.value = 0;
@@ -115,8 +99,7 @@ export default {
         </p>
       </div>
 
-      <form @submit.prevent="update" v-else>
-        <h3>Editar</h3>
+      <form @submit.prevent="onSubmit" v-else>
         <label for="name" class="fw-bolder form-label"> Nome </label>
         <div class="input-group mb-3">
           <input
@@ -128,72 +111,29 @@ export default {
           />
         </div>
 
-        <label for="abbreviation" class="fw-bolder form-label">
-          Nome abreviado
+        <label for="acronym" class="fw-bolder form-label"> Sigla </label>
+        <div class="input-group mb-3">
+          <input
+            v-model="form.acronym"
+            type="text"
+            class="form-control"
+            name="acronym"
+            required
+          />
+        </div>
+
+        <label for="about" class="fw-bolder form-label">
+          Sobre a parceria
         </label>
         <div class="input-group mb-3">
-          <input
-            v-model="form.abbreviation"
+          <textarea
+            v-model="form.about"
             type="text"
             class="form-control"
-            name="abbreviation"
+            name="about"
+            aria-label="With textarea"
             required
-          />
-        </div>
-
-        <label for="level" class="fw-bolder form-label"> Nivel </label>
-        <div class="input-group mb-3">
-          <input
-            v-model="form.level"
-            type="text"
-            class="form-control"
-            name="level"
-            required
-          />
-        </div>
-
-        <label for="scholarship" class="fw-bolder form-label"> Bolsa </label>
-        <div class="input-group mb-3">
-          <input
-            v-model="form.scholarship"
-            type="text"
-            class="form-control"
-            name="scholarship"
-            required
-          />
-        </div>
-
-        <label for="email" class="fw-bolder form-label"> Email </label>
-        <div class="input-group mb-3">
-          <input
-            v-model="form.email"
-            type="text"
-            class="form-control"
-            name="email"
-            required
-          />
-        </div>
-
-        <label for="lattes" class="fw-bolder form-label"> Lattes </label>
-        <div class="input-group mb-3">
-          <input
-            v-model="form.lattes"
-            type="text"
-            class="form-control"
-            name="lattes"
-            required
-          />
-        </div>
-
-        <label for="college" class="fw-bolder form-label"> Faculdade </label>
-        <div class="input-group mb-3">
-          <input
-            v-model="form.college"
-            type="text"
-            class="form-control"
-            name="college"
-            required
-          />
+          ></textarea>
         </div>
 
         <label for="inputImage" class="fw-bolder form-label"> Imagem </label>
@@ -201,14 +141,15 @@ export default {
           <input
             type="file"
             class="form-control"
-            id="inputImage"
+            name="inputImage"
             @change="previewImage"
             accept="image/*"
+            required
           />
         </div>
 
         <button type="submit" class="btn btn-success mt-3">
-          Update Student
+          Update Company
         </button>
       </form>
     </div>
