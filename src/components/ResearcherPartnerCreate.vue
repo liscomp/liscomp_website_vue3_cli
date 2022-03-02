@@ -1,11 +1,11 @@
 <script>
-import { createCompany } from "@/firebase";
+import { createResearcherPartner } from "@/firebase";
 /* import firebase from "firebase"; */
 import { reactive } from "vue";
 import { firebaseApp } from "@/firebase";
 
 export default {
-  name: "CompanyCreate",
+  name: "ResearcherPartnerCreate",
   methods: {
     previewImage(event) {
       this.uploadValue.value = 0;
@@ -15,8 +15,11 @@ export default {
   setup() {
     const form = reactive({
       name: "",
-      acronym: "",
-      about: "",
+      abbreviation: "",
+      institution: "",
+      resume: "",
+      email: "",
+      lattes: "",
       imgUrl: "",
     });
     const imageData = reactive({ data: {} });
@@ -25,14 +28,14 @@ export default {
       const fileExtension = imageData.data.name.split(".").pop();
       const myNewFile = new File(
         [imageData.data],
-        `${form.acronym}.${fileExtension}`,
+        `${form.abbreviation}.${fileExtension}`,
         {
           type: imageData.data.type,
         }
       );
       const storageRef = firebaseApp
         .storage()
-        .ref(`/company/${myNewFile.name}`)
+        .ref(`/researcherPartner/${myNewFile.name}`)
         .put(myNewFile);
       storageRef.on(
         `state_changed`,
@@ -47,10 +50,13 @@ export default {
           uploadValue.value = 100;
           storageRef.snapshot.ref.getDownloadURL().then((url) => {
             form.imgUrl = url;
-            createCompany(form.acronym, { ...form });
+            createResearcherPartner(form.abbreviation, { ...form });
             form.name = "";
-            form.acronym = "";
-            form.about = "";
+            form.institution = "";
+            form.resume = "";
+            form.abbreviation = "";
+            form.email = "";
+            form.lattes = "";
             form.imgUrl = "";
             imageData.data = {};
             uploadValue.value = 0;
@@ -64,7 +70,7 @@ export default {
 </script>
 
 <template>
-  <div class="card card-body">
+  <div class="card card-body mt-4">
     <div v-if="uploadValue.value != 0">
       <p>
         Progress: {{ uploadValue.value.toFixed() + "%" }}
@@ -88,18 +94,55 @@ export default {
         />
       </div>
 
-      <label for="acronym" class="fw-bolder form-label"> Sigla </label>
+      <label for="abbreviation" class="fw-bolder form-label">
+        Nome abreviado
+      </label>
       <div class="input-group mb-3">
         <input
-          v-model="form.acronym"
+          v-model="form.abbreviation"
           type="text"
           class="form-control"
-          name="acronym"
+          name="abbreviation"
           required
         />
       </div>
 
-      <label for="about" class="fw-bolder form-label"> Sobre a parceria </label>
+      <label for="institution" class="fw-bolder form-label">
+        Instituição
+      </label>
+      <div class="input-group mb-3">
+        <input
+          v-model="form.institution"
+          type="text"
+          class="form-control"
+          name="institution"
+          required
+        />
+      </div>
+
+      <label for="email" class="fw-bolder form-label"> Email </label>
+      <div class="input-group mb-3">
+        <input
+          v-model="form.email"
+          type="text"
+          class="form-control"
+          name="email"
+          required
+        />
+      </div>
+
+      <label for="lattes" class="fw-bolder form-label"> Lattes </label>
+      <div class="input-group mb-3">
+        <input
+          v-model="form.lattes"
+          type="text"
+          class="form-control"
+          name="lattes"
+          required
+        />
+      </div>
+
+      <label for="about" class="fw-bolder form-label"> Resumo </label>
       <div class="input-group mb-3">
         <textarea
           v-model="form.about"
@@ -111,7 +154,7 @@ export default {
         ></textarea>
       </div>
 
-      <label for="inputImage" class="fw-bolder form-label"> Imagem </label>
+      <label for="inputImage" class="fw-bolder form-label"> Foto </label>
       <div class="input-group mb-3">
         <input
           type="file"
@@ -124,7 +167,7 @@ export default {
       </div>
 
       <button type="submit" class="btn btn-success mt-3">
-        Adicionar artigo
+        Adicionar Parceiro
       </button>
     </form>
   </div>

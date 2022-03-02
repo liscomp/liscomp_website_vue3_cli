@@ -216,6 +216,17 @@ const routes = [
       import(/* webpackChunkName: "destaques" */ "@/views/CompanyEdit.vue"),
   },
   {
+    path: "/researcherpartneredit/:id",
+    name: "ResearcherPartnerEdit",
+    meta: {
+      title: "Editar Artigos",
+    },
+    component: () =>
+      import(
+        /* webpackChunkName: "destaques" */ "@/views/ResearcherPartnerEdit.vue"
+      ),
+  },
+  {
     path: "/:pathMatch(.*)*",
     name: "naoEcontrada",
     meta: {

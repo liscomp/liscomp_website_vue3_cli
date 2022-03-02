@@ -10,6 +10,8 @@ import ProjectCreate from "@/components/ProjectCreate.vue";
 import ProjectList from "@/components/ProjectList.vue";
 import CompanyCreate from "@/components/CompanyCreate.vue";
 import CompanyList from "@/components/CompanyList.vue";
+import ResearcherPartnerCreate from "@/components/ResearcherPartnerCreate.vue";
+import ResearcherPartnerList from "@/components/ResearcherPartnerList.vue";
 import { adminLogout, firebaseApp } from "@/firebase";
 import { onBeforeMount } from "vue";
 import { useRouter, useRoute } from "vue-router";
@@ -27,6 +29,8 @@ export default {
     ProjectList,
     CompanyCreate,
     CompanyList,
+    ResearcherPartnerCreate,
+    ResearcherPartnerList,
   },
   setup() {
     const router = useRouter();
@@ -104,6 +108,20 @@ export default {
             aria-selected="false"
           >
             Empresas
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-researcherPartner-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-researcherPartner"
+            type="button"
+            role="tab"
+            aria-controls="pills-researcherPartner"
+            aria-selected="false"
+          >
+            Parceiros
           </button>
         </li>
         <li class="nav-item" role="presentation">
@@ -334,6 +352,66 @@ export default {
               aria-labelledby="pills-company-list-tab"
             >
               <CompanyList />
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-researcherPartner"
+          role="tabpanel"
+          aria-labelledby="pills-researcherPartner-tab"
+        >
+          <ul
+            class="nav nav-pills mb-3"
+            id="pills-researcherPartner-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-researcherPartner-create-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-researcherPartner-create"
+                type="button"
+                role="tab"
+                aria-controls="pills-researcherPartner-create"
+                aria-selected="true"
+              >
+                Adicionar
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-researcherPartner-list-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-researcherPartner-list"
+                type="button"
+                role="tab"
+                aria-controls="pills-researcherPartner-list"
+                aria-selected="false"
+              >
+                Listar
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="pills-researcherPartner-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-researcherPartner-create"
+              role="tabpanel"
+              aria-labelledby="pills-researcherPartner-create-tab"
+            >
+              <ResearcherPartnerCreate />
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-researcherPartner-list"
+              role="tabpanel"
+              aria-labelledby="pills-researcherPartner-list-tab"
+            >
+              <ResearcherPartnerList />
             </div>
           </div>
         </div>

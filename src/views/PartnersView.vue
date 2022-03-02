@@ -53,31 +53,35 @@ export default {
     </div>
     <div class="container inner-pages">
       <h4 class="title position">Pesquisadores</h4>
-      <div class="row box-positions">
-        <Pesquisador
-          v-for="researcher in orderResearcherPartners"
-          v-bind:key="researcher.abbreviation"
-          v-bind:abbreviation="researcher.abbreviation"
-          v-bind:name="researcher.name"
-          v-bind:institution="researcher.institution"
-          v-bind:email="researcher.email"
-          v-bind:lattes="researcher.lattes"
-          v-bind:resume="researcher.resume"
-          v-bind:imgUrl="researcher.imgUrl"
-          v-bind:imgLogoUrl="researcher.imgLogoUrl"
-        />
+      <div class="box-positions">
+        <div class="row">
+          <Pesquisador
+            v-for="researcher in orderResearcherPartners"
+            v-bind:key="researcher.abbreviation"
+            v-bind:abbreviation="researcher.abbreviation"
+            v-bind:name="researcher.name"
+            v-bind:institution="researcher.institution"
+            v-bind:email="researcher.email"
+            v-bind:lattes="researcher.lattes"
+            v-bind:resume="researcher.resume"
+            v-bind:imgUrl="researcher.imgUrl"
+            v-bind:imgLogoUrl="researcher.imgLogoUrl"
+          />
+        </div>
       </div>
 
       <h4 class="title position">Empresas</h4>
-      <div class="row box-positions">
-        <Empresa
-          v-for="company in orderCompanys"
-          v-bind:key="company.acronym"
-          v-bind:name="company.name"
-          v-bind:about="company.about"
-          v-bind:acronym="company.acronym"
-          v-bind:imgUrl="company.imgUrl"
-        />
+      <div class="box-positions">
+        <div class="row">
+          <Empresa
+            v-for="company in orderCompanys"
+            v-bind:key="company.acronym"
+            v-bind:name="company.name"
+            v-bind:about="company.about"
+            v-bind:acronym="company.acronym"
+            v-bind:imgUrl="company.imgUrl"
+          />
+        </div>
       </div>
     </div>
   </div>

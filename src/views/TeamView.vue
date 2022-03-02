@@ -79,60 +79,68 @@ export default {
     </ol> -->
     <div class="container inner-pages">
       <h4 class="title position">Pesquisadores</h4>
-      <div class="row box-positions">
-        <Pesquisador
-          v-for="professor in orderResearcher"
-          v-bind:key="professor.nome"
-          v-bind:nome="professor.nome"
-          v-bind:contato="professor.contato"
-          v-bind:foto="professor.foto"
-          v-bind:educacao="professor.educacao"
-          v-bind:pesquisas="professor.pesquisas"
-        />
+      <div class="box-positions">
+        <div class="row">
+          <Pesquisador
+            v-for="professor in orderResearcher"
+            v-bind:key="professor.nome"
+            v-bind:nome="professor.nome"
+            v-bind:contato="professor.contato"
+            v-bind:foto="professor.foto"
+            v-bind:educacao="professor.educacao"
+            v-bind:pesquisas="professor.pesquisas"
+          />
+        </div>
       </div>
 
       <h4 class="title position">Alunos de Doutorado</h4>
-      <div class="row box-positions">
-        <Aluno
-          v-for="aluno in orderStudentDoctorate"
-          v-bind:key="aluno.abbreviation"
-          v-bind:name="aluno.name"
-          v-bind:scholarship="aluno.scholarship"
-          v-bind:abbreviation="aluno.abbreviation"
-          v-bind:email="aluno.email"
-          v-bind:lattes="aluno.lattes"
-          v-bind:college="aluno.college"
-          v-bind:imgUrl="aluno.imgUrl"
-        />
+      <div class="box-positions">
+        <div class="row">
+          <Aluno
+            v-for="aluno in orderStudentDoctorate"
+            v-bind:key="aluno.abbreviation"
+            v-bind:name="aluno.name"
+            v-bind:scholarship="aluno.scholarship"
+            v-bind:abbreviation="aluno.abbreviation"
+            v-bind:email="aluno.email"
+            v-bind:lattes="aluno.lattes"
+            v-bind:college="aluno.college"
+            v-bind:imgUrl="aluno.imgUrl"
+          />
+        </div>
       </div>
       <h4 class="title position">Alunos de Mestrado</h4>
-      <div class="row box-positions">
-        <Aluno
-          v-for="aluno in orderStudentMaster"
-          v-bind:key="aluno.abbreviation"
-          v-bind:name="aluno.name"
-          v-bind:scholarship="aluno.scholarship"
-          v-bind:abbreviation="aluno.abbreviation"
-          v-bind:email="aluno.email"
-          v-bind:lattes="aluno.lattes"
-          v-bind:college="aluno.college"
-          v-bind:imgUrl="aluno.imgUrl"
-        />
+      <div class="box-positions">
+        <div class="row">
+          <Aluno
+            v-for="aluno in orderStudentMaster"
+            v-bind:key="aluno.abbreviation"
+            v-bind:name="aluno.name"
+            v-bind:scholarship="aluno.scholarship"
+            v-bind:abbreviation="aluno.abbreviation"
+            v-bind:email="aluno.email"
+            v-bind:lattes="aluno.lattes"
+            v-bind:college="aluno.college"
+            v-bind:imgUrl="aluno.imgUrl"
+          />
+        </div>
       </div>
       <h4 class="title position">Alunos de Iniciação Científica</h4>
 
-      <div class="row box-positions">
-        <Aluno
-          v-for="aluno in orderStudentInitiation"
-          v-bind:key="aluno.abbreviation"
-          v-bind:name="aluno.name"
-          v-bind:scholarship="aluno.scholarship"
-          v-bind:abbreviation="aluno.abbreviation"
-          v-bind:email="aluno.email"
-          v-bind:lattes="aluno.lattes"
-          v-bind:college="aluno.college"
-          v-bind:imgUrl="aluno.imgUrl"
-        />
+      <div class="box-positions">
+        <div class="row">
+          <Aluno
+            v-for="aluno in orderStudentInitiation"
+            v-bind:key="aluno.abbreviation"
+            v-bind:name="aluno.name"
+            v-bind:scholarship="aluno.scholarship"
+            v-bind:abbreviation="aluno.abbreviation"
+            v-bind:email="aluno.email"
+            v-bind:lattes="aluno.lattes"
+            v-bind:college="aluno.college"
+            v-bind:imgUrl="aluno.imgUrl"
+          />
+        </div>
       </div>
     </div>
   </div>

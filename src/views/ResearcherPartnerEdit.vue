@@ -1,10 +1,14 @@
 <script>
 import { reactive, computed, onMounted } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import { getCompany, updateCompany, firebaseApp } from "@/firebase";
+import {
+  getResearcherPartner,
+  updateResearcherPartner,
+  firebaseApp,
+} from "@/firebase";
 
 export default {
-  name: "CompanyEdit",
+  name: "ResearcherPartnerEdit",
   methods: {
     previewImage(event) {
       this.uploadValue.value = 0;
@@ -14,44 +18,53 @@ export default {
   setup() {
     const router = useRouter();
     const route = useRoute();
-    const companyId = computed(() => route.params.id);
+    const studentId = computed(() => route.params.id);
 
     const form = reactive({
       name: "",
-      acronym: "",
-      about: "",
+      abbreviation: "",
+      institution: "",
+      resume: "",
+      email: "",
+      lattes: "",
       imgUrl: "",
     });
     onMounted(async () => {
-      const company = await getCompany(companyId.value);
-      form.name = company.name;
-      form.acronym = company.acronym;
-      form.about = company.about;
-      form.imgUrl = company.imgUrl;
+      const student = await getResearcherPartner(studentId.value);
+      form.name = student.name;
+      form.abbreviation = student.abbreviation;
+      form.institution = student.institution;
+      form.resume = student.resume;
+      form.email = student.email;
+      form.lattes = student.lattes;
+      form.imgUrl = student.imgUrl;
     });
     const imageData = reactive({ data: null });
     const uploadValue = reactive({ value: 0 });
     const update = async () => {
       window.scrollTo(0, 0);
       if (imageData.data == null) {
-        await updateCompany(companyId.value, { ...form });
+        await updateResearcherPartner(studentId.value, { ...form });
         router.push("/dataview");
         form.name = "";
-        form.acronym = "";
-        form.about = "";
+        form.abbreviation = "";
+        form.institution = "";
+        form.resume = "";
+        form.email = "";
+        form.lattes = "";
         form.imgUrl = "";
       } else {
         const fileExtension = imageData.data.name.split(".").pop();
         const myNewFile = new File(
           [imageData.data],
-          `${form.acronym}.${fileExtension}`,
+          `${form.abbreviation}.${fileExtension}`,
           {
             type: imageData.data.type,
           }
         );
         const storageRef = firebaseApp
           .storage()
-          .ref(`/company/${myNewFile.name}`)
+          .ref(`/researcherPartner/${myNewFile.name}`)
           .put(myNewFile);
         storageRef.on(
           `state_changed`,
@@ -66,10 +79,13 @@ export default {
             uploadValue.value = 100;
             storageRef.snapshot.ref.getDownloadURL().then((url) => {
               form.imgUrl = url;
-              updateCompany(form.acronym, { ...form });
+              updateResearcherPartner(form.abbreviation, { ...form });
               form.name = "";
-              form.acronym = "";
-              form.about = "";
+              form.abbreviation = "";
+              form.institution = "";
+              form.resume = "";
+              form.email = "";
+              form.lattes = "";
               form.imgUrl = "";
               imageData.data = {};
               uploadValue.value = 0;
@@ -100,6 +116,7 @@ export default {
       </div>
 
       <form @submit.prevent="update" v-else>
+        <h3>Editar</h3>
         <label for="name" class="fw-bolder form-label"> Nome </label>
         <div class="input-group mb-3">
           <input
@@ -111,32 +128,67 @@ export default {
           />
         </div>
 
-        <label for="acronym" class="fw-bolder form-label"> Sigla </label>
+        <label for="abbreviation" class="fw-bolder form-label">
+          Nome abreviado
+        </label>
         <div class="input-group mb-3">
           <input
-            v-model="form.acronym"
+            v-model="form.abbreviation"
             type="text"
             class="form-control"
-            name="acronym"
+            name="abbreviation"
             required
           />
         </div>
 
-        <label for="about" class="fw-bolder form-label">
-          Sobre a parceria
+        <label for="institution" class="fw-bolder form-label">
+          Instituição
         </label>
         <div class="input-group mb-3">
-          <textarea
-            v-model="form.about"
+          <input
+            v-model="form.institution"
             type="text"
             class="form-control"
-            name="about"
+            name="institution"
+            required
+          />
+        </div>
+
+        <label for="email" class="fw-bolder form-label"> Email </label>
+        <div class="input-group mb-3">
+          <input
+            v-model="form.email"
+            type="text"
+            class="form-control"
+            name="email"
+            required
+          />
+        </div>
+
+        <label for="lattes" class="fw-bolder form-label"> Lattes </label>
+        <div class="input-group mb-3">
+          <input
+            v-model="form.lattes"
+            type="text"
+            class="form-control"
+            name="lattes"
+            required
+          />
+        </div>
+
+        <label for="resume" class="fw-bolder form-label"> Resumo </label>
+        <div class="input-group mb-3">
+          <textarea
+            v-model="form.resume"
+            type="text"
+            class="form-control"
+            name="resume"
             aria-label="With textarea"
             required
           ></textarea>
         </div>
 
-        <label for="inputImage" class="fw-bolder form-label"> Imagem </label>
+        <label for="inputImage" class="fw-bolder form-label"> Foto </label>
         <div class="input-group mb-3">
           <input
             type="file"
@@ -144,12 +196,11 @@ export default {
             name="inputImage"
             @change="previewImage"
             accept="image/*"
-            required
           />
         </div>
 
         <button type="submit" class="btn btn-success mt-3">
-          Update Company
+          Update Parceiro
         </button>
       </form>
     </div>

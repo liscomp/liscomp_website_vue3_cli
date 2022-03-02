@@ -12,11 +12,10 @@ export default {
     "lattes",
     "resume",
     "imgUrl",
-    "imgLogoUrl",
   ],
   data: function () {
     return {
-      email_completo: "mailto:%20" + this.contato.email,
+      email_completo: "mailto:%20" + this.email,
     };
   },
 };
@@ -30,6 +29,7 @@ export default {
       </div>
       <div class="portrait-title text-center">
         <h5 class="title name">{{ name }}</h5>
+        <h6 class="cargo">{{ institution }}</h6>
       </div>
       <ul class="network-icon d-flex justify-content-center" aria-hidden="true">
         <li>
@@ -64,7 +64,7 @@ export default {
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="title name" id="researcherModalLabel">{{ nome }}</h5>
+                <h5 class="title name" id="researcherModalLabel">{{ name }}</h5>
                 <h5 class="modal-title"></h5>
                 <button
                   type="button"
@@ -75,17 +75,7 @@ export default {
               </div>
               <div class="modal-body">
                 <div class="row about">
-                  <div class="col-md-4">
-                    <div class="d-flex justify-content-center">
-                      <img
-                        class="avatar avatar-circle"
-                        v-bind:src="`${imgLogoUrl}`"
-                      />
-                    </div>
-                    <h5 class="title name">{{ institution }}</h5>
-                  </div>
-                  <div class="col-md-7">
-                    <h6 class="title name">Resumo</h6>
+                  <div class="col-12">
                     <div>{{ resume }}</div>
                   </div>
                 </div>
